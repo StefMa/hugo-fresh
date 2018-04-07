@@ -1,0 +1,66 @@
+{{- $navbar := .Site.Params.navbar -}}
+{{- $logoSrc := $navbar.logo.src -}}
+{{- $logoAlt := $navbar.logo.alt -}}
+{{- $links := $navbar.links -}}
+{{- $buttonText := $navbar.buttonText -}}
+<div class="navbar-wrapper navbar-sticky">
+  <div class="hero-head">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-left">
+          <a class="nav-item" href="/">
+            <img class="brand" src="/img/{{ $logoSrc }}" alt="{{ $logoAlt }}">
+          </a>
+          <a id="panel-trigger" href="#left-panel" class="nav-item nav-inner hamburger-btn" href="javascript:void(0);">
+            <span class="menu-toggle">
+              <span class="icon-box-toggle">
+                <span class="rotate">
+                  <i class="icon-line-top"></i>
+                  <i class="icon-line-center"></i>
+                  <i class="icon-line-bottom"></i>
+                </span>
+              </span>
+            </span>
+          </a>
+        </div>
+        <span class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="nav-right nav-menu">
+          {{- range $links -}}
+          {{- if ne .dropdown true }}
+          <a class="nav-item is-tab nav-inner" href="{{ .url }}">
+            {{ .text }}
+          </a>
+          {{- else }}
+          <div class="nav-item is-drop">
+            <a class="nav-item is-tab nav-inner-xs">
+              {{ .text }}
+            </a>
+            <span class="drop-caret"><i class="fa fa-angle-down"></i></span>
+            <div class="dropContain">
+              <div class="dropOut">
+                <div class="triangle"></div>
+                <ul>
+                  {{- range .links -}}
+                  <li>{{ . }}</li>
+                  {{- end -}}
+                </ul>
+              </div>
+            </div>
+          </div>
+          {{- end -}}
+          {{- end -}}
+
+          <span class="nav-item">
+            <a class="button cta is-large rounded secondary-btn raised">
+              {{ $buttonText }}
+            </a>
+          </span>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>

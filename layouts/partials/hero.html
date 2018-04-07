@@ -1,0 +1,54 @@
+{{- $hero := .Site.Params.hero }}
+{{- $tagline := $hero.tagline -}}
+{{- $subTagline := $hero.subtagline -}}
+{{- $buttonText := $hero.buttonText }}
+{{- $heroImage := $hero.image -}}
+<section class="hero is-fullheight is-default is-bold is-slanted">
+  {{ partial "navbar.html" . }}
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="columns is-vcentered" style="padding-top:60px;">
+        <div class="column is-4 is-offset-1 has-text-left">
+          <h1 class="big-title">
+            {{ $tagline }}
+          </h1>
+          {{- with $subTagline -}}
+          <h2 class="subtitle is-5">
+            {{ . }}
+          </h2>
+          {{- end -}}
+          <br>
+          {{- with $buttonText -}}
+          <p class="has-text-left">
+            <a class="button cta is-large rounded primary-btn raised">
+              {{ . }}
+            </a>
+          </p>
+          {{- end -}}
+        </div>
+        <div class="column is-5 is-offset-2">
+          <figure class="image is-4by3">
+            <img src="/img/{{ $heroImage }}" alt="Description">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-foot mb-20">
+    <div class="container">
+      <div class="tabs is-centered">
+        <ul>
+          {{- range $hero.bottomIcons }}
+          <li>
+            <a>
+              <img class="partner-logo" src="/img/{{ . }}">
+            </a>
+          </li>
+          {{- end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

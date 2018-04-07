@@ -1,0 +1,4 @@
+data/assetHashes.json
+node_modules/
+static/css/core-*.css
+static/js/fresh-*.js

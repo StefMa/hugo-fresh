@@ -1,0 +1,35 @@
+{{- $section1 := .Site.Params.section1 -}}
+{{- $tagline := $section1.tagline -}}
+{{- $subTagline := $section1.subTagline -}}
+{{- $panels := $section1.panels -}}
+<section class="section section-light-grey is-medium">
+  <div class="container">
+    <div class="title-wrapper huge-pb">
+      <h2 class="title section-title has-text-centered pb-20">{{ $tagline }}</h2>
+      {{- with $subTagline -}}
+      <h3 class="subtitle is-5 has-text-centered">{{ . }}</h3>
+      {{- end -}}
+    </div>
+
+    <div class="columns mt-80">
+      {{- range $panels -}}
+      <div class="column is-one-third">
+        <div class="feature-card is-bordered has-text-centered revealOnScroll delay-{{ .delay }}" data-animation="fadeInLeft">
+          <div class="card-title">
+            <h4>{{ .title }}</h4>
+          </div>
+          <div class="card-icon">
+            <img src="/img/{{ .image }}">
+          </div>
+          <div class="card-text">
+            <p>{{ .text }}</p>
+          </div>
+          <div class="card-action">
+            <a href="{{ .button.url }}" class="button btn-align-md primary-btn raised">{{ .button.text }}</a>
+          </div>
+        </div>
+      </div>
+      {{- end -}}
+    </div>
+  </div>
+</section>

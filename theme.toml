@@ -1,0 +1,12 @@
+name = "Hugo Fresh"
+license = "MIT"
+licenselink = "https://github.com/lucperkins/hugo-fresh/blob/master/LICENSE.md"
+description = ""
+homepage = "https://github.com/lucperkins/hugo-fresh"
+tags = []
+features = []
+min_version = "0.38"
+
+[author]
+  name = "Luc Perkins"
+  homepage = "https://github.com/lucperkins"
