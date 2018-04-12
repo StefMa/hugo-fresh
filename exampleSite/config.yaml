@@ -1,0 +1,57 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Hugo Fresh Theme
+
+params:
+  hero:
+    tagline: Main tagline
+    subTagline: Sub tagline
+    buttonText: Button text
+    image: illustrations/worker.svg
+    bottomIcons:
+    - logos/clients/systek.svg
+    - logos/clients/tribe.svg
+    - logos/clients/kromo.svg
+    - logos/clients/infinite.svg
+    - logos/clients/gutwork.svg
+  navbar:
+    buttonText: Sign up
+    logo:
+      src: logos/fresh.svg
+      alt: Main navbar logo
+    links:
+    - text: Features
+      url: /
+    - text: Pricing
+      url: /
+    - text: Dropdown
+      dropdown: true
+      links:
+      - Dropdown item 1
+      - Dropdown item 2
+      - Dropdown item 3
+  section1:
+    tagline: Great power comes with great Responsability
+    subTagline: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+    panels:
+    - title: Online App builder
+      image: illustrations/icons/mouse-globe.svg
+      text: This is some explanatory text that is on two rows
+      button:
+        text: Free Trial
+        url: /
+      delay: 1
+    - title: Cloud deployment
+      image: illustrations/icons/laptop-cloud.svg
+      text: This is some explanatory text that is on two rows
+      button:
+        text: Free Trial
+        url: /
+      delay: 2
+    - title: Pluggable tools
+      image: illustrations/icons/plug-cloud.svg
+      text: This is some explanatory text that is on two rows
+      button:
+        text: Free Trial
+        url: /
+      delay: 3
