@@ -53,4 +53,6 @@ gulp.task('js:watch', () => {
 
 gulp.task('build', gulp.series('sass', 'js'));
 
-gulp.task('default', gulp.series('sass', 'js', gulp.parallel('sass:watch', 'js:watch')));
+gulp.task('dev', gulp.series('sass', 'js', gulp.parallel('sass:watch', 'js:watch')));
+
+gulp.task('default', gulp.series('dev'));
