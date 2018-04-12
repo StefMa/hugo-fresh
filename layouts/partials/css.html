@@ -1,5 +1,5 @@
-{{- $cssFilename := cond .Site.IsServer (index .Site.Data.assetHashes "core.css") "core.css" }}
+{{- $coreCssUrl := printf "/css/%s" (cond .Site.IsServer (index .Site.Data.assetHashes "core.css") "core.css") | absURL }}
 <link rel="shortcut icon" type="image/png" href="{{ "/img/favicon.png" | absURL }}" />
 <link rel="stylesheet" href="{{ "/css/bulma.min.css" | absURL }}" />
 <link rel="stylesheet" href="{{ "/css/icons.css" | absURL }}" />
-<link rel="stylesheet" href="{{ printf "/css/%s" $cssFilename | absURL }}" />
+<link rel="stylesheet" href="{{ $coreCssUrl }}" />

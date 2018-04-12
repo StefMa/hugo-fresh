@@ -2,7 +2,7 @@
 {{- $tagline := $hero.tagline -}}
 {{- $subTagline := $hero.subtagline -}}
 {{- $buttonText := $hero.buttonText }}
-{{- $heroImage := $hero.image -}}
+{{- $heroImageUrl := printf "/img/%s" $hero.image | absURL -}}
 <section class="hero is-fullheight is-default is-bold is-slanted">
   {{ partial "navbar.html" . }}
 
@@ -29,7 +29,7 @@
         </div>
         <div class="column is-5 is-offset-2">
           <figure class="image is-4by3">
-            <img src="/img/{{ $heroImage }}" alt="Description">
+            <img src="{{ $heroImageUrl }}" alt="Description">
           </figure>
         </div>
       </div>
@@ -40,13 +40,14 @@
     <div class="container">
       <div class="tabs is-centered">
         <ul>
-          {{- range $hero.bottomIcons }}
+          {{- range $hero.bottomIcons -}}
+          {{- $imgUrl := printf "/img/%s" . }}
           <li>
             <a>
-              <img class="partner-logo" src="/img/{{ . }}">
+              <img class="partner-logo" src="{{ $imgUrl }}">
             </a>
           </li>
-          {{- end }}
+          {{- end -}}
         </ul>
       </div>
     </div>
