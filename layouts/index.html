@@ -1,5 +1,5 @@
-{{- $cssFilename := index .Site.Data.assetHashes "core.css" }}
-{{- $jsFilename := index .Site.Data.assetHashes "fresh.js" }}
+{{- $cssFilename := cond .Site.IsServer (index .Site.Data.assetHashes "core.css") "core.css" }}
+{{- $jsFilename := cond .Site.IsServer (index .Site.Data.assetHashes "fresh.js") "fresh.js" }}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,8 +7,8 @@
     <title>{{ .Site.Title }}</title>
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
     <link rel="stylesheet" href="/css/bulma.min.css" />
-    <link rel="stylesheet" href="/css/{{ $cssFilename }}" />
     <link rel="stylesheet" href="/css/icons.css" />
+    <link rel="stylesheet" href="/css/{{ $cssFilename }}" />
   </head>
   <body>
     <div id="preloader">
@@ -16,9 +16,7 @@
     </div>
     {{ partial "hero.html" . }}
     {{ partial "section-1.html" . }}
-
-
-
+    {{ partial "section-2.html" . }}
 
       <section class="section is-medium">
           <div class="container">

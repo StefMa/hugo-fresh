@@ -9,3 +9,6 @@ setup:
 
 dev:
 	$(GULP)
+
+build:
+	$(GULP) build
