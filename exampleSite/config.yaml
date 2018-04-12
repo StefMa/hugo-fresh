@@ -4,9 +4,9 @@ title: Hugo Fresh Theme
 
 params:
   hero:
-    tagline: Main tagline
-    subTagline: Sub tagline
-    buttonText: Button text
+    tagline: Hugo Fresh theme
+    subTagline: An adaptation of the gorgeous Fresh landing page starter from CSS Ninja
+    buttonText: Click here
     image: illustrations/worker.svg
     bottomIcons:
     - logos/clients/systek.svg
