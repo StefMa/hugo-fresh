@@ -52,7 +52,7 @@ section:focus {
     outline: none !important;
 }
 
-// Preloader 
+// Preloader
 #preloader {
     position: fixed;
     top: 0;
@@ -68,16 +68,16 @@ section:focus {
     height: 200px;
     position: absolute;
     left: 50%;
-    // centers the loading animation horizontally on the screen 
+    // centers the loading animation horizontally on the screen
     top: 50%;
-    // centers the loading animation vertically on the screen 
-    background-image: url(../images/loaders/rings.svg);
+    // centers the loading animation vertically on the screen
+    background-image: url(../img/loaders/rings.svg);
     background-size: 80px 80px;
-    // path to loading animation 
+    // path to loading animation
     background-repeat: no-repeat;
     background-position: center;
     margin: -100px 0 0 -100px;
-    // width and height divided by two 
+    // width and height divided by two
 }
 
 // Back to top button
@@ -139,7 +139,7 @@ body #backtotop a {
 }
 
 
-// HELPER CLASSES 
+// HELPER CLASSES
 .is-disabled {
     pointer-events: none;
     opacity: 0.4;
@@ -225,27 +225,27 @@ body #backtotop a {
 
 //Navbar animated icon
 .menu-toggle  {
-    font-size: 20px; 
-    color: #666; 
-    line-height: 48px; 
-    text-align: center; 
-    background: transparent; 
-    display: block; 
+    font-size: 20px;
+    color: #666;
+    line-height: 48px;
+    text-align: center;
+    background: transparent;
+    display: block;
     width: 24px;
-    height: 26px; 
-    cursor: pointer; 
-    padding: 0; 
-    margin: 0 14px; 
+    height: 26px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 14px;
     transition: opacity 0.4s;
     opacity: 1;
     position: relative;
     top: 2px;
     .icon-box-toggle  {
         height: 100%;
-        width: 100%; 
-        background: tranparent; 
+        width: 100%;
+        background: tranparent;
         position: relative;
-        display: block; 
+        display: block;
         &.active > span.rotate {
 
             /*transform*/
@@ -258,16 +258,16 @@ body #backtotop a {
 
 
         &.active > span > i.icon-line-center{
-            visibility: hidden; 
-            width: 1px; 
-            height: 3px; 
+            visibility: hidden;
+            width: 1px;
+            height: 3px;
             left: 70%;
         }
 
         &.active > span > i.icon-line-bottom {
             margin: -1.5px 0 0 -10px;
             left: 50%;
-            top: 50%; 
+            top: 50%;
             /*transform*/
             -webkit-transform: rotate(135deg);
             -moz-transform:translate(0px, 0px) rotate(135deg);
@@ -278,7 +278,7 @@ body #backtotop a {
         &.active  > span > i.icon-line-top {
             margin: -1.5px 0 0 -10px;
             left: 50%;
-            top: 50%; 
+            top: 50%;
             /*transform*/
             -webkit-transform: rotate(45deg);
             -moz-transform:translate(0px, 0px) rotate(45deg);
@@ -290,46 +290,46 @@ body #backtotop a {
     }
 
     .icon-line-center {
-        position: absolute; 
-        width: 20px; 
-        height: 2px; 
-        background: $secondary; 
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $secondary;
         margin: -1.5px 0 0 -10px;
         left: 50%;
-        top: 50%; 
+        top: 50%;
 
         -webkit-transition: all .2s ease ;
         -moz-transition: all .2s ease ;
         -o-transition: all .2s ease ;
-        transition: all .2s ease ;	
+        transition: all .2s ease ;
     }
 
     .icon-line-top {
-        position: absolute; 
-        width: 20px; 
-        height: 2px; 
-        background: $secondary; 
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $secondary;
         margin: -2px 0 0 -10px;
         left: 50%;
-        top: 30%; 
+        top: 30%;
         -webkit-transition: all .2s ease ;
         -moz-transition: all .2s ease ;
         -o-transition: all .2s ease ;
-        transition: all .2s ease ;	
+        transition: all .2s ease ;
     }
 
     .icon-line-bottom {
-        position: absolute; 
-        width: 20px; 
-        height: 2px; 
-        background: $secondary; 
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $secondary;
         margin: 1.5px 0 0 -10px;
         left: 50%;
-        top: 60%; 
+        top: 60%;
         -webkit-transition: all .2s ease ;
         -moz-transition: all .2s ease ;
         -o-transition: all .2s ease ;
-        transition: all .2s ease ;	
+        transition: all .2s ease ;
     }
 }
 

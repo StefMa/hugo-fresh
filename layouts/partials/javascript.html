@@ -1,5 +1,9 @@
-{{- $jsUrl := printf "/js/%s" (cond .Site.IsServer (index .Site.Data.assetHashes "fresh.js") "fresh.js") | absURL }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script src="{{ "/js/jquery-panelslider/jquery.panelslider.min.js" | absURL }}"></script>
+{{- if .Site.IsServer -}}
+{{- $jsUrl := printf "/js/%s" (index .Site.Data.assetHashes "fresh.js") | absURL }}
 <script src="{{ $jsUrl }}"></script>
+{{- else }}
+<script src="{{ "/js/fresh.js" | absURL }}"></script>
+{{- end -}}
