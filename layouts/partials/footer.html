@@ -1,6 +1,7 @@
 {{- $footer := .Site.Params.footer -}}
 {{- $image := $footer.image -}}
-{{- $columns := $footer.columns }}
+{{- $columns := $footer.columns -}}
+{{- $followUs := $footer.followUs -}}
 <footer class="footer footer-dark">
   <div class="container">
     <div class="columns">
@@ -34,21 +35,13 @@
             <h3>Follow Us</h3>
             <nav class="level is-mobile">
               <div class="level-left">
-                <a class="level-item">
-                  <span class="icon"><i class="fa fa-github"></i></span>
+                {{- range $followUs -}}
+                <a class="level-item" href="{{ .url }}">
+                  <span class="icon">
+                    <i class="fa fa-{{ .icon }}"></i>
+                  </span>
                 </a>
-                <a class="level-item">
-                  <span class="icon"><i class="fa fa-dribbble"></i></span>
-                </a>
-                <a class="level-item">
-                  <span class="icon"><i class="fa fa-facebook"></i></span>
-                </a>
-                <a class="level-item">
-                  <span class="icon"><i class="fa fa-twitter"></i></span>
-                </a>
-                <a class="level-item">
-                  <span class="icon"><i class="fa fa-bitbucket"></i></span>
-                </a>
+                {{- end -}}
               </div>
             </nav>
           </div>
