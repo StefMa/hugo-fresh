@@ -1,29 +1,38 @@
+{{- $contact := .Site.Params.contact -}}
+{{- $tagline := $contact.tagline -}}
+{{- $subTagline := $contact.subTagline -}}
 <section class="section section-light-grey is-medium">
   <div class="container">
-      <div class="title-wrapper huge-pb">
-          <h2 class="title section-title has-text-centered pb-20">Drop us a line or two !</h2>
-          <h3 class="subtitle is-5 has-text-centered">Lorem ipsum sit dolor amet is a dummy text used by typography industry </h3>
-      </div>
+    <div class="title-wrapper huge-pb">
+      <h2 class="title section-title has-text-centered pb-20">
+        {{ $tagline }}
+      </h2>
+      <h3 class="subtitle is-5 has-text-centered">
+        {{ $subTagline }}
+      </h3>
+    </div>
 
-      <div class="columns mt-80">
-          <div class="column is-6 is-offset-3">
-              <form>
-                  <div class="columns is-multiline">
-                      <div class="column is-6">
-                          <input class="input is-medium" type="text" placeholder="Enter your Name">
-                      </div>
-                      <div class="column is-6">
-                          <input class="input is-medium" type="email" placeholder="Enter your Email">
-                      </div>
-                      <div class="column is-12">
-                          <textarea class="textarea" rows="10" placeholder="Write someting ..."></textarea>
-                      </div>
-                      <div class="form-footer has-text-centered mt-10">
-                          <button class="button cta is-large primary-btn raised is-clear">Send Message</button>
-                      </div>
-                  </div>
-              </form>
+    <div class="columns mt-80">
+      <div class="column is-6 is-offset-3">
+        <form>
+          <div class="columns is-multiline">
+            <div class="column is-6">
+              <input class="input is-medium" type="text" placeholder="Enter your Name">
+            </div>
+            <div class="column is-6">
+              <input class="input is-medium" type="email" placeholder="Enter your Email">
+            </div>
+            <div class="column is-12">
+              <textarea class="textarea" rows="10" placeholder="Write someting ..."></textarea>
+            </div>
+            <div class="form-footer has-text-centered mt-10">
+              <button class="button cta is-large primary-btn raised is-clear">
+                Send Message
+              </button>
+            </div>
           </div>
+        </form>
       </div>
+    </div>
   </div>
 </section>

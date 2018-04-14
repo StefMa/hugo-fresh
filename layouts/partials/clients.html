@@ -1,44 +1,37 @@
+{{- $clients := .Site.Params.clients -}}
+{{- $tagline := $clients.tagline -}}
+{{- $subTagline := $clients.subTagline -}}
+{{- $clientExamples := $clients.clientExamples -}}
 <section class="section is-medium section-secondary">
   <div class="container">
     <div class="title-wrapper pb-40">
-      <h2 class="title is-2 section-title has-text-centered light-text pb-20">Our Clients love us !</h2>
-      <h3 class="subtitle is-5 has-text-centered light-text">Lorem ipsum sit dolor amet is a dummy text used by typography industry </h3>
+      <h2 class="title is-2 section-title has-text-centered light-text pb-20">
+        {{ $tagline }}
+      </h2>
+      <h3 class="subtitle is-5 has-text-centered light-text">
+        {{ $subTagline }}
+      </h3>
     </div>
 
     <div class="columns is-vcentered mt-40">
-        <div class="column is-4">
-            <figure class="testimonial">
-                <blockquote>
-                    Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-                </blockquote>
-                <div class="author">
-                    <img src="/img/illustrations/faces/1.png" alt=""/>
-                    <h5>Irma Walters</h5><span>Accountant</span>
-                </div>
-            </figure>
-        </div>
-        <div class="column is-4">
-            <figure class="testimonial">
-                <blockquote>
-                    Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-                </blockquote>
-                <div class="author">
-                    <img src="/img/illustrations/faces/2.png" alt=""/>
-                    <h5>John Bradley</h5><span>Financial Analyst</span>
-                </div>
-            </figure>
-        </div>
-        <div class="column is-4">
-            <figure class="testimonial">
-                <blockquote>
-                    Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-                </blockquote>
-                <div class="author">
-                    <img src="/img/illustrations/faces/3.png" alt=""/>
-                    <h5>Gary Blackman</h5><span>HR Manager</span>
-                </div>
-            </figure>
-        </div>
+      {{- range $clientExamples -}}
+      <div class="column is-4">
+        <figure class="testimonial">
+          <blockquote>
+            {{ .quote }}
+          </blockquote>
+          <div class="author">
+            <img src="{{ printf "/img/illustrations/faces/%s" .image | absURL }}" alt=""/>
+            <h5>
+              {{ .name }}
+            </h5>
+            <span>
+              {{ .position }}
+            </span>
+          </div>
+        </figure>
+      </div>
+      {{- end -}}
     </div>
   </div>
 </section>

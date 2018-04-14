@@ -1,68 +1,36 @@
+{{- $sellingPoints := .Site.Params.sellingPoints -}}
+{{- $tagline := $sellingPoints.tagline }}
+{{- $points := $sellingPoints.points }}
 <section class="section is-medium">
   <div class="container">
     <div class="columns">
       <div class="column">
-          <h1 class="title section-title">You're here because you want the best</h1>
+          <h1 class="title section-title">{{ $tagline }}</h1>
       </div>
       <div class="column is-7 mt-60">
-
-        <!-- icon block -->
+        {{- range $points -}}
         <article class="media icon-box">
           <figure class="media-left">
             <p class="image">
-              <img src="/img/illustrations/icons/laptop-globe.svg">
+              <img src="{{ printf "/img/illustrations/icons/%s.svg" .icon | absURL }}">
             </p>
           </figure>
           <div class="media-content mt-50">
             <div class="content">
               <p>
-                <span class="icon-box-title">Powerful and unified interface</span>
+                <span class="icon-box-title">
+                  {{ .title }}
+                </span>
                 <br><br>
-                <span class="icon-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</span>
+                <span class="icon-box-text">
+                  {{ .description }}
+                </span>
               </p>
             </div>
           </div>
         </article>
-        <!-- /icon block -->
-
-        <!-- icon block -->
-        <article class="media icon-box">
-            <figure class="media-left">
-                <p class="image">
-                    <img src="/img/illustrations/icons/doc-sync.svg">
-                </p>
-            </figure>
-            <div class="media-content mt-50">
-                <div class="content">
-                    <p>
-                        <span class="icon-box-title">Cross device Synchronisation</span>
-                        <br><br>
-                        <span class="icon-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</span>
-                    </p>
-                </div>
-            </div>
-        </article>
-        <!-- /icon block -->
-
-        <!-- icon block -->
-        <article class="media icon-box">
-            <figure class="media-left">
-                <p class="image">
-                    <img src="/img/illustrations/icons/mobile-feed.svg">
-                </p>
-            </figure>
-            <div class="media-content mt-50">
-                <div class="content">
-                    <p>
-                        <span class="icon-box-title">Nomad System</span>
-                        <br><br>
-                        <span class="icon-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</span>
-                    </p>
-                </div>
-            </div>
-        </article>
-        <!-- /icon block -->
-
+        {{- end -}}
+        </div>
       </div>
     </div>
   </div>
