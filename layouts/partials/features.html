@@ -13,7 +13,7 @@
 
     <div class="columns mt-80">
       {{- range $panels -}}
-      {{- $imgUrl := printf "/img/%s" .image | absURL -}}
+      {{- $imgUrl := printf "img/%s" .image | absURL -}}
       <div class="column is-one-third">
         <div class="feature-card is-bordered has-text-centered revealOnScroll delay-{{ .delay }}" data-animation="fadeInLeft">
           <div class="card-title">

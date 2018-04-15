@@ -8,8 +8,8 @@
     <div class="container">
       <nav class="nav">
         <div class="nav-left">
-          <a class="nav-item" href="/">
-            <img class="brand" src="/img/{{ $logoSrc }}" alt="{{ $logoAlt }}">
+          <a class="nav-item" href="{{ .Site.BaseURL }}">
+            <img class="brand" src="img/{{ $logoSrc }}" alt="{{ $logoAlt }}">
           </a>
           <a id="panel-trigger" href="#left-panel" class="nav-item nav-inner hamburger-btn" href="javascript:void(0);">
             <span class="menu-toggle">
