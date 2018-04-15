@@ -2,7 +2,7 @@
 {{- $tagline := $hero.tagline -}}
 {{- $subTagline := $hero.subtagline -}}
 {{- $buttonText := $hero.buttonText }}
-{{- $heroImageUrl := printf "/img/%s" $hero.image | absURL -}}
+{{- $heroImageUrl := printf "img/%s" $hero.image | absURL -}}
 <section class="hero is-fullheight is-default is-bold is-slanted">
   {{ partial "navbar.html" . }}
 
@@ -41,7 +41,7 @@
       <div class="tabs is-centered">
         <ul>
           {{- range $hero.bottomIcons -}}
-          {{- $imgUrl := printf "/img/%s" . }}
+          {{- $imgUrl := printf "img/%s" . }}
           <li>
             <a>
               <img class="partner-logo" src="{{ $imgUrl }}">
