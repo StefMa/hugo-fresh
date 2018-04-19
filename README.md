@@ -28,7 +28,11 @@ $ curl -O https://raw.githubusercontent.com/lucperkins/hugo-fresh/master/example
 $ hugo
 ```
 
+Adjust the values in `config.yaml` and the images in `static/img` to personalize your landing page.
+
 ## Running this theme locally
+
+In order to run this theme locally, you'll need to have Node.js installed (to build the JavaScript and CSS out of Sass files).
 
 ## Developing this theme
 
