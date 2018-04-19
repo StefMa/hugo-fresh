@@ -32,20 +32,16 @@ Adjust the values in `config.yaml` and the images in `static/img` to personalize
 
 ## Running this theme locally
 
-In order to run this theme locally, you'll need to have Node.js installed (to build the JavaScript and CSS out of Sass files).
-
-## Developing this theme
-
-Feel free to make changes to this theme if you'd like. Pull requests welcome! To get started developing the theme:
+The CSS and JavaScript for theme is built using [GulpJS](https://gulpjs.com). Sass assets are in [`source/scss`](source/scss) and JavaScript assets are in [`source/js`](source/js). In order to run this theme locally, you'll need to have Node.js installed (to build the JavaScript and CSS). Once Node.js is installed, follow these instructions to run the theme locally:
 
 ```bash
-$ make setup
+$ hugo new site fresh-landing-page && cd fresh-landing-page
+$ git clone https://github.com/lucperkins/hugo-fresh themes/hugo-fresh
+$ rm config.toml
+$ curl -O https://raw.githubusercontent.com/lucperkins/hugo-fresh/master/exampleSite/config.yaml
+$ (cd themes/hugo-fresh && make setup && make dev)
+# In a different terminal window
+$ hugo server
 ```
 
-## Theme components
-
-The CSS and JavaScript for theme is built using [GulpJS](https://gulpjs.com). Sass assets are in [`source/scss`](source/scss) and JavaScript assets are in [`source/js`](source/js). To develop the static assets:
-
-```bash
-$ make dev
-```
+Then open up `localhost:1313` in your browser and you should be ready to go!
