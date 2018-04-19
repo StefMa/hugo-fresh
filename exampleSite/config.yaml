@@ -32,7 +32,7 @@ params:
       - Dropdown item 2
       - Dropdown item 3
   features:
-    tagline: Great power comes with great Responsability
+    tagline: Great power comes with great Responsibility
     subTagline: Lorem ipsum sit dolor amet is a dummy text used by typography industry
     panels:
     - title: Online App builder
