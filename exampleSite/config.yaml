@@ -1,6 +1,7 @@
 baseURL: http://example.org/
 languageCode: en-us
 title: Hugo Fresh Theme
+theme: hugo-fresh
 
 params:
   hero:

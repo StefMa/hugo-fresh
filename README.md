@@ -16,6 +16,20 @@ Variable | What it represents | Default
 
 Okay, maybe I don't want to make the full table. You can easily figure it out for yourself using the [example config](exampleSite/config.yaml).
 
+## Building a landing page using this theme
+
+In order to build a landing page using this theme:
+
+```bash
+$ hugo new site fresh-landing-page && cd fresh-landing-page
+$ git clone https://github.com/lucperkins/hugo-fresh themes/hugo-fresh
+$ rm config.toml
+$ curl -O https://raw.githubusercontent.com/lucperkins/hugo-fresh/master/exampleSite/config.yaml
+$ hugo
+```
+
+## Running this theme locally
+
 ## Developing this theme
 
 Feel free to make changes to this theme if you'd like. Pull requests welcome! To get started developing the theme:
