@@ -1,5 +1,5 @@
 {{- $navbar := .Site.Params.navbar -}}
-{{- $logoSrc := $navbar.logo.src -}}
+{{- $logoSrc := printf "img/%s" $navbar.logo.src | absURL -}}
 {{- $logoAlt := $navbar.logo.alt -}}
 {{- $links := $navbar.links -}}
 {{- $buttonText := $navbar.buttonText -}}
@@ -9,7 +9,7 @@
       <nav class="nav">
         <div class="nav-left">
           <a class="nav-item" href="{{ .Site.BaseURL }}">
-            <img class="brand" src="img/{{ $logoSrc }}" alt="{{ $logoAlt }}">
+            <img class="brand" src="{{ $logoSrc }}" alt="{{ $logoAlt }}">
           </a>
           <a id="panel-trigger" href="#left-panel" class="nav-item nav-inner hamburger-btn" href="javascript:void(0);">
             <span class="menu-toggle">
