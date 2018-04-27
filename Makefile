@@ -5,7 +5,7 @@ NODE_BIN = node_modules/.bin
 GULP     := $(NODE_BIN)/gulp
 
 setup:
-	npm install
+	yarn
 
 dev:
 	$(GULP)
