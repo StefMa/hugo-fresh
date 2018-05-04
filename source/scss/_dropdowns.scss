@@ -12,18 +12,13 @@ div.navbar-item.is-drop:hover .dropContain .dropOut {
 }
 
 div.navbar-item.is-drop:hover, div.navbar-item.is-drop:hover a, {
-    border-bottom: 1px solid transparent !important;
+    border-bottom: 0.5px solid transparent !important;
     color: $secondary;
 }
 
 div.navbar-item.is-drop:hover .dropContain {
     top: 65px;
     animation: fadeInUp 0.27s ease-out;
-}
-
-span.drop-caret {
-    position: relative;
-    top: 5px;
 }
 
 div.navbar-item.is-drop {
