@@ -27,13 +27,13 @@ Hero styles
             color: #363636;
         }
     }
-    &.is-primary a.nav-item.nav-inner-xs, &.is-info a.nav-item.nav-inner-xs, &.is-danger a.nav-item.nav-inner-xs, &.is-success a.nav-item.nav-inner-xs, &.is-dark a.nav-item.nav-inner-xs  {
+    &.is-primary a.navbar-item.navbar-inner-xs, &.is-info a.navbar-item.navbar-inner-xs, &.is-danger a.navbar-item.navbar-inner-xs, &.is-success a.navbar-item.navbar-inner-xs, &.is-dark a.navbar-item.navbar-inner-xs  {
         color: #7a7a7a;
         &:hover {
             color: $secondary !important;
         }
     }
-    &.is-light a.nav-item.is-drop:hover a {
+    &.is-light a.navbar-item.is-drop:hover a {
         color: $secondary !important;
     }
     &.is-light a.button, &.is-warning a.button {
@@ -73,7 +73,7 @@ Hero styles
     }
 }
 
-.nav-item.is-drop  {
+.navbar-item.is-drop  {
     color: #7a7a7a;
     &:hover {
         color: $secondary !important;

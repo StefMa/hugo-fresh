@@ -3,20 +3,20 @@ Dropdown styles
 ========================================================================== */
 
 // Hover Dropdowns 
-div.nav-item.is-drop a {
+div.navbar-item.is-drop a {
     padding-right: 7px;
 }
 
-div.nav-item.is-drop:hover .dropContain .dropOut {
+div.navbar-item.is-drop:hover .dropContain .dropOut {
     opacity: 1;
 }
 
-div.nav-item.is-drop:hover, div.nav-item.is-drop:hover a, {
+div.navbar-item.is-drop:hover, div.navbar-item.is-drop:hover a, {
     border-bottom: 1px solid transparent !important;
     color: $secondary;
 }
 
-div.nav-item.is-drop:hover .dropContain {
+div.navbar-item.is-drop:hover .dropContain {
     top: 65px;
     animation: fadeInUp 0.27s ease-out;
 }
@@ -26,7 +26,7 @@ span.drop-caret {
     top: 5px;
 }
 
-div.nav-item.is-drop {
+div.navbar-item.is-drop {
     position: relative;
     .dropContain {
         width: 220px;
