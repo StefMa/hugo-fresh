@@ -6,12 +6,12 @@
 <div class="navbar-wrapper navbar-sticky">
   <div class="hero-head">
     <div class="container">
-      <nav class="nav">
-        <div class="nav-left">
-          <a class="nav-item" href="{{ .Site.BaseURL }}">
+      <nav class="navbar">
+        <div class="navbar-start">
+          <a class="navbar-item" href="{{ .Site.BaseURL }}">
             <img class="brand" src="{{ $logoSrc }}" alt="{{ $logoAlt }}">
           </a>
-          <a id="panel-trigger" href="#left-panel" class="nav-item nav-inner hamburger-btn" href="javascript:void(0);">
+          <a id="panel-trigger" href="#left-panel" class="navbar-item navbar-inner hamburger-btn" href="javascript:void(0);">
             <span class="menu-toggle">
               <span class="icon-box-toggle">
                 <span class="rotate">
@@ -23,20 +23,20 @@
             </span>
           </a>
         </div>
-        <span class="nav-toggle">
+        <span class="navbar-toggle">
           <span></span>
           <span></span>
           <span></span>
         </span>
-        <div class="nav-right nav-menu">
+        <div class="navbar-end navbar-menu">
           {{- range $links -}}
           {{- if ne .dropdown true }}
-          <a class="nav-item is-tab nav-inner" href="{{ .url }}">
+          <a class="navbar-item is-tab navbar-inner" href="{{ .url }}">
             {{ .text }}
           </a>
           {{- else }}
-          <div class="nav-item is-drop">
-            <a class="nav-item is-tab nav-inner-xs">
+          <div class="navbar-item is-drop">
+            <a class="navbar-item is-tab navbar-inner-xs">
               {{ .text }}
             </a>
             <span class="drop-caret"><i class="fa fa-angle-down"></i></span>
@@ -54,7 +54,7 @@
           {{- end -}}
           {{- end -}}
 
-          <span class="nav-item">
+          <span class="navbar-item">
             <a class="button cta is-large rounded secondary-btn raised">
               {{ $buttonText }}
             </a>

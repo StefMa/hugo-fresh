@@ -2,8 +2,8 @@ $(function(){
 
   // The following code is based off a toggle menu by @Bradcomp
   (function() {
-    var burger = document.querySelector('.nav-toggle');
-    var menu = document.querySelector('.nav-menu');
+    var burger = document.querySelector('.navbar-toggle');
+    var menu = document.querySelector('.navbar-menu');
     burger.addEventListener('click', function() {
       burger.classList.toggle('is-active');
       menu.classList.toggle('is-active');
