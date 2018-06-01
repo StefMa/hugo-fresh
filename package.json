@@ -2,6 +2,7 @@
   "private": true,
   "devDependencies": {
     "concurrently": "^3.5.1",
+    "del": "^3.0.0",
     "font-awesome": "^4.7.0",
     "gulp": "gulpjs/gulp.git#4.0",
     "gulp-autoprefixer": "^5.0.0",
