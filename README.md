@@ -32,7 +32,7 @@ Adjust the values in `config.yaml` and the images in `static/img` to personalize
 
 ## Running this theme locally
 
-The CSS and JavaScript for theme is built using [GulpJS](https://gulpjs.com). Sass assets are in [`source/scss`](source/scss) and JavaScript assets are in [`source/js`](source/js). In order to run this theme locally, you'll need to have Node.js installed (to build the JavaScript and CSS). Once Node.js is installed, follow these instructions to run the theme locally:
+The CSS and JavaScript for theme is built using [GulpJS](https://gulpjs.com). Sass assets are in [`source/scss`](source/scss) and JavaScript assets are in [`source/js`](source/js). In order to run this theme locally, you'll need to have Node.js installed (to build the JavaScript and CSS) as well as [Yarn](https://yarnpkg.com/en/). Once Node.js and Yarn are installed, follow these instructions to run the theme locally:
 
 ```bash
 $ hugo new site fresh-landing-page && cd fresh-landing-page
