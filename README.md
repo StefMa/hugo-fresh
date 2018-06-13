@@ -25,6 +25,7 @@ $ hugo new site fresh-landing-page && cd fresh-landing-page
 $ git clone https://github.com/lucperkins/hugo-fresh themes/hugo-fresh
 $ rm config.toml
 $ curl -O https://raw.githubusercontent.com/lucperkins/hugo-fresh/master/exampleSite/config.yaml
+$ mkdir content && touch content/.gitkeep
 $ hugo
 ```
 
@@ -39,6 +40,7 @@ $ hugo new site fresh-landing-page && cd fresh-landing-page
 $ git clone https://github.com/lucperkins/hugo-fresh themes/hugo-fresh
 $ rm config.toml
 $ curl -O https://raw.githubusercontent.com/lucperkins/hugo-fresh/master/exampleSite/config.yaml
+$ mkdir content && touch content/.gitkeep
 $ (cd themes/hugo-fresh && make setup && make dev)
 # In a different terminal window
 $ hugo server
