@@ -1,36 +1,32 @@
+{{- $sidebar  := .Site.Params.sidebar }}
+{{- $logo     := index $sidebar "logo" }}
+{{- $sections := index $sidebar "sections" }}
 <div class="sidebar">
-    <div class="sidebar-header">
-        <img src="{{ "/images/logos/fresh-square.svg" | relURL }}">
-        <a class="sidebar-close" href="javascript:void(0);"><i data-feather="x"></i></a>
-    </div>
-    <div class="inner">
-        <ul class="sidebar-menu">
-            <li><span class="nav-section-title"></span></li>
-            <li class="have-children"><a href="#"><span class="fa fa-user"></span>User</a>
-                <ul>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
-            </li>
-            <li class="have-children"><a href="#"><span class="fa fa-envelope"></span>Messages</a>
-                <ul>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">Compose</a></li>
-                </ul>
-            </li>
-            <li class="have-children"><a href="#"><span class="fa fa-image"></span>Images</a>
-                <ul>
-                    <li><a href="#">Library</a></li>
-                    <li><a href="#">Upload</a></li>
-                </ul>
-            </li>
-            <li class="have-children"><a href="#"><span class="fa fa-cog"></span>Settings</a>
-                <ul>
-                    <li><a href="#">User settings</a></li>
-                    <li><a href="#">App settings</a></li>
-                </ul>
-            </li>
+  <div class="sidebar-header">
+    <img src="{{ printf "/images/logos/%s.svg" $logo | relURL }}">
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      {{- range $sections }}
+      <li class="have-children">
+        <a href="#">
+          <span class="fa fa-{{ .icon }}"></span>
+          {{ .title }}
+        </a>
+        <ul>
+          {{- range .links }}
+          <li>
+            <a href="{{ .url }}">
+              {{ .text }}
+            </a>
+          </li>
+          {{- end }}
         </ul>
-    </div>
+      </li>
+      {{- end }}
+    </ul>
+  </div>
 </div>
