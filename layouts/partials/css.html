@@ -1,0 +1,14 @@
+{{- $inServerMode := .Site.IsServer }}
+{{- $sass := "style.sass" }}
+{{- $cssTarget := "css/style.css" }}
+{{- $cssOpts := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
+<link rel="icon" type="image/png" href="{{ "/images/favicon.png" | absURL }}" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+{{- if $inServerMode }}
+{{- $css := resources.Get $sass | toCSS $cssOpts }}
+<link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}">
+{{- else }}
+{{- $css := resources.Get $sass | toCSS $cssOpts | minify | fingerprint }}
+<link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- end }}
+<link rel="stylesheet" type="text/css" href="{{ "/css/icons.css" | absURL }}">
