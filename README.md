@@ -1,8 +1,8 @@
 # The Fresh theme for Hugo
 
-**Fresh** is a theme for the [Hugo](https://gohugo.io) static site generator adapted from the gorgeous, [Bulma](https://bulma.io)-based theme of the same name from [CSS Ninja](https://cssninja.io).
+**Fresh** is a theme for the [Hugo](https://gohugo.io) static site generator adapted from the gorgeous, [Bulma](https://bulma.io)-based theme of the same name from [CSS Ninja](https://cssninja.io/themes/fresh). You can find a live demo of the original theme [here](https://cssninjastudio.github.io).
 
-![Fresh theme logo](fresh.png)
+![Fresh theme logo](images/screenshot.png)
 
 > This theme is for landing pages only. If you'd like to extend the theme to include other types of pages—blog posts, documentation pages, etc.—feel free to submit a pull request.
 

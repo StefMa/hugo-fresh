@@ -2,3 +2,37 @@ baseURL: http://something-fresh.org/
 languageCode: en-us
 title: Hugo Fresh Theme
 theme: hugo-fresh
+
+params:
+  hero:
+    # Main hero title
+    title: Manage. Deploy.
+    # Hero subtitle (optional)
+    subtitle: Lorem ipsum sit dolor amet is dummy text used by the typography industry
+    buttonText: Get started
+    buttonLink: "#"
+    # Hero image (from /images/___)
+    image: illustrations/worker.svg
+    # Footer logos (from /images/logos/clients/___.svg)
+    clientLogos:
+    - systek
+    - tribe
+    - kromo
+    - infinite
+    - gutwork
+  section1:
+    title: Great power comes
+    subtitle: with great responsibility
+    tiles:
+    - title: App builder
+      icon: mouse-globe
+      text: This is some explanatory text that is on two rows
+      buttonText: Free trial
+    - title: Cloud integration
+      icon: laptop-cloud
+      text: This is some explanatory text that is on two rows
+      buttonText: Get started
+    - title: Add-ons & plugins
+      icon: plug-cloud
+      text: This is some explanatory text that is on two rows
+      buttonText: Get started
