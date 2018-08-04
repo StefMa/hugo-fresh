@@ -4,6 +4,9 @@ title: Hugo Fresh Theme
 theme: hugo-fresh
 
 params:
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
   hero:
     # Main hero title
     title: Manage. Deploy.

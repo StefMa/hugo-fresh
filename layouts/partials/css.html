@@ -1,9 +1,12 @@
 {{- $inServerMode := .Site.IsServer }}
-{{- $sass := "style.sass" }}
-{{- $cssTarget := "css/style.css" }}
-{{- $cssOpts := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
+{{- $sass         := "style.sass" }}
+{{- $cssTarget    := "css/style.css" }}
+{{- $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
+{{- $fontFace     := replace .Site.Params.font.name " " "+" }}
+{{- $fontSizes    := delimit .Site.Params.font.sizes "," }}
+{{- $fontUrl      := printf "https://fonts.googleapis.com/css?family=%s:%s" $fontFace $fontSizes }}
 <link rel="icon" type="image/png" href="{{ "/images/favicon.png" | absURL }}" />
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+<link href="{{ $fontUrl }}" rel="stylesheet">
 {{- if $inServerMode }}
 {{- $css := resources.Get $sass | toCSS $cssOpts }}
 <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}">
