@@ -25,6 +25,19 @@ params:
     - kromo
     - infinite
     - gutwork
+  navbar:
+  - title: Features
+    url: /
+  - title: Pricing
+    url: /
+  - title: Foo
+    sublinks:
+    - title: Dropdown item
+      url: /
+    - title: Dropdown item
+      url: /
+    - title: Dropdown item
+      url: /
   sidebar:
     # Logo (from /images/logos/___.svg)
     logo: fresh-square
