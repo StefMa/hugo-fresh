@@ -25,12 +25,13 @@ params:
     - kromo
     - infinite
     - gutwork
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Features
     url: /
   - title: Pricing
     url: /
-  - title: Foo
+  - title: Dropdown
     sublinks:
     - title: Dropdown item
       url: /
