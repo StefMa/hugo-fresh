@@ -39,6 +39,11 @@ params:
       url: /
     - title: Dropdown item
       url: /
+  - title: Log in
+    url: /
+  - title: Sign up
+    url: /
+    button: true
   sidebar:
     # Logo (from /images/logos/___.svg)
     logo: fresh-square
