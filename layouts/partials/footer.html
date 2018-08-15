@@ -2,6 +2,7 @@
 {{- $logo         := index $footer "logo" }}
 {{- $productLinks := index $footer "product" }}
 {{- $docLinks     := index $footer "docs" }}
+{{- $blogrollLinks:= index $footer "blogroll" }}
 {{- $socialMedia  := index $footer "socialmedia" }}
 {{- $bulmaLogo    := index $footer "bulmalogo" }}
 <footer class="footer footer-dark">
@@ -50,7 +51,7 @@
             <h3>Blogroll</h3>
           </div>
           <ul class="link-list">
-            {{- range $docLinks }}
+            {{- range $blogrollLinks }}
             <li>
               <a href="{{ .link }}">
                 {{ .text }}
