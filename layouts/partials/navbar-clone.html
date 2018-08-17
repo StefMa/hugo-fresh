@@ -1,3 +1,4 @@
+{{- $navbar := .Site.Params.navbar }}
 <nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
@@ -39,38 +40,34 @@
       </div>
 
       <div class="navbar-end">
-        <a href="#" class="navbar-item is-secondary">
-          Features
-        </a>
-        <a href="#" class="navbar-item is-secondary">
-          Pricing
-        </a>
+        {{- range $navbar }}
+        {{- if .sublinks }}
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
-            Dropdown
+            {{ .title }}
           </a>
 
           <div class="navbar-dropdown">
-            <a class="navbar-item">
-              Dropdown item
+            {{- range .sublinks }}
+            <a href="{{ .url }}" class="navbar-item">
+              {{ .title }}
             </a>
-            <a class="navbar-item">
-              Dropdown item
-            </a>
-            <a class="navbar-item">
-              Dropdown item
-            </a>
+            {{- end }}
           </div>
         </div>
-        <a href="#" class="navbar-item is-secondary">
-          Log in
-        </a>
-        <a class="navbar-item">
+        {{- else if .button }}
+        <a href="{{ .url }}" class="navbar-item">
           <span class="button signup-button rounded secondary-btn raised">
-            Sign up
+            {{ .title }}
           </span>
         </a>
+        {{- else }}
+        <a href="{{ .url }}" class="navbar-item is-secondary">
+          {{ .title }}
+        </a>
+        {{- end }}
+        {{- end }}
       </div>
     </div>
-  </div>
+</div>
 </nav>
