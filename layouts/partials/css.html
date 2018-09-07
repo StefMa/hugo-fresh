@@ -9,9 +9,9 @@
 <link href="{{ $fontUrl }}" rel="stylesheet">
 {{- if $inServerMode }}
 {{- $css := resources.Get $sass | toCSS $cssOpts }}
-<link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}">
+<link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}">
 {{- else }}
 {{- $css := resources.Get $sass | toCSS $cssOpts | minify | fingerprint }}
-<link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+<link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{- end }}
 <link rel="stylesheet" type="text/css" href="{{ "/css/icons.css" | absURL }}">
