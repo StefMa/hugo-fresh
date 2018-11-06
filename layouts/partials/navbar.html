@@ -1,11 +1,14 @@
 {{- $navbar         := .Site.Params.navbar }}
 {{- $sidebarVisible := .Site.Params.sidebar }}
+{{- $navbarLogo     := .Site.Params.navbarlogo }}
 <nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://cssninja.io">
-        <img src="{{ "/images/logos/fresh-alt.svg" | absURL }}" alt="" width="112" height="28">
+      {{- if $navbarLogo}}
+      <a class="navbar-item" href="{{ $navbarLogo.link }}">
+        <img src="{{ printf "/images/%s" $navbarLogo.image | relURL }}" alt="" width="112" height="28">
       </a>
+      {{- end}}
 
       {{- if $sidebarVisible }}
       <a class="navbar-item is-hidden-desktop is-hidden-tablet">
