@@ -15,8 +15,15 @@
 
     {{ partial "single/single.html" . }}
 
-    {{ partial "javascript.html" . }}
+    <!-- Back To Top Button -->
+    <div id="backtotop"><a href="#"></a></div>
+
+    {{ if .Params.sidebar }}
+    {{ partial "single/sidebar.html" . }}
+    {{ end }}
 
     {{ end }}
+
+    {{ partial "javascript.html" . }}
   </body>
 </html>
