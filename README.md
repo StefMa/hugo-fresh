@@ -33,3 +33,13 @@ open http://localhost:1313
 ## Customizing your page
 
 There's a wide variety of customizations that you can make to your Hugo Fresh landing page by modifying the `config.yaml` file that you downloaded. That file provides documentation for what the various config values represent.
+
+
+## Troubleshooting
+
+If you see `error: failed to transform resource: TOCSS: failed to transform "style.sass"` when attempting to run your `hugo server`, make sure you have the extended version of Hugo installed:
+
+```bash
+# On Ubuntu:
+snap refresh hugo --channel=extended
+```
