@@ -1,5 +1,8 @@
 {{- $navbar         := .Site.Params.navbar }}
 {{- $sidebarVisible := .Site.Params.sidebar }}
+{{ if .Params.sidebar }}
+{{ $sidebarVisible = .Params.sidebar }}
+{{ end }}
 {{- $navbarLogo     := .Site.Params.navbarlogo }}
 <nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
   <div class="container">
