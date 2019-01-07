@@ -7,14 +7,11 @@ Classes to change the feel of bulma buttons
 .button {
     cursor: pointer;
     transition: all 0.5s;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
     &.cta {
         font-family: 'Open Sans', sans-serif;
         font-size: 1rem;
         font-weight: 600;
-        padding: 10px 40px 10px 40px;
+        padding: 26px 40px 26px 40px;
     }
     &.is-clear {
         line-height: 0 !important;
@@ -33,8 +30,20 @@ Classes to change the feel of bulma buttons
         font-size: .9rem;
         font-weight: 600;
         font-family: 'Open Sans', sans-serif;
-        padding: 8px 26px;
+        padding: 24px 26px;
         width: 130px;
+    }
+}
+
+input.button, button.button {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    &.cta {
+        padding: 10px 40px 10px 40px;
+    }
+    &.signup-button {
+        padding: 8px 26px;
     }
 }
 
