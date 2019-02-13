@@ -1,7 +1,7 @@
 {{- $navbar         := .Site.Params.navbar }}
 {{- $sidebarVisible := .Site.Params.sidebar }}
 {{ if .Params.sidebar }}
-{{ $sidebarVisible = .Params.sidebar }}
+{{ $sidebarVisible := .Params.sidebar }}
 {{ end }}
 {{- $navbarLogo     := .Site.Params.navbarlogo }}
 <nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
