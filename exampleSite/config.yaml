@@ -150,30 +150,37 @@ params:
     - link: https://bitbucket.org/#
       icon: bitbucket
     bulmalogo: true
-    product:
-    - text: Discover features
-      link: /
-    - text: Why choose our product?
-      link: /
-    - text: Compare features
-      link: /
-    - text: Our roadmap
-      link: /
-    - text: Request features
-      link: /
-    docs:
-    - text: Get started
-      link: /
-    - text: User guides
-      link: /
-    - text: Admin guide
-      link: /
-    - text: Developers
-      link: /
-    blogroll:
-    - text: Latest news
-      link: /
-    - text: Tech articles
-      link: /
-    - text: Video blog
-      link: /
+    quicklinks:
+      column1:
+        title: "Product"
+        links:
+        - text: Discover features
+          link: /
+        - text: Why choose our product?
+          link: /
+        - text: Compare features
+          link: /
+        - text: Our roadmap
+          link: /
+        - text: Request features
+          link: /
+      column2:
+        title: "Docs"
+        links:
+        - text: Get started
+          link: /
+        - text: User guides
+          link: /
+        - text: Admin guide
+          link: /
+        - text: Developers
+          link: /
+      column3:
+        title: "Blog"
+        links:
+        - text: Latest news
+          link: /
+        - text: Tech articles
+          link: /
+        - text: Video blog
+          link: /
