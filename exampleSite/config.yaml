@@ -4,6 +4,10 @@ title: Hugo Fresh Theme
 theme: hugo-fresh
 
 params:
+  navbarlogo:
+  # Logo (from /images/logos/___)
+   image: logos/fresh.svg
+   link: /
   font:
     name: "Open Sans"
     sizes: [400,600]
