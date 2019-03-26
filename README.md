@@ -15,13 +15,13 @@ To create a new site using this theme:
 hugo new site my-site && cd my-site
 
 # Clone the Fresh theme
-git clone https://github.com/lucperkins/hugo-fresh themes/hugo-fresh
+git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
 
 # Remove the default config
 rm config.toml
 
 # Fetch the example config
-curl -O https://raw.githubusercontent.com/lucperkins/hugo-fresh/master/exampleSite/config.yaml
+curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/config.yaml
 
 # Run the site locally
 hugo server
