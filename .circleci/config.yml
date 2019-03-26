@@ -2,43 +2,78 @@ version: 2
 jobs:
   build:
     docker:
-      - image: jojomi/hugo:0.53h
+      - image: alpine:3.9.2
 
     steps:
+      - run:
+          name: Install hugo
+          command: apk add hugo
+
       - run:
           name: Create site
           command: hugo new site my-site
 
       - run:
-          name: Install git
-          command: apk add git
-      - run:
           name: Clone the theme from the PR
           working_directory: my-site
-          command: git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
+          command: |
+            apk add git
+            git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
       - run:
           working_directory: my-site/themes/hugo-fresh
           command: |
-            git fetch origin ${CIRCLE_BRANCH}/head:BRANCHNAME
-            git checkout BRANCHNAME
+            if [[ ${CIRCLE_BRANCH} == "*pull*" ]]; then
+              git fetch origin ${CIRCLE_BRANCH}/head:BRANCHNAME
+              git checkout BRANCHNAME
+            else
+              git checkout ${CIRCLE_BRANCH}
+            fi
 
-      - run:
-          name: Install curl
-          command: apk add curl
       - run:
           name: Replace default config
           working_directory: my-site
           command: |
             rm config.toml
+            apk add curl
             curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/config.yaml
+      - run:
+          name: Replace baseUrl in config
+          working_directory: my-site
+          command: |
+            apk add sed
+            URL=hugo-fresh-$(echo $CIRCLE_BRANCH | tr _ -)
+            if [ $CIRCLE_BRANCH == "master" ]; then
+              URL=hugo-fresh
+            fi
+            sed -i "s,http://something-fresh.org,https://${URL}.now.sh,g" config.yaml
+            cat config.yaml
 
       - run:
           name: Create hugo site
           working_directory: my-site
           command: hugo
+
       - run:
-          name: Look if everything is there
-          working_directory: my-site
+          name: Create now.json
+          working_directory: my-site/public
           command: |
-            ls -lsa
-            ls -lsa public
+            URL=hugo-fresh-$(echo $CIRCLE_BRANCH | tr _ -)
+            if [ $CIRCLE_BRANCH == "master" ]; then
+              URL=hugo-fresh
+            fi
+            echo "{ \"version\": 2, \"name\": \"hugo-fresh\", \"alias\": \"${URL}\", \"builds\": [{ \"src\": \"**\", \"use\": \"@now/static\" }] }" >> now.json
+
+      - run:
+          name: Install now CLI
+          command: |
+            apk add wget
+            wget -q https://github.com/zeit/now-cli/releases/download/14.2.3/now-alpine.gz
+            apk add gzip
+            gunzip now-alpine.gz
+            chmod a+x now-alpine
+            mv now-alpine /usr/local/bin/now
+            apk add libstdc++ libgcc
+      - run:
+          name: Publish to now.sh
+          working_directory: my-site/public
+          command: now --target production --token ${NOW_TOKEN}
