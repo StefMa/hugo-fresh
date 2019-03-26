@@ -1,0 +1,44 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: jojomi/hugo:0.53h
+
+    steps:
+      - run:
+          name: Create site
+          command: hugo new site my-site
+
+      - run:
+          name: Install git
+          command: apk add git
+      - run:
+          name: Clone the theme from the PR
+          working_directory: my-site
+          command: git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
+      - run:
+          working_directory: my-site/themes/hugo-fresh
+          command: |
+            git fetch origin ${CIRCLE_BRANCH}/head:BRANCHNAME
+            git checkout BRANCHNAME
+
+      - run:
+          name: Install curl
+          command: apk add curl
+      - run:
+          name: Replace default config
+          working_directory: my-site
+          command: |
+            rm config.toml
+            curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/config.yaml
+
+      - run:
+          name: Create hugo site
+          working_directory: my-site
+          command: hugo
+      - run:
+          name: Look if everything is there
+          working_directory: my-site
+          command: |
+            ls -lsa
+            ls -lsa public
