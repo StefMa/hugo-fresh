@@ -149,8 +149,6 @@ params:
         title: "Blog"
         links:
         - text: Latest news
-          link: /
+          link: /blog/first
         - text: Tech articles
-          link: /
-        - text: Video blog
-          link: /
+          link: /blog/second
