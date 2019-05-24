@@ -1,6 +1,5 @@
 ---
 title: AGB
-sidebar: false
 ---
 
 {{% title3 "§1 Lorem" %}}
