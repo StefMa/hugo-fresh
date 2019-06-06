@@ -5,7 +5,7 @@ theme: hugo-fresh
 
 params:
   navbarlogo:
-  # Logo (from /images/logos/___)
+  # Logo (from static/images/logos/___)
    image: logos/fresh.svg
    link: /
   font:
@@ -20,9 +20,9 @@ params:
     buttontext: Get started
     # Where the main hero button links to
     buttonlink: "#"
-    # Hero image (from /images/___)
+    # Hero image (from static/images/___)
     image: illustrations/worker.svg
-    # Footer logos (from /images/logos/clients/___.svg)
+    # Footer logos (from static/images/logos/clients/___.svg)
     clientlogos:
     - systek
     - tribe
@@ -48,40 +48,6 @@ params:
   - title: Sign up
     url: /
     button: true
-  sidebar:
-    # Logo (from /images/logos/___.svg)
-    logo: fresh-square
-    sections:
-    - title: User
-      icon: user
-      links:
-      - text: Profile
-        url: /
-      - text: Account
-        url: /
-      - text: Settings
-        url: /
-    - title: Messages
-      icon: envelope
-      links:
-      - text: Inbox
-        url: /
-      - text: Compose
-        url: /
-    - title: Images
-      icon: image
-      links:
-      - text: Library
-        url: /
-      - text: Upload
-        url: /
-    - title: Settings
-      icon: cog
-      links:
-      - text: User settings
-        url: /
-      - text: App settings
-        url: /
   section1:
     title: Great power comes
     subtitle: with great responsibility
@@ -137,6 +103,7 @@ params:
       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
       job: HR Manager
       img: 3
+  section5: true
   footer:
     # Logo (from /images/logos/___)
     logo: fresh-white-alt.svg
@@ -166,8 +133,8 @@ params:
           link: /
         - text: Our roadmap
           link: /
-        - text: Request features
-          link: /
+        - text: AGB
+          link: /agb
       column2:
         title: "Docs"
         links:
@@ -183,8 +150,6 @@ params:
         title: "Blog"
         links:
         - text: Latest news
-          link: /
+          link: /blog/first
         - text: Tech articles
-          link: /
-        - text: Video blog
-          link: /
+          link: /blog/second

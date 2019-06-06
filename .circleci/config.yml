@@ -33,9 +33,15 @@ jobs:
           name: Replace default config
           working_directory: my-site
           command: |
+            if [[ ${CIRCLE_BRANCH} == "*pull*" ]]; then
+              git fetch origin ${CIRCLE_BRANCH}/head:BRANCHNAME
+              branch=BRANCHNAME
+            else
+              branch=${CIRCLE_BRANCH}
+            fi
             rm config.toml
             apk add curl
-            curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/config.yaml
+            curl https://codeload.github.com/stefma/hugo-fresh/tar.gz/$branch | tar -xz --strip=2 hugo-fresh-$branch/exampleSite/
       - run:
           name: Replace baseUrl in config
           working_directory: my-site
@@ -67,7 +73,7 @@ jobs:
           name: Install now CLI
           command: |
             apk add wget
-            wget -q https://github.com/zeit/now-cli/releases/download/14.2.3/now-alpine.gz
+            wget -q https://github.com/zeit/now-cli/releases/download/15.4.0/now-alpine.gz
             apk add gzip
             gunzip now-alpine.gz
             chmod a+x now-alpine
