@@ -103,6 +103,7 @@ params:
       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
       job: HR Manager
       img: 3
+  section5: true
   footer:
     # Logo (from /images/logos/___)
     logo: fresh-white-alt.svg
