@@ -73,7 +73,7 @@ jobs:
           name: Install now CLI
           command: |
             apk add wget
-            wget -q https://github.com/zeit/now-cli/releases/download/14.2.3/now-alpine.gz
+            wget -q https://github.com/zeit/now-cli/releases/download/15.4.0/now-alpine.gz
             apk add gzip
             gunzip now-alpine.gz
             chmod a+x now-alpine
