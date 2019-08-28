@@ -1,0 +1,333 @@
+stackbitVersion: ~0.2.0
+ssgName: custom
+publishDir: exampleSite/public
+buildCommand: cd exampleSite && hugo --gc --baseURL "/" --themesDir ../.. && cd ..
+uploadDir: images
+staticDir: exampleSite/static
+pagesDir: exampleSite/content
+dataDir: exampleSite
+models:
+  config:
+    type: data
+    label: Config
+    file: config.toml
+    fields:
+      - type: string
+        name: title
+        label: Title
+        required: true
+      - type: string
+        name: baseURL
+        label: Base baseURL
+        description: Hostname (and path)  to the root
+      - type: string
+        name: languageCode
+        label: Language Code "en"
+      - type: string
+        name: theme
+        label: Theme Name 
+      - type: string
+        name: themesDir
+        label: Themes Folder Path
+      - type: object
+        name: params
+        label: Site Parameters
+        fields:
+          - type: object
+            name: navbarlogo
+            label: Navbar Logo
+            fields:
+              - type: image
+                name: image
+                label: Logo image
+              - type: string
+                name: link
+                label: Logo link
+          - type: object
+            name: font
+            label: Font family
+            fields:
+              - type: string
+                name: name
+                label: Font family name
+              - type: list
+                name: sizes
+                label: Font weights
+                items:
+                  type: number
+          - type: object
+            name: hero
+            label: Hero Section
+            fields:
+              - type: string
+                name: title
+                label: Title
+              - type: string
+                name: subtitle
+                label: Subtitle
+              - type: string
+                name: buttontext
+                label: Button Text
+              - type: string
+                name: buttonlink
+                label: Button Link
+              - type: image
+                name: image
+                label: Image
+              - type: list
+                name: clientlogos
+                label: Client Logos
+                items:
+                  type: string
+          - type: list
+            name: navbar
+            label: Navbar
+            items:
+              type: object
+              fields:
+                - type: string
+                  name: title
+                  label: Title
+                  required: true
+                - type: string
+                  name: url
+                  label: URL
+                - type: list
+                  name: sublinks
+                  label: Dropdown Sublinks
+                  items:
+                    type: object
+                    fields:
+                      - type: string
+                        name: title
+                        label: Title
+                        required: true
+                      - type: string
+                        name: url
+                        label: URL
+                - type: boolean
+                  name: button
+                  label: Button
+          - type: object
+            name: section1
+            label: First Section
+            fields:
+              - type: string
+                name: title
+                label: Title
+              - type: string
+                name: subtitle
+                label: Subtitle
+              - type: list
+                name: tiles
+                label: Tiles
+                items:
+                  type: object
+                  fields:
+                    - type: string
+                      name: title
+                      label: Title
+                      required: true
+                    - type: string
+                      name: icon
+                      label: Icon
+                    - type: text
+                      name: text
+                      label: Text
+                    - type: string
+                      name: url
+                      label: URL
+                    - type: string
+                      name: buttonText
+                      label: Button Text
+          - type: object
+            name: section2
+            label: Second Section
+            fields:
+              - type: string
+                name: title
+                label: Title
+              - type: string
+                name: subtitle
+                label: Subtitle
+              - type: list
+                name: features
+                label: Features
+                items:
+                  type: object
+                  fields:
+                    - type: string
+                      name: title
+                      label: Title
+                      required: true
+                    - type: text
+                      name: text
+                      label: Text
+                    - type: string
+                      name: icon
+                      label: Icon
+          - type: object
+            name: section3
+            label: Third Section
+            fields: 
+              - type: string
+                name: title
+                label: Title
+              - type: string
+                name: subtitle
+                label: Subtitle
+              - type: image
+                name: image
+                label: Image
+              - type: string
+                name: buttonText
+                label: Button Text
+              - type: string
+                name: buttonLink
+                label: Button Link
+          - type: object
+            name: section4
+            label: Forth Section
+            fields:
+              - type: string
+                name: title
+                label: Title
+              - type: string
+                name: subtitle
+                label: Subtitle
+              - type: list
+                name: clients
+                label: Clients
+                items:
+                  type: object
+                  fields:
+                    - type: string
+                      name: name
+                      label: Client Name
+                    - type: text
+                      name: quote
+                      label: Quote
+                    - type: string
+                      name: job
+                      label: Job
+                    - type: number
+                      name: img
+                      label: Image
+          - type: boolean
+            name: section5
+            label: Fifth Section 
+          - type: object
+            name: footer
+            label: Footer
+            fields:
+              - type: image
+                name: logo
+                label: Footer Logo
+              - type: list
+                name: socialmedia
+                label: Social Media
+                items:
+                  type: object
+                  fields: 
+                    - type: string
+                      name: link
+                      label: Link
+                    - type: string
+                      name: icon
+                      label: Icon
+              - type: boolean
+                name: bulmalogo
+                label: Bulma Logo
+              - type: object
+                name: quicklinks
+                label: Quick Links
+                fields:
+                  - type: object
+                    name: column1
+                    label: First Column
+                    fields:
+                      - type: string
+                        name: title
+                        label: Title
+                      - type: list
+                        name: links
+                        label: Links
+                        items:
+                          type: object
+                          fields:
+                            - type: string
+                              name: text
+                              label: Text
+                            - type: string
+                              name: link
+                              label: Link
+                  - type: object
+                    name: column2
+                    label: Second Column
+                    fields:
+                      - type: string
+                        name: title
+                        label: Title
+                      - type: list
+                        name: links
+                        label: Links
+                        items:
+                          type: object
+                          fields:
+                            - type: string
+                              name: text
+                              label: Text
+                            - type: string
+                              name: link
+                              label: Link
+                  - type: object
+                    name: column3
+                    label: Third Column
+                    fields: 
+                      - type: string
+                        name: title
+                        label: Title
+                      - type: list
+                        name: links
+                        label: Links
+                        items:
+                          type: object
+                          fields:
+                            - type: string
+                              name: text
+                              label: Text
+                            - type: string
+                              name: link
+                              label: Link
+  basicpage:
+    type: page
+    label: Basic Page
+    match: "*.md"
+    fields:
+      - type: string
+        name: title
+        label: Title
+        required: true
+  blog:
+    type: page
+    label: Blog
+    folder: blog
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: boolean
+        name: sidebar
+        label: SideBar
+      - type: string
+        name: sidebarlogo
+        label: Sidebar Logo
+
+
+
+
+
+
+
+
+
