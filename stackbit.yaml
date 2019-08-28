@@ -10,7 +10,7 @@ models:
   config:
     type: data
     label: Config
-    file: config.toml
+    file: config.yaml
     fields:
       - type: string
         name: title
