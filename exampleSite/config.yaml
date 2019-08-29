@@ -2,7 +2,6 @@ baseURL: http://something-fresh.org/
 languageCode: en-us
 title: Hugo Fresh Theme
 theme: hugo-fresh
-themesDir: "../.."
 
 params:
   navbarlogo:
