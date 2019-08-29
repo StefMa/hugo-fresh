@@ -131,7 +131,7 @@ models:
                     - type: string
                       name: icon
                       label: Icon
-                    - type: text
+                    - type: string
                       name: text
                       label: Text
                     - type: string
@@ -160,7 +160,7 @@ models:
                       name: title
                       label: Title
                       required: true
-                    - type: text
+                    - type: string
                       name: text
                       label: Text
                     - type: string
@@ -204,7 +204,7 @@ models:
                     - type: string
                       name: name
                       label: Client Name
-                    - type: text
+                    - type: string
                       name: quote
                       label: Quote
                     - type: string
