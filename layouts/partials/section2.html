@@ -23,7 +23,7 @@
               <p>
                 <span class="icon-box-title">{{ .title }}</span>
 
-                <span class="icon-box-text">{{ .text }}</span>
+                <span class="icon-box-text">{{ .text | markdownify }}</span>
               </p>
             </div>
           </div>
