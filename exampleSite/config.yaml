@@ -9,7 +9,7 @@ params:
     link: /
   font:
     name: "Open Sans"
-    sizes: [400,600]
+    sizes: ["400","600"]
   hero:
     # Main hero title
     title: Manage. Deploy.

@@ -54,7 +54,7 @@ models:
                 name: sizes
                 label: Font weights
                 items:
-                  type: number
+                  type: string
           - type: object
             name: hero
             label: Hero Section
