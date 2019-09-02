@@ -4,10 +4,10 @@
   <div class="container">
     <div class="tabs is-centered">
       <ul>
-        {{- range $clientLogos }}
+        {{- range $item :=$clientLogos }}
         <li>
           <a>
-            <img class="partner-logo" src="{{ . }}">
+            <img class="partner-logo" src="{{ $item | relURL }}">
           </a>
         </li>
         {{- end }}
