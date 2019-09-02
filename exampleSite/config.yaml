@@ -5,13 +5,8 @@ theme: hugo-fresh
 
 params:
   navbarlogo:
-<<<<<<< HEAD
-  # Logo (from static/images/logos/___)
-=======
-  # Logo (from static/)
->>>>>>> 1f981218c5741e368adeb3c180d644a183e7df25
-   image: images/logos/fresh.svg
-   link: /
+    image: images/logos/fresh.svg
+    link: /
   font:
     name: "Open Sans"
     sizes: [400,600]
@@ -109,11 +104,6 @@ params:
       img: images/illustrations/faces/3.png
   section5: true
   footer:
-<<<<<<< HEAD
-    # Logo (from /images/logos/___)
-=======
-    # Logo (from static/)
->>>>>>> 1f981218c5741e368adeb3c180d644a183e7df25
     logo: images/logos/fresh-white-alt.svg
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
