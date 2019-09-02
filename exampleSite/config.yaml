@@ -5,8 +5,8 @@ theme: hugo-fresh
 
 params:
   navbarlogo:
-  # Logo (from static/images/logos/___)
-   image: logos/fresh.svg
+  # Logo (from static/)
+   image: images/logos/fresh.svg
    link: /
   font:
     name: "Open Sans"
@@ -105,8 +105,8 @@ params:
       img: 3
   section5: true
   footer:
-    # Logo (from /images/logos/___)
-    logo: fresh-white-alt.svg
+    # Logo (from static/)
+    logo: images/logos/fresh-white-alt.svg
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
     - link: https://github.com/lucperkins/github-fresh
