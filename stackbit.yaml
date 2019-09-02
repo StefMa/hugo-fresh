@@ -78,7 +78,7 @@ models:
                 name: clientlogos
                 label: Client Logos
                 items:
-                  type: string
+                  type: image
           - type: list
             name: navbar
             label: Navbar
@@ -128,7 +128,7 @@ models:
                       name: title
                       label: Title
                       required: true
-                    - type: string
+                    - type: image
                       name: icon
                       label: Icon
                     - type: string
@@ -163,7 +163,7 @@ models:
                     - type: string
                       name: text
                       label: Text
-                    - type: string
+                    - type: image
                       name: icon
                       label: Icon
           - type: object
@@ -210,7 +210,7 @@ models:
                     - type: string
                       name: job
                       label: Job
-                    - type: number
+                    - type: image
                       name: img
                       label: Image
           - type: boolean

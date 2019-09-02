@@ -5,7 +5,11 @@ theme: hugo-fresh
 
 params:
   navbarlogo:
+<<<<<<< HEAD
+  # Logo (from static/images/logos/___)
+=======
   # Logo (from static/)
+>>>>>>> 1f981218c5741e368adeb3c180d644a183e7df25
    image: images/logos/fresh.svg
    link: /
   font:
@@ -21,14 +25,14 @@ params:
     # Where the main hero button links to
     buttonlink: "#"
     # Hero image (from static/images/___)
-    image: illustrations/worker.svg
+    image: images/illustrations/worker.svg
     # Footer logos (from static/images/logos/clients/___.svg)
     clientlogos:
-    - systek
-    - tribe
-    - kromo
-    - infinite
-    - gutwork
+    - images/logos/clients/systek.svg
+    - images/logos/clients/tribe.svg
+    - images/logos/clients/kromo.svg
+    - images/logos/clients/infinite.svg
+    - images/logos/clients/gutwork.svg
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Features
@@ -53,17 +57,17 @@ params:
     subtitle: with great responsibility
     tiles:
     - title: App builder
-      icon: mouse-globe
+      icon: images/illustrations/icons/mouse-globe.svg
       text: This is some explanatory text that is on two rows
       url: /
       buttonText: Free trial
     - title: Cloud integration
-      icon: laptop-cloud
+      icon: images/illustrations/icons/laptop-cloud.svg
       text: This is some explanatory text that is on two rows
       url: /
       buttonText: Get started
     - title: Add-ons & plugins
-      icon: plug-cloud
+      icon: images/illustrations/icons/plug-cloud.svg
       text: This is some explanatory text that is on two rows
       url: /
       buttonText: Get started
@@ -74,17 +78,17 @@ params:
     - title: Powerful and unified interface
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
       # Icon (from /images/illustrations/icons/___.svg)
-      icon: laptop-globe
+      icon: images/illustrations/icons/laptop-globe.svg
     - title: Cross-device synchronisation
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: doc-sync
+      icon: images/illustrations/icons/doc-sync.svg
     - title: Nomad system
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: mobile-feed
+      icon: images/illustrations/icons/mobile-feed.svg
   section3:
     title: One platform
     subtitle: To rule them all
-    image: illustrations/mockups/app-mockup.png
+    image: images/illustrations/mockups/app-mockup.png
     buttonText: Get started
     buttonLink: "#"
   section4:
@@ -94,18 +98,22 @@ params:
     - name: Irma Walters
       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
       job: Accountant
-      img: 1
+      img: images/illustrations/faces/1.png
     - name: John Bradley
       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
       job: Financial Analyst
-      img: 2
+      img: images/illustrations/faces/2.png
     - name: Gary Blackman
       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
       job: HR Manager
-      img: 3
+      img: images/illustrations/faces/3.png
   section5: true
   footer:
+<<<<<<< HEAD
+    # Logo (from /images/logos/___)
+=======
     # Logo (from static/)
+>>>>>>> 1f981218c5741e368adeb3c180d644a183e7df25
     logo: images/logos/fresh-white-alt.svg
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
