@@ -22,10 +22,13 @@ jobs:
       - run:
           working_directory: my-site/themes/hugo-fresh
           command: |
-            if [[ ${CIRCLE_BRANCH} == "*pull*" ]]; then
+            isPrIfGreaterThanZero=$(expr $CIRCLE_BRANCH : "pull")
+            if [ isPrIfGreaterThanZero > 0 ]; then
+              echo "Hello World $CIRCLE_BRANCH"
               git fetch origin ${CIRCLE_BRANCH}/head:BRANCHNAME
               git checkout BRANCHNAME
             else
+              echo "Hello World else $CIRCLE_BRANCH"
               git checkout ${CIRCLE_BRANCH}
             fi
 
@@ -33,9 +36,9 @@ jobs:
           name: Replace default config
           working_directory: my-site
           command: |
-            if [[ ${CIRCLE_BRANCH} == "*pull*" ]]; then
-              git fetch origin ${CIRCLE_BRANCH}/head:BRANCHNAME
-              branch=BRANCHNAME
+            isPrIfGreaterThanZero=$(expr $CIRCLE_BRANCH : "pull")
+            if [ isPrIfGreaterThanZero > 0 ]; then
+              branch=${CIRCLE_SHA1}
             else
               branch=${CIRCLE_BRANCH}
             fi
@@ -47,7 +50,7 @@ jobs:
           working_directory: my-site
           command: |
             apk add sed
-            URL=hugo-fresh-$(echo $CIRCLE_BRANCH | tr _ -)
+            URL=hugo-fresh-$(echo $CIRCLE_BRANCH | tr _ - | tr / -)
             if [ $CIRCLE_BRANCH == "master" ]; then
               URL=hugo-fresh
             fi
@@ -63,7 +66,7 @@ jobs:
           name: Create now.json
           working_directory: my-site/public
           command: |
-            URL=hugo-fresh-$(echo $CIRCLE_BRANCH | tr _ -)
+            URL=hugo-fresh-$(echo $CIRCLE_BRANCH | tr _ - | tr / -)
             if [ $CIRCLE_BRANCH == "master" ]; then
               URL=hugo-fresh
             fi
