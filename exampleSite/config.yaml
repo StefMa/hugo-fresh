@@ -112,15 +112,15 @@ params:
     socialmedia:
     - link: https://github.com/lucperkins/github-fresh
       # Icons are from Font Awesome
-      icon: github
+      icon: fab fa-github
     - link: https://dribbble.com/#
-      icon: dribbble
+      icon: fab fa-dribbble
     - link: https://facebook.com/#
-      icon: facebook
+      icon: fab fa-facebook-f
     - link: https://twitter.com/lucperkins
-      icon: twitter
+      icon: fab fa-twitter
     - link: https://bitbucket.org/#
-      icon: bitbucket
+      icon: fab fa-bitbucket
     bulmalogo: true
     quicklinks:
       column1:
