@@ -14,4 +14,4 @@
 {{- $css := resources.Get $sass | toCSS $cssOpts | minify | fingerprint }}
 <link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{- end }}
-<link rel="stylesheet" type="text/css" href="{{ "css/icons.css" | absURL }}">
+<link rel="stylesheet" type="text/css" href="{{ "css/fontawesome.min.css" | absURL }}">
