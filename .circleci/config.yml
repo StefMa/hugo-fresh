@@ -75,13 +75,8 @@ jobs:
       - run:
           name: Install now CLI
           command: |
-            apk add wget
-            wget -q https://github.com/zeit/now-cli/releases/download/15.4.0/now-alpine.gz
-            apk add gzip
-            gunzip now-alpine.gz
-            chmod a+x now-alpine
-            mv now-alpine /usr/local/bin/now
-            apk add libstdc++ libgcc
+            apk add --update npm
+            npm install -g now@16.3.0
       - run:
           name: Publish to now.sh
           working_directory: my-site/public
