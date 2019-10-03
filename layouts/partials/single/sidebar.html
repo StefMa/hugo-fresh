@@ -8,9 +8,9 @@
   </div>
   <div class="inner">
     <ul class="sidebar-menu">
-      {{ range where .Site.RegularPages "Section" (strings.TrimSuffix "/" .Dir) }}
+      {{ range where .Site.RegularPages "Section" (strings.TrimSuffix "/" .File.Dir) }}
       <li>
-        <a href="{{ .URL }}">
+        <a href="{{ .Permalink }}">
           {{ .Title }}
         </a>
       </li>
