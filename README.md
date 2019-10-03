@@ -290,6 +290,8 @@ Single pages displays a single unit of information and are more or less independ
 
 You can create single pages in the `content` directory (even sub-dirs are possible).
 
+If you'd like to have the footer displayed on your single page include "include_footer: true" in your front matter.
+
 <details>
 <summary>Code</summary>
 
@@ -298,6 +300,7 @@ You can create single pages in the `content` directory (even sub-dirs are possib
 title: AGB
 sidebar: true # or false to display the sidebar
 sidebarlogo: fresh-white-alt # From (static/images/logo/)
+include_footer: true
 ---
 ```
 
