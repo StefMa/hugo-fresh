@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: alpine:3.9.2
+      - image: alpine:3.10.2
 
     steps:
       - run:
