@@ -6,7 +6,7 @@
 
 ## Requirement 
 
-hugo extended needed for hugo fresh theme for details see [Hugo Support](https://discourse.gohugo.io/t/hugo-extended-needed-for-hugo-fresh-theme/13844)
+hugo extended needed for hugo fresh theme for details see [Hugo Support](https://discourse.gohugo.io/t/hugo-extended-needed-for-hugo-fresh-theme/13844) and can be installed from here in release [hugo](https://github.com/gohugoio/hugo/releases)
 
 ## Getting started
 
