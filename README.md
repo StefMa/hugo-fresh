@@ -4,6 +4,10 @@
 
 ![Fresh theme logo](images/screenshot.png)
 
+## Requirement 
+
+hugo extended needed for hugo fresh theme for details see [Hugo Support](https://discourse.gohugo.io/t/hugo-extended-needed-for-hugo-fresh-theme/13844)
+
 ## Getting started
 
 To create a new site using this theme:
@@ -27,7 +31,6 @@ hugo server
 # Open the site in your browser
 open http://localhost:1313
 ```
-
 ## Customizing your page
 
 ### Landing page
