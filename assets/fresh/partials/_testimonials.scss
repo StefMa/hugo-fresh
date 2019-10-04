@@ -41,12 +41,13 @@ Testimonials Styles
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     }
     blockquote:before, blockquote:after {
-        font-family: 'FontAwesome';
+        font-family: 'Font Awesome\ 5 Free';
         content: "\f10d";
         position: absolute;
         font-size: 20px;
         opacity: 0.3;
         font-style: normal;
+        font-weight: 900;
     }
     blockquote:before {
         top: 35px;
