@@ -7,7 +7,13 @@ jobs:
     steps:
       - run:
           name: Install hugo
-          command: apk add hugo
+          command: |
+            apk add wget
+            wget -q https://github.com/gohugoio/hugo/releases/download/v0.58.3/hugo_0.58.3_Linux-64bit.tar.gz
+            apk add tar
+            tar xzf hugo_0.58.3_Linux-64bit.tar.gz
+            chmod a+x hugo
+            mv hugo /usr/local/bin/hugo
 
       - run:
           name: Create site
@@ -81,8 +87,8 @@ jobs:
           command: |
             apk add --update npm
             npm config set unsafe-perm true
-            npm install -g now@16.3.0
+            npm install -g now@16.3.1
       - run:
           name: Publish to now.sh
           working_directory: my-site/public
-          command: now --target production --token ${NOW_TOKEN}
+          command: now --prod --token ${NOW_TOKEN}
