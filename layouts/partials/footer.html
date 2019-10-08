@@ -3,6 +3,7 @@
 {{- $quickLinks  := index $footer "quicklinks" }}
 {{- $socialMedia := index $footer "socialmedia" }}
 {{- $bulmaLogo   := index $footer "bulmalogo" }}
+{{- $followUs    := index $footer "socialmediatext" }}
 <footer class="footer footer-dark">
   <div class="container">
     <div class="columns">
@@ -32,7 +33,7 @@
       <div class="column">
         <div class="footer-column">
           <div class="footer-header">
-            <h3>Follow Us</h3>
+            <h3>{{ $followUs }}</h3>
             <nav class="level is-mobile">
               <div class="level-left">
                 {{- range $socialMedia }}
