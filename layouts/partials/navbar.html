@@ -60,20 +60,20 @@
 
             <div class="navbar-dropdown">
               {{- range .sublinks }}
-              <a href="{{ .Permalink }}" class="navbar-item">
+              <a href="{{ .url }}" class="navbar-item">
                 {{ .title }}
               </a>
               {{- end }}
             </div>
           </div>
           {{- else if .button }}
-          <a href="{{ .Permalink }}" class="navbar-item">
+          <a href="{{ .url }}" class="navbar-item">
             <span class="button signup-button rounded secondary-btn raised">
               {{ .title }}
             </span>
           </a>
           {{- else }}
-          <a href="{{ .Permalink }}" class="navbar-item is-secondary">
+          <a href="{{ .url }}" class="navbar-item is-secondary">
             {{ .title }}
           </a>
           {{- end }}
