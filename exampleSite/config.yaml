@@ -5,8 +5,8 @@ theme: hugo-fresh
 googleAnalytics: #Put in your tracking code without quotes like this: UA-XXXXXX...
 #Disables warningss
 disableKinds:
- -taxonomy
- -taxonomyTerm
+- taxonomy
+- taxonomyTerm
 
 
 params:
