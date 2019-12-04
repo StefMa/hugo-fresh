@@ -2,22 +2,25 @@ baseURL: http://something-fresh.org/
 languageCode: en-us
 title: Hugo Fresh Theme
 theme: hugo-fresh
-googleAnalytics: #Put in your tracking code without quotes like this: UA-XXXXXX...
-#Disables warningss
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+# Disables warnings
 disableKinds:
- -taxonomy
- -taxonomyTerm
-
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
 
 params:
- # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy 
   description: 
   navbarlogo:
   # Logo (from static/images/logos/___)
-   image: logos/fresh.svg
-   link: /
+    image: logos/fresh.svg
+    link: /
   font:
     name: "Open Sans"
     sizes: [400,600]
