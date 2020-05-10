@@ -2,8 +2,8 @@
 {{- $sass         := "style.sass" }}
 {{- $cssTarget    := "css/style.css" }}
 {{- $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
-{{- $fontFace     := replace .Site.Params.font.name " " "+" }}
-{{- $fontSizes    := delimit .Site.Params.font.sizes "," }}
+{{- $fontFace     := replace .Site.Params.font.name " " "+" | default "Open+Sans" }}
+{{- $fontSizes    := delimit .Site.Params.font.sizes "," | default (slice 300 400 600 700) }}
 {{- $fontUrl      := printf "https://fonts.googleapis.com/css?family=%s:%s" $fontFace $fontSizes }}
 <link rel="icon" type="image/png" href="{{ "images/favicon.png" | relURL }}" />
 <link href="{{ $fontUrl }}" rel="stylesheet">
