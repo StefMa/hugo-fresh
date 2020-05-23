@@ -9,7 +9,7 @@ jobs:
           name: Install hugo
           command: |
             apk add wget
-            wget -q https://github.com/gohugoio/hugo/releases/download/v0.63.2/hugo_0.63.2_Linux-64bit.tar.gz
+            wget -q https://github.com/gohugoio/hugo/releases/download/v0.63.2/hugo_extended_0.63.2_Linux-64bit.tar.gz
             apk add tar
             tar xzf hugo_0.63.2_Linux-64bit.tar.gz
             chmod a+x hugo
