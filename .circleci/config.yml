@@ -17,7 +17,7 @@ jobs:
 
       - run:
           name: Create site
-          command: hugo new site my-site
+          command: /usr/local/bin/hugo new site my-site
 
       - run:
           name: Clone the theme from the PR
@@ -70,7 +70,7 @@ jobs:
       - run:
           name: Create hugo site
           working_directory: my-site
-          command: hugo
+          command: /usr/local/bin/hugo
 
       - run:
           name: Create now.json
