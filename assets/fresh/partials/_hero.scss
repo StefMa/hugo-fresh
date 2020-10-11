@@ -6,7 +6,7 @@ Hero styles
     padding-top: 6rem;
     padding-bottom: 6rem;
     .title, .subtitle {
-        font-family: Sfont-stack;
+        font-family: $font-stack;
     }
     .title {
         &.is-bold {
