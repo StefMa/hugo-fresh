@@ -15,8 +15,8 @@ markup:
 params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: true
-  # Used as meta data; describe your site to make Google Bots happy 
-  description: 
+  # Used as meta data; describe your site to make Google Bots happy
+  description:
   navbarlogo:
   # Logo (from static/images/logos/___)
     image: logos/fresh.svg
@@ -61,6 +61,40 @@ params:
   - title: Sign up
     url: /
     button: true
+  sidebar:
+    # Logo (from /images/logos/___.svg)
+    logo: fresh-square
+    sections:
+    - title: User
+      icon: user
+      links:
+      - text: Profile
+        url: /
+      - text: Account
+        url: /
+      - text: Settings
+        url: /
+    - title: Messages
+      icon: envelope
+      links:
+      - text: Inbox
+        url: /
+      - text: Compose
+        url: /
+    - title: Images
+      icon: image
+      links:
+      - text: Library
+        url: /
+      - text: Upload
+        url: /
+    - title: Settings
+      icon: cog
+      links:
+      - text: User settings
+        url: /
+      - text: App settings
+        url: /
   section1:
     title: Great power comes
     subtitle: with great responsibility
