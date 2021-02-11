@@ -64,7 +64,7 @@ jobs:
             if [ $CIRCLE_BRANCH == "master" ]; then
               URL=hugo-fresh
             fi
-            sed -i "s,http://something-fresh.org,https://${URL}.now.sh,g" config.yaml
+            sed -i "s,http://something-fresh.org,https://${URL}.vercel.app,g" config.yaml
             cat config.yaml
 
       - run:
