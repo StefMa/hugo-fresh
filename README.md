@@ -39,7 +39,7 @@ Define the logo of the navigationbar in the upper left corner.
 <details>
 <summary>Code</summary>
 
-```
+```yaml
 navbarlogo:
  image: logos/fresh.svg # Logo (from static/images/logos/)
  link: /
@@ -53,7 +53,7 @@ Set the font of the site.
 <details>
 <summary>Code</summary>
 
-```
+```yaml
 font:
   name: "Open Sans"
   sizes: [400,600]
@@ -66,7 +66,8 @@ The "main" page which you see when you open the website.
 
 <details>
 <summary>Code</summary>
-```
+
+```yaml
 hero:
   title: Manage. Deploy.
   subtitle: Lorem ipsum sit dolor amet is dummy text used by the typography industry
@@ -91,7 +92,7 @@ For a dropdown, add a "sublinks" list.
 <details>
 <summary>Code</summary>
 
-```
+```yaml
 navbar:
 - title: Features
   url: /
@@ -114,13 +115,58 @@ navbar:
 
 </details>
 
+#### sidebar
+The sidebar is an optional parameter where you can place even more navigation items.
+
+<details>
+<summary>Code</summary>
+
+```yaml
+sidebar:
+  # Logo (from /images/logos/___.svg)
+  logo: fresh-square
+  sections:
+  - title: User
+    icon: user
+    links:
+    - text: Profile
+      url: /
+    - text: Account
+      url: /
+    - text: Settings
+      url: /
+  - title: Messages
+    icon: envelope
+    links:
+    - text: Inbox
+      url: /
+    - text: Compose
+      url: /
+  - title: Images
+    icon: image
+    links:
+    - text: Library
+      url: /
+    - text: Upload
+      url: /
+  - title: Settings
+    icon: cog
+    links:
+    - text: User settings
+      url: /
+    - text: App settings
+      url: /
+```
+
+</details>
+
 #### section1
 Describes the second "page" which you will see when you scroll down. Currently it will have **always** three `titles`.
 
 <details>
 <summary>Code</summary>
 
-```
+```yaml
 section1:
   title: Great power comes
   subtitle: with great responsibility
@@ -150,7 +196,7 @@ Shows information why someone should use this product.
 <details>
 <summary>Code</summary>
 
-```
+```yaml
 section2:
   title: You're here because you want the best
   subtitle: And we know it
@@ -175,7 +221,7 @@ Display a bright image of your product.
 <details>
 <summary>Code</summary>
 
-```
+```yaml
 section3:
   title: One platform
   subtitle: To rule them all
@@ -192,7 +238,7 @@ What clients says about us.
 <details>
 <summary>Code</summary>
 
-```
+```yaml
 section4:
   title: Our Clients love us!
   subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
@@ -219,7 +265,7 @@ Write us.
 <details>
 <summary>Code</summary>
 
-```
+```yaml
 section5: true # or false to hide it
 ```
 
@@ -231,7 +277,7 @@ The footer of the site.
 <details>
 <summary>Code</summary>
 
-```
+```yaml
 footer:
   # Logo (from /staticimages/logos/___)
   logo: fresh-white-alt.svg
@@ -295,12 +341,12 @@ If you'd like to have the footer displayed on your single page include "include_
 <details>
 <summary>Code</summary>
 
-```
+```yaml
 ---
 title: AGB
 sidebar: true # or false to display the sidebar
 sidebarlogo: fresh-white-alt # From (static/images/logo/)
-include_footer: true
+include_footer: true # or false to display the footer
 ---
 ```
 
