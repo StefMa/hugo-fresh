@@ -53,7 +53,7 @@ curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/c
 #theme: [hugo-fresh]
 module:
   imports:
-    path: github.com/stefma/hugo-fresh
+    path: github.com/StefMa/hugo-fresh
 
 # Run the site locally
 hugo server
