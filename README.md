@@ -6,7 +6,10 @@
 
 ## Getting started
 
-To create a new site using this theme:
+To create a new site using this theme
+
+<details open>
+<summary>with git submodules</summary>
 
 ```bash
 # Create site and cd into it
@@ -27,6 +30,39 @@ hugo server
 # Open the site in your browser
 open http://localhost:1313
 ```
+
+</details>
+
+<details>
+<summary>with hugo modules</summary>
+
+```bash
+# Create site and cd into it
+hugo new site my-site && cd my-site
+
+# Transform your hugo site to an module
+hugo mod init YOUR_MODULE_NAME
+
+# Remove the default config
+rm config.toml
+
+# Fetch the example config
+curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/config.yaml
+
+# Replace theme with module in config.yaml
+#theme: [hugo-fresh]
+module:
+  imports:
+    path: github.com/stefma/hugo-fresh
+
+# Run the site locally
+hugo server
+
+# Open the site in your browser
+open http://localhost:1313
+```
+
+</details>
 
 ## Customizing your page
 
