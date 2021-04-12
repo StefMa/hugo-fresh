@@ -1,12 +1,11 @@
-$(document).ready(function(){
-    
-    //Preloader
-    $(window).on('load', function() { // makes sure the whole site is loaded 
-        $('#status').fadeOut(); // will first fade out the loading animation 
-        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-        $('body').delay(350).css({'overflow':'visible'});
-    })
+//Preloader
+$(window).on('load', function() { // makes sure the whole site is loaded 
+    $('#status').fadeOut(); // will first fade out the loading animation 
+    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+    $('body').delay(350).css({'overflow':'visible'});
+})
 
+$(document).ready(function(){
     //Mobile menu toggle
     if ($('.navbar-burger').length) {
         $('.navbar-burger').on("click", function(){
@@ -19,14 +18,14 @@ $(document).ready(function(){
     }
 
     //Animate left hamburger icon and open sidebar
-    $('.menu-icon-trigger').click(function(e){
+    $('.menu-icon-trigger').on("click", function(e){
         e.preventDefault();
         $('.menu-icon-wrapper').toggleClass('open');
         $('.sidebar').toggleClass('is-active');
     });
 
     //Close sidebar
-    $('.sidebar-close').click(function() {
+    $('.sidebar-close').on("click", function() {
         $('.sidebar').removeClass('is-active');
         $('.menu-icon-wrapper').removeClass('open');
     })
@@ -50,7 +49,7 @@ $(document).ready(function(){
 
     //Navbar Clone
     if ($('#navbar-clone').length) {
-        $(window).scroll(function() {    // this will work when your window scrolled.
+        $(window).on("scroll", function() {    // this will work when your window scrolled.
             var height = $(window).scrollTop();  //getting the scrolling height of window
             if(height  > 50) {
                 $("#navbar-clone").addClass('is-active');
@@ -91,7 +90,7 @@ $(document).ready(function(){
     // Back to Top button behaviour
     var pxShow = 600;
     var scrollSpeed = 500;
-    $(window).scroll(function() {
+    $(window).on("scroll", function() {
         if ($(window).scrollTop() >= pxShow) {
             $("#backtotop").addClass('visible');
         } else {
@@ -110,7 +109,7 @@ $(document).ready(function(){
     // Remove links that don't actually link to anything
         .not('[href="#"]')
         .not('[href="#0"]')
-        .click(function(event) {
+        .on("click", function(event) {
         // On-page links
         if (
             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
