@@ -1,2 +1,8 @@
+// ==========================================================================
+// Parameterized variables
+// ==========================================================================
+
+$font-stack: '{{ .Site.Params.font.name | default "Open Sans" }}', sans-serif
+
 @import "bulma/bulma"
 @import "fresh/core"
