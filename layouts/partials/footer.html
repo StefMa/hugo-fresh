@@ -1,34 +1,36 @@
-{{- $footer      := .Site.Params.footer }}
-{{- $logo        := index $footer "logo" }}
-{{- $quickLinks  := index $footer "quicklinks" }}
+{{- $footer := .Site.Params.footer }}
+{{- $logo := index $footer "logo" }}
+{{- $quickLinks := index $footer "quicklinks" }}
 {{- $socialMedia := index $footer "socialmedia" }}
-{{- $bulmaLogo   := index $footer "bulmalogo" }}
-{{- $socialMediaTitle    := index $footer "socialmediatitle" }}
+{{- $bulmaLogo := index $footer "bulmalogo" }}
+{{- $socialMediaTitle := index $footer "socialmediatitle" }}
 <footer class="footer footer-dark">
   <div class="container">
     <div class="columns">
       <div class="column">
+        {{ if $logo}}
         <div class="footer-logo">
           <img src="{{ printf "/images/logos/%s" $logo | relURL }}">
         </div>
+        {{ end }}
       </div>
       {{- range $quickLinks }}
-        <div class="column">
-          <div class="footer-column">
-            <div class="footer-header">
-                <h3>{{ .title }}</h3>
-            </div>
-            <ul class="link-list">
-              {{- range .links }}
-              <li>
-                <a href="{{ .link }}">
-                  {{ .text }}
-                </a>
-              </li>
-              {{- end }}
-            </ul>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>{{ .title }}</h3>
           </div>
+          <ul class="link-list">
+            {{- range .links }}
+            <li>
+              <a href="{{ .link }}">
+                {{ .text }}
+              </a>
+            </li>
+            {{- end }}
+          </ul>
         </div>
+      </div>
       {{- end }}
       <div class="column">
         <div class="footer-column">
@@ -46,7 +48,8 @@
 
             {{- if $bulmaLogo }}
             <a href="https://bulma.io" target="_blank">
-              <img src="{{ "/images/logos/made-with-bulma.png" | relURL }}" alt="Made with Bulma" width="128" height="24">
+              <img src="{{ " /images/logos/made-with-bulma.png" | relURL }}" alt="Made with Bulma" width="128"
+                height="24">
             </a>
             {{- end }}
           </div>

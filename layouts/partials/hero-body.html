@@ -1,9 +1,9 @@
-{{- $hero       := .Site.Params.hero }}
-{{- $title      := index $hero "title" }}
-{{- $subtitle   := index $hero "subtitle" }}
+{{- $hero := .Site.Params.hero }}
+{{- $title := index $hero "title" }}
+{{- $subtitle := index $hero "subtitle" }}
 {{- $buttonText := index $hero "buttontext" }}
 {{- $buttonLink := index $hero "buttonlink" }}
-{{- $image      := index $hero "image" }}
+{{- $image := index $hero "image" }}
 <div class="hero-body">
   <div class="container">
     <div class="columns is-vcentered">
@@ -16,11 +16,13 @@
           {{ . }}
         </h2>
         {{ end }}
+        {{ if $buttonText }}
         <p>
           <a class="button cta rounded primary-btn raised" href="{{ $buttonLink }}">
             {{ $buttonText }}
           </a>
         </p>
+        {{ end }}
       </div>
       <div class="column is-5 is-offset-1">
         <figure class="image is-4by3">
