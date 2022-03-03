@@ -9,7 +9,7 @@ include_footer: false
 There's a wide variety of customizations that you can make to your Hugo Fresh landing page by modifying the `config.yaml` file that you downloaded.
 
 ### navbarlogo
-Define the logo of the navigationbar in the upper left corner.
+Define the logo of the navigation bar in the upper left corner.
 
 <details>
 <summary>Code</summary>
