@@ -1,6 +1,8 @@
+@import "../utilities/mixins"
+
 $modal-z: 40 !default
 
-$modal-background-background-color: rgba($black, 0.86) !default
+$modal-background-background-color: bulmaRgba($scheme-invert, 0.86) !default
 
 $modal-content-width: 640px !default
 $modal-content-margin-mobile: 20px !default
@@ -25,13 +27,16 @@ $modal-card-title-size: $size-4 !default
 $modal-card-foot-radius: $radius-large !default
 $modal-card-foot-border-top: 1px solid $border !default
 
-$modal-card-body-background-color: $white !default
+$modal-card-body-background-color: $scheme-main !default
 $modal-card-body-padding: 20px !default
 
+$modal-breakpoint: $tablet !default
+
 .modal
-  +overlay
+  @extend %overlay
   align-items: center
   display: none
+  flex-direction: column
   justify-content: center
   overflow: hidden
   position: fixed
@@ -41,7 +46,7 @@ $modal-card-body-padding: 20px !default
     display: flex
 
 .modal-background
-  +overlay
+  @extend %overlay
   background-color: $modal-background-background-color
 
 .modal-content,
@@ -52,17 +57,17 @@ $modal-card-body-padding: 20px !default
   position: relative
   width: 100%
   // Responsiveness
-  +tablet
+  +from($modal-breakpoint)
     margin: 0 auto
     max-height: calc(100vh - #{$modal-content-spacing-tablet})
     width: $modal-content-width
 
 .modal-close
-  +delete
+  @extend %delete
   background: none
   height: $modal-close-dimensions
   position: fixed
-  right: $modal-close-right
+  +ltr-position($modal-close-right)
   top: $modal-close-top
   width: $modal-close-dimensions
 
@@ -71,6 +76,7 @@ $modal-card-body-padding: 20px !default
   flex-direction: column
   max-height: calc(100vh - #{$modal-card-spacing})
   overflow: hidden
+  -ms-overflow-y: visible
 
 .modal-card-head,
 .modal-card-foot
@@ -100,7 +106,7 @@ $modal-card-body-padding: 20px !default
   border-top: $modal-card-foot-border-top
   .button
     &:not(:last-child)
-      margin-right: 10px
+      +ltr-property("margin", 0.5em)
 
 .modal-card-body
   +overflow-touch

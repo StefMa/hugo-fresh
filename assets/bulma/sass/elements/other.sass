@@ -1,8 +1,10 @@
+@import "../utilities/mixins"
+
 .block
-  +block
+  @extend %block
 
 .delete
-  +delete
+  @extend %delete
 
 .heading
   display: block
@@ -11,18 +13,8 @@
   margin-bottom: 5px
   text-transform: uppercase
 
-.highlight
-  +block
-  font-weight: $weight-normal
-  max-width: 100%
-  overflow: hidden
-  padding: 0
-  pre
-    overflow: auto
-    max-width: 100%
-
 .loader
-  +loader
+  @extend %loader
 
 .number
   align-items: center
