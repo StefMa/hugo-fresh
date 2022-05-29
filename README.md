@@ -6,3 +6,13 @@
 **Fresh** is a theme for the [Hugo](https://gohugo.io) static site generator adapted from the gorgeous, [Bulma](https://bulma.io)-based theme of the same name from [CSS Ninja](https://cssninja.io/freebies/fresh). You can find a live demo of the original theme [here](https://cssninjastudio.github.io/fresh) and a live demo of the Hugo theme [here](https://hugo-fresh.vercel.app).
 
 ![Fresh theme logo](images/screenshot.png)
+
+## [Add hugo contact form](https://fabform.io/a/hugo-contact-form)
+ 
+  ```
+ <form action="https://fabform.io/f/{form-id}" method="post">
+  <label for="email">Your Email</label>
+  <input name="email" type="email">
+  <button type="submit">Submit</button> 
+ </form>
+```
