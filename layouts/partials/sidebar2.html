@@ -1,4 +1,4 @@
-{{- $sidebar  := .Site.Params.sidebar }}
+{{- $sidebar  := .Params.sidebar }}
 {{- $logo     := index $sidebar "logo" }}
 {{- $sections := index $sidebar "sections" }}
 <div class="sidebar">
@@ -13,7 +13,7 @@
       {{- range $sections }}
       {{if .url }}
       <li class="">
-        <a href="{{ .url }}">
+      <a href="{{ .url }}">
         <span class="fa fa-{{ .icon }}"></span>
         {{ .title }}
       </a>

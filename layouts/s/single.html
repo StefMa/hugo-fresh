@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    {{ partial "meta.html" . }}
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ partial "css.html" . }}
+    {{ partial "izumafonts.html" . }}
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
+    {{ block "main" . }}
+
+
+    {{ partial "single/izuma-single.html" . }}
+
+    {{ if .Params.include_footer }}
+    {{ partial "footer.html" . }}
+    {{ end }}
+
+
+    <!-- Back To Top Button -->
+    <div id="backtotop"><a href="#"></a></div>
+
+    {{ if .Params.sidebar }}
+    {{ partial "sidebar2.html" . }}
+    {{ end }}
+
+    {{ end }}
+
+    {{ partial "javascript.html" . }}
+  </body>
+</html>

@@ -6,8 +6,13 @@ $white: #fff;
 $smoke-white: #fcfcfc;
 $grey-white: #f2f2f2;
 
+
+$izuma-blue: #3684F5;
+$izuma-orange: #FF9C2B;
+$izuma-green: #365129;
+
 $primary: #4FC1EA;
-$secondary: #F39200;
+$secondary: darken($izuma-orange, 5%);
 $accent: #00efb7;
 
 $fade-grey: #ededed;

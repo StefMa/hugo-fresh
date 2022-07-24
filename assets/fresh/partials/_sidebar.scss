@@ -69,7 +69,7 @@ Sidebar Styles
 
 //Sidebar
 .sidebar {
-    background: $dark-grey;
+    background: $light-grey;
     width: 280px;
     height: 100%;
     position: fixed;
@@ -97,7 +97,7 @@ Sidebar Styles
             height: 24px;
         }
         svg {
-            stroke: $white;
+            stroke: $dark-grey;
             transform: rotate(0);
             transition: all .3s;
             cursor: pointer;
@@ -121,17 +121,17 @@ Sidebar Styles
                     padding: 20px 25px;
                     display: block;
                     text-decoration: none;
-                    color: $white;
+                    color: $dark-grey;
                     &:hover {
                         padding: 20px 25px;
                         display: block;
                         text-decoration: none;
-                        color: $white;
+                        color: $izuma-blue;
                     }
                 }
                 a span {
                     margin-right: 20px;
-                    color: $white;
+                    color: $dark-grey;
                 }
                 &.have-children {
                     ul {
@@ -139,12 +139,12 @@ Sidebar Styles
                     }
                     li {
                         a {
-                            background-color: darken($dark-grey, 5%);
+                            background-color: lighten($izuma-blue, 30%);
                             padding-left: 62px;
                             border-bottom: 1px solid darken($dark-grey, 2%);
                             font-size: .8rem;
                             &:hover {
-                                color: $primary;
+                                color: $izuma-blue;
                                 padding-left: 62px;
                             }
                         }
@@ -154,7 +154,7 @@ Sidebar Styles
                         top: 27px;
                         right: 30px;
                         content: "\f054";
-                        color: $white;
+                        color: $dark-grey;
                         transition: all .5s;
                         font-weight: 200 !important;
                         font-size: .8rem;
@@ -166,7 +166,7 @@ Sidebar Styles
             position: relative;
         }
         li.have-children.active > a, li.have-children.active > a span, li.have-children.active > a span:after {
-            color: $secondary;
+            color: $izuma-blue;
         }
         li.active.have-children span::after {
             -moz-transform: rotate(90deg);
