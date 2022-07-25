@@ -1,0 +1,13 @@
+<!-- arrowbullet -->
+{{- $li := .Get "li" | safeHTML -}}
+{{- with .Parent -}}
+<li><span class="fa-solid fa-arrow-right"></span>
+&nbsp;{{$li | safeHTML}}
+</li>
+{{- else -}}
+<ul class="arrowlist">
+<li><span class="fa-solid fa-arrow-right"></span>
+&nbsp;{{$li | safeHTML}}
+</li>
+</ul>
+{{- end -}}
