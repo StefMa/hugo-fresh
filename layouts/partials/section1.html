@@ -1,12 +1,16 @@
 {{- $section1 := .Site.Params.section1 }}
 {{- $title    := index $section1 "title" }}
 {{- $subtitle := index $section1 "subtitle" }}
+{{- $subtitle2 := index $section1 "subtitle2" }}
+{{- $subtitlepop  := index $section1 "subtitlepop" }}
 {{- $tiles    := index $section1 "tiles" }}
 <section class="section section-feature-grey is-medium">
   <div class="container">
     <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2">{{ $title }}</h2>
-      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <h2 class="title is-3">{{ $title }}</h2>
+      <h3 class="subtitle is-5">{{ $subtitle | safeHTML }}</h3>
+      <h3 class="subtitlepop izuma-pop is-5">{{ $subtitlepop | safeHTML }}</h3>
+      <h3 class="subtitle is-5"><span class="iz-callout">{{ $subtitle2 | safeHTML }}</span></h3>
       <div class="divider is-centered"></div>
     </div>
 
@@ -22,10 +26,10 @@
                 <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
             </div>
             <div class="card-text">
-                <p>{{ .text }}</p>
+                <p>{{ .text | safeHTML }}</p>
             </div>
             <div class="card-action">
-              <a href="{{ .url }}" class="button btn-align-md accent-btn raised">{{ .buttonText }}</a>
+              <a href="{{ .url }}" class="button izumaparallel btn-align-md raised">{{ .buttonText }}</a>
             </div>
           </div>
         </div>

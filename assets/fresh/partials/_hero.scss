@@ -6,16 +6,31 @@ Hero styles
     padding-top: 6rem;
     padding-bottom: 6rem;
     .title, .subtitle {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
     .title {
         &.is-bold {
             font-weight: 700;
         }
     }
+    .subtitlepop {
+        font-family: 'Poppins', sans-serif;
+        &.is-izuma-hero-pop {
+            color: #FFF;
+            font-weight: 500;
+            background: $izuma-blue;
+            padding: 1rem 2rem 1rem 2rem;
+            margin-left: -1rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            -webkit-clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+            clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+        }
+    }
     .subtitle {
-        &.is-muted {
-            color: $muted-grey;
+        font-weight: 400;
+        &.is-muted {            
+            color: $medium-grey;
         }
     }
 }
@@ -25,3 +40,47 @@ Hero styles
         height: 70px;
     }
 }
+
+@media only screen and (max-device-width : 1024px) and (orientation : portrait) {
+    .hero-body {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        .title, .subtitle {
+            font-family: 'Poppins', sans-serif;
+        }
+        .title {
+            &.is-bold {
+                font-weight: 700;
+            }
+        }
+        .subtitlepop {
+            font-family: 'Poppins', sans-serif;
+            &.is-izuma-hero-pop {
+                color: #FFF;
+                font-weight: 500;
+                background: #3684F5;
+                padding: 1rem 2rem 1rem 2rem;
+                margin-left: -3rem;
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+                margin-right: -3rem;
+            }
+        }
+        .subtitle {
+            font-weight: 400;
+            &.is-muted {            
+                color: $medium-grey;
+            }
+        }
+    }
+
+    .hero-foot {
+        img.partner-logo {
+            height: 70px;
+        }
+    }
+
+
+}
+
+

@@ -38,6 +38,7 @@ Navbar
     }
     //Navbar items
     .navbar-item {
+        font-family: 'Poppins', sans-serif;
         color: $muted-grey;
         &.is-secondary {
             &:hover {
@@ -111,5 +112,11 @@ Navbar
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
     &.is-active {
         transform: translateY(0); 
+    }
+}
+
+@media only screen and (max-device-width : 1024px) and (orientation : portrait) {
+    .navbar.is-fresh .navbar-brand {
+        padding-left: 10px
     }
 }

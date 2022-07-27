@@ -1,0 +1,40 @@
+.button {
+    cursor: pointer;
+    transition: all 0.5s;
+    &.izumaparallel {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+		font-weight: 600;
+		background: $izuma-orange;
+		padding: 24px 26px;
+		-webkit-clip-path: polygon(0% 0%, 100% 0%, 90% 0%, 100% 20%, 100% 100%, 10% 100%, 0% 80%, 0% 0%);
+		clip-path: polygon(0% 0%, 100% 0%, 90% 0%, 100% 20%, 100% 100%, 10% 100%, 0% 80%, 0% 0%);
+		color: #FFF;
+    }
+    &.cta {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 26px 40px 26px 40px;
+    }
+    &.is-clear {
+        line-height: 0 !important;
+    }
+    &.rounded {
+        border-radius: 500px;
+    }
+    &.raised:hover {
+        box-shadow: 0 14px 26px -12px rgba(0, 0, 0, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2) !important;
+        opacity: 0.8;
+    }
+    &.btn-outlined {
+        background: transparent;
+    }
+    &.signup-button {
+        font-size: .9rem;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        padding: 24px 26px;
+        width: 130px;
+    }
+}

@@ -16,17 +16,51 @@ Section Styles
     &.section-half {
         height: 75vh !important;
     }
-    .title, .subtitle {
+    .title, .subtitle, subtitle2, subtitlepop {
         font-family: 'Poppins', sans-serif;
 
     }
     .subtitle {
         &.is-muted {
-            color: $izuma-blue;
+            color: $muted-grey;
         }
     }
 }
 
+.izuma-pop {
+            font-family: 'Poppins', sans-serif;
+            color: #FFF;
+            font-weight: 600;
+            background: $izuma-blue;
+            padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+            margin-left: -1rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            -webkit-clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+            clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+            &.cobalt {
+                background: $izuma-cobalt;
+            }
+}
+
+
+
+.section {
+    .subtitlepop {
+        &.izuma-pop {
+            font-family: 'Poppins', sans-serif;
+            color: #FFF;
+            font-weight: 600;
+            background: $izuma-blue;
+            padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+            margin-left: -1rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            -webkit-clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+            clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+        }
+    }
+}
 //Titles
 .title-wrapper {
     max-width: 500px;
@@ -34,6 +68,12 @@ Section Styles
     .title, .subtitle {
         font-family: 'Poppins', sans-serif;
 
+    }
+    .subtitlepop {
+        &.is-izuma-hero-pop {
+            color: $izuma-blue;
+            weight: 600;
+        }
     }
     .subtitle {
         &.is-muted {
@@ -77,9 +117,103 @@ img.pushed-image {
             font-weight: 600;
         }
         .icon-box-text {
-            color: $title-grey;
+            color: $izuma-cobalt;
             font-size: 1rem;
             font-weight: 400;
         }
     }
+}
+
+figure {
+    &.section2 {
+        float: left;
+        margin-left: -33%;
+        padding-right: 2%;
+        margin-top: 13%;
+        width: 200px;
+    }
+}
+
+
+.section2 {
+    .spacer-desktop {
+        height: 60px;
+    }    
+}
+
+@media only screen and (max-device-width : 1024px) and (orientation : portrait) {
+    .media {
+        display: block;
+    }
+
+
+    .section {
+        .subtitlepop {
+            &.izuma-pop {
+                font-family: 'Poppins', sans-serif;
+                color: #FFF;
+                font-weight: 600;
+                background: $izuma-blue;
+                padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+                margin-left: -3rem;
+                margin-right: -3rem;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+
+    .izuma-pop {
+        font-family: 'Poppins', sans-serif;
+        color: #FFF;
+        font-weight: 600;
+        background: $izuma-blue;
+        padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        -webkit-clip-path: none;
+        clip-path: none;
+
+    }
+
+
+
+}
+
+
+@media (max-width: 767px) {
+    .section2 {
+        .spacer-desktop {
+            height: 0;
+        }
+    }
+    figure {
+        &.section2 {
+            float: none;
+            margin: 10px;
+            padding-right: 2%;
+            width: 200px;
+        }
+    }
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .section2 {
+        .spacer-desktop {
+            height: 0;
+        }
+    }
+    figure {
+        &.section2 {
+            float: non;
+            margin: 10px;
+            padding-right: 2%;
+            width: 200px;
+        }
+    }
+
 }

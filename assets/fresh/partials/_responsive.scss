@@ -2,7 +2,18 @@
 Responsive Styles
 ========================================================================== */
 
+
+.desktop-top60 {
+    margin-top: 60px;
+}
+
 @media (max-width: 767px) {
+    .desktop-top60 {
+        margin-top: 0;
+    }
+    .mobile-30 {
+        height: 30px;
+    }
 
     .landing-caption {
         text-align: center;
@@ -43,6 +54,13 @@ Responsive Styles
 
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .desktop-top60 {
+        margin-top: 0;
+    }
+
+    .mobile-30 {
+        height: 30px;
+    }
     .landing-caption {
         text-align: center;
     }
@@ -78,3 +96,4 @@ Responsive Styles
         }
     }
 }
+
