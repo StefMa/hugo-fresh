@@ -13,9 +13,16 @@
       {{- range $sections }}
       {{if .url }}
       <li class="">
+        {{ if .newwin }}
+        <a href="{{ .url }}" target="_blank" >
+        {{else}}
         <a href="{{ .url }}">
+        {{- end }}
         <span class="fa fa-{{ .icon }}"></span>
         {{ .title }}
+        {{ if .newwin }}
+        <span class="fa fa-external-link external"></span>
+        {{- end }}
       </a>
       </li>
       {{else}}

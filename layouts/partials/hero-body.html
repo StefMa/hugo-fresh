@@ -5,6 +5,7 @@
 {{- $buttonText  := index $hero "buttontext" }}
 {{- $buttonLink  := index $hero "buttonlink" }}
 {{- $image       := index $hero "image" }}
+{{- $isobject    := index $hero "isobject" }}
 <div class="hero-body">
   <div class="container">
     <div class="columns is-vcentered">
@@ -34,7 +35,11 @@
       <div class="mobile-30"></div>
       <div class="column is-5 is-offset-1">
         <figure>
-          <img src="{{ printf "/images/%s" $image | relURL }}" alt="Description">
+          {{ if $isobject }}
+          <object type="image/svg+xml" data="{{ printf "/images/%s" $image | relURL }}" alt="Description"></object>
+          {{ else }}
+          <img src="{{ printf "/images/%s" $image | relURL }}" alt="Description" />
+          {{ end }}
         </figure>
       </div>
     </div>

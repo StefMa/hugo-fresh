@@ -133,6 +133,15 @@ Sidebar Styles
                     margin-right: 20px;
                     color: $dark-grey;
                 }
+                span.external {
+                    position: absolute;
+                    top: 22px;
+                    right: 5px;
+                    color: #344258;
+                    font-weight: 200 !important;
+                    font-size: 1.1rem;                                
+                } 
+
                 &.have-children {
                     ul {
                         padding: 0px;
@@ -158,7 +167,7 @@ Sidebar Styles
                         transition: all .5s;
                         font-weight: 200 !important;
                         font-size: .8rem;
-                    } 
+                    }
                 }
             }
         }
