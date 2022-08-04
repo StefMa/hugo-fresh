@@ -7,21 +7,20 @@
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
         <h1 class="title section-title">{{ $title }}</h1>
+        <div class="pop-spacer"></div>
         <h3 class="subtitle is-5 izuma-pop cobalt">{{ $subtitle | safeHTML }}</h3>
       </div>
-
       <div class="column is-7 desktop-top60">
         <div class="spacer-desktop"></div>
         {{- range $features }}
+        <div class="mt-50"></div>
         <article class="media icon-box">
           {{ if .image }}
           <figure class="media-left section2">
-            <p class="image">
-              <img src="{{ printf "/images/%s" .image | relURL }}">
-            </p>
+              <img class="section2" src="{{ printf "/images/%s" .image | relURL }}">
           </figure>
           {{ end }}
-          <div class="media-content mt-50">
+          <div class="media-content">
             <div class="content">
               <p>
                 <span class="icon-box-title">{{ .title }}</span>
@@ -31,6 +30,7 @@
             </div>
           </div>
         </article>
+        <div class="spacer-desktop-20"></div>
         {{- end }}
       </div>
     </div>

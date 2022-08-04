@@ -4,23 +4,23 @@
 {{- $image      := index $section3 "image" }}
 {{- $buttonText := index $section3 "buttontext" }}
 {{- $buttonLink := index $section3 "buttonlink" }}
-<section class="section section-feature-grey is-medium">
+<section class="section section-feature-grey is-medium section3">
   <div class="container">
     <div class="columns">
       <div class="column is-10 is-offset-1">
         <div class="has-text-centered">
-          <img class="pushed-image" src="{{ printf "/images/%s" $image | relURL }}">
+          <img class="pushed-image need-border" src="{{ printf "/images/%s" $image | relURL }}">
         </div>
       </div>
     </div>
 
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2">{{ $title }}</h2>
-      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <h3 class="subtitle is-5">{{ $subtitle }}</h3>
     </div>
 
     <p class="has-text-centered mt-20">
-      <a class="button cta is-large rounded secondary-btn raised" href="{{ $buttonLink }}">
+      <a class="button cta is-large izumaparallel secondary-btn raised" href="{{ $buttonLink }}">
         {{ $buttonText }}
       </a>
     </p>

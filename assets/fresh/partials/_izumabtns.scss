@@ -38,3 +38,18 @@
         width: 130px;
     }
 }
+
+
+.navbar-item {
+	.button {
+		&.login-btn {
+			background: $izuma-orange;
+			color: #FFF;
+			-webkit-clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+			clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+			margin: 0px;
+			padding: 30px 30px 25px 30px;
+			margin-top: -12px;
+		}
+	}
+}

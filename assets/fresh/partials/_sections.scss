@@ -43,6 +43,9 @@ Section Styles
             }
 }
 
+.pop-spacer {
+    height: 1px;
+}
 
 
 .section {
@@ -129,15 +132,29 @@ figure {
         float: left;
         margin-left: -33%;
         padding-right: 2%;
-        margin-top: 13%;
+        margin-top: auto;
+        margin-bottom: auto;
         width: 200px;
+        text-align: center;
+
     }
 }
+
+img .section2 {
+      max-width:200px;
+      max-height:95px;
+      width: auto;
+      height: auto;
+}
+
 
 
 .section2 {
     .spacer-desktop {
-        height: 60px;
+        height: 70px;
+    }
+    .spacer-desktop-20 {
+        height: 20px;
     }    
 }
 
@@ -159,6 +176,9 @@ figure {
                 margin-right: -3rem;
                 margin-bottom: 1rem;
                 font-size: 1rem;
+                -webkit-clip-path: none;
+                clip-path: none;
+
             }
         }
     }
@@ -216,4 +236,10 @@ figure {
         }
     }
 
+}
+
+img.need-border {
+    border: #000;
+    border-style: solid;
+    border-width: 1px;
 }

@@ -8,6 +8,12 @@ Responsive Styles
 }
 
 @media (max-width: 767px) {
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+       position: relative
+    }
     .desktop-top60 {
         margin-top: 0;
     }
@@ -54,6 +60,13 @@ Responsive Styles
 
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+       position: relative
+    }
+
     .desktop-top60 {
         margin-top: 0;
     }

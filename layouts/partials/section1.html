@@ -23,7 +23,7 @@
               <h4>{{ .title }}</h4>
             </div>
             <div class="card-icon">
-                <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
+                <img src="{{ printf "/images/%s" .icon | relURL }}">
             </div>
             <div class="card-text">
                 <p>{{ .text | safeHTML }}</p>

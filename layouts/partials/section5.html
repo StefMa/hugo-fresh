@@ -1,8 +1,16 @@
-<section class="section section-light-grey is-medium">
+{{- $section5   := .Site.Params.section5 }}
+{{- $title      := index $section5 "title" }}
+{{- $subtitle   := index $section5 "subtitle" }}
+{{- $subtitlepop   := index $section5 "subtitlepop" }}
+{{- $buttonText := index $section5 "buttontext" }}
+{{- $buttonLink := index $section5 "buttonlink" }}
+<section class="section section-light-grey is-medium section5">
   <div class="container">
     <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2 is-spaced">Drop us a line or two </h2>
-      <h3 class="subtitle is-5 is-muted">We'd love to hear from you</h3>
+      <h2 class="title is-2 is-spaced">{{ $title | safeHTML }}</h2>
+      <h3 class="subtitle is-5 izuma-pop">{{ $subtitlepop | safeHTML }}</h3>
+      <h3 class="subtitle is-5">{{ $subtitle | safeHTML }}</h3>
+<!--  -->
       <div class="divider is-centered"></div>
     </div>
 
@@ -21,7 +29,7 @@
                 <textarea class="textarea" rows="10" placeholder="Write someting..."></textarea>
               </div>
               <div class="form-footer has-text-centered mt-10">
-                <button class="button cta is-large primary-btn raised is-clear">Send Message</button>
+                <button class="button cta is-large primary-btn raised is-clear">{{ $buttonText }}</button>
               </div>
             </div>
           </form>

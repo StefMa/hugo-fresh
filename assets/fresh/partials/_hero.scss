@@ -64,6 +64,9 @@ Hero styles
                 margin-bottom: 1rem;
                 font-size: 1.2rem;
                 margin-right: -3rem;
+                -webkit-clip-path: none;
+                clip-path: none;
+
             }
         }
         .subtitle {
