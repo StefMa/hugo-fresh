@@ -2,9 +2,12 @@
 {{- $title      := index $section5 "title" }}
 {{- $subtitle   := index $section5 "subtitle" }}
 {{- $subtitlepop   := index $section5 "subtitlepop" }}
-{{- $buttonText := index $section5 "buttontext" }}
-{{- $buttonLink := index $section5 "buttonlink" }}
+{{- $embedcode   := index $section5 "embedcode" }}
+<!-- {{- $buttonText := index $section5 "buttontext" }}
+{{- $buttonLink := index $section5 "buttonlink" }} -->
 <section class="section section-light-grey is-medium section5">
+
+
   <div class="container">
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2 is-spaced">{{ $title | safeHTML }}</h2>
@@ -17,7 +20,9 @@
     <div class="content-wrapper">
       <div class="columns">
         <div class="column is-6 is-offset-3">
-          <form>
+
+          {{ $embedcode | safeHTML }}
+<!--           <form>
             <div class="columns is-multiline">
               <div class="column is-6">
                 <input class="input is-medium" type="text" placeholder="Enter your name">
@@ -33,7 +38,7 @@
               </div>
             </div>
           </form>
-        </div>
+ -->        </div>
       </div>
     </div>
   </div>
