@@ -1,0 +1,57 @@
+#consent-notice {padding: 1rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: 100%; 
+	background: $izuma-blue; color: rgba(255,255,255,0.8);}
+#consent-notice span {margin-right: 1rem;}
+#consent-notice button {cursor: pointer; display: inline-block; width: auto;}
+#consent-notice span a {color: inherit; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.5);}
+#consent-notice button.btn {
+	background: $izuma-cobalt; font-weight: normal;
+	border: 0;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 10px;
+	border-radius: 5px;	
+	margin-left: 10px;
+}
+#consent-notice button.btn.manage-consent {
+	background: $izuma-orange; font-weight: normal;
+	border: 0;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 10px;
+	border-radius: 5px;	
+}
+
+#consent-overlay {position: fixed; left: 0; top: 0; width: 100%; height: 100vh; display: none; background: rgba(0,0,0,0.75); z-index: 999999; overflow: auto; cursor: pointer;}
+#consent-overlay.active {display: flex;}
+#consent-overlay > div {background: white; width: 100%; max-width: 30rem; padding: 1.75rem; margin: auto; cursor: initial;}
+#consent-overlay > div > div {display: flex; align-items: flex-start; margin-bottom: 1rem;}
+#consent-overlay > div > div:last-child {margin: 0;}
+#consent-overlay h3 {padding-top: 0;}
+#consent-overlay input {margin-top: 0.3rem;}
+#consent-overlay label {display: block;}
+#consent-overlay .btn {
+	background: $izuma-cobalt; font-weight: normal;
+	border: 0;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 10px;
+	border-radius: 5px;	
+	margin-left: 10px;
+
+}
+
+#consent-overlay button.btn.save-consent {
+	background: $izuma-cobalt; font-weight: normal;
+	border: 0;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 10px;
+	border-radius: 5px;	
+	margin-left: 10px;	
+}
+
+@media (max-width: 767px) {
+    #consent-overlay > div {padding: 1.75rem 1rem;}
+    #consent-notice span {display: block; padding-top: 3px; margin-bottom: 1.5rem;}
+    #consent-notice button.btn {position: relative; bottom: 4px;}
+}
