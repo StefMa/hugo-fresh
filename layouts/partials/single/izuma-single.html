@@ -1,3 +1,6 @@
 {{ partial "navbar.html" . }}
 {{ partial "navbar-clone.html" . }}
 {{ partial "single/izuma-s-content.html" . }}
+{{ if .Site.Params.footer }}
+{{ partial "footer.html" . }}
+{{ end }}

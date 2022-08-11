@@ -1,1 +1,6 @@
-<h5 class="title is-5">{{ .Get 0 }}</h5>
+<div>
+{{ with .Get 1 }}
+<a class="titleanchor" id="{{ . }}"></a>
+{{ end }}
+<h5 class="title is-5">{{ .Get 0 | safeHTML }}</h5>
+</div>

@@ -1,0 +1,9 @@
+<div class="izfigwrapright block{{ .Get "block"}}">
+	<div class="izfigright">
+		<figure><div class="image" style="background-image:url(/images/{{ .Get "src" }})";></div></figure>
+<!--		<figcaption>{{ .Get "caption" }}</figcaption> -->
+	</div>
+	<div class="overlay w{{ .Get "width"}}">
+		{{ .Inner | safeHTML }}
+	</div>
+</div>

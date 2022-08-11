@@ -1,4 +1,5 @@
 {{- $section2 := .Site.Params.section2 }}
+{{- $anchor   := index $section2 "anchor" }}
 {{- $title    := index $section2 "title" }}
 {{- $subtitle := index $section2 "subtitle" }}
 {{- $features := index $section2 "features" }}
@@ -6,6 +7,7 @@
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
+        <a class="titleanchor" id="{{ $anchor }}"></a>
         <h1 class="title section-title">{{ $title }}</h1>
         <div class="pop-spacer"></div>
         <h3 class="subtitle is-5 izuma-pop cobalt">{{ $subtitle | safeHTML }}</h3>

@@ -2,3 +2,11 @@ span.iz-callout {
 	color: $izuma-blue;
 	font-weight: 500;
 }
+
+/* https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
+a.titleanchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
