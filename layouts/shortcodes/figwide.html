@@ -1,0 +1,42 @@
+{{- $svgobj := (.Get "svgobj") -}}
+{{- $image := (.Get "image") -}}
+{{- $desc := (.Get "desc") -}}
+{{- $height := default "auto" (.Get "height") -}}
+<!-- mobile is an optional alternate version for phone displat -->
+{{- $mobile := default $svgobj (.Get "mobile") -}}
+{{ if $image }}
+{{- $mobile := default $image (.Get "mobile") -}}
+{{ end}}
+
+<!-- https://stackoverflow.com/questions/644896/how-do-i-scale-a-stubborn-svg-embedded-with-the-object-tag -->
+<div class="izfigwrapwide block{{ .Get "block"}}">
+	<div class="izfigwide">
+		<div class="desktop">
+			<figure>
+			{{ if $svgobj }}
+	        <object style="height:{{ $height }};" type="image/svg+xml" data="{{ printf "%s/%s" ( path.Dir .Page.RelPermalink ) $svgobj | relURL }}" alt="{{ $desc }}"></object>
+			{{ end }}
+			{{ if $image }}
+	        <img style="height:{{ $height }};" src="{{ printf "%s/%s" ( path.Dir .Page.RelPermalink ) $image | relURL }}" alt="{{ $desc }}" />
+			{{ end }}		
+			</figure>
+	<!--		<figcaption>{{ .Get "caption" }}</figcaption> -->
+		</div>
+		<div class="mobile">
+			<figure>
+			{{ if $svgobj }}
+	        <object style="height:{{ $height }};" type="image/svg+xml" data="{{ printf "%s/%s" ( path.Dir .Page.RelPermalink ) $mobile | relURL }}" alt="{{ $desc }}"></object>
+			{{ end }}
+			{{ if $image }}
+	        <img style="height:{{ $height }};" src="{{ printf "%s/%s" ( path.Dir .Page.RelPermalink ) $mobile | relURL }}" alt="{{ $desc }}" />
+			{{ end }}		
+			</figure>
+	<!--		<figcaption>{{ .Get "caption" }}</figcaption> -->
+		</div>
+	</div>
+	{{ with .Inner }}
+	<div class="caption">
+		{{ .Inner | safeHTML }}
+	</div>
+	{{ end }}
+</div>

@@ -6,7 +6,7 @@
 	float: left;
 	width: 40%;	
 	background: $izuma-blue;
-	margin: 1rem 2rem 1rem 0;
+	margin: 1rem 2rem 1rem -15px;
 	&.block30
 		width: 30%;
 	&.block50
@@ -155,10 +155,92 @@
 				background-size: cover;
 				background-position: center;
 
+
+.izfigwrapwide
+	position: relative;
+	padding: 0;
+	width: 100%;	
+	background: none;
+	margin: 0;
+	&.block30
+		width: 30%;
+	&.block50
+		width: 50%;
+	&.block60
+		width: 60%;		
+	.overlay
+		position: relative;
+		height: 100%;
+		top: 0;
+		color: $izuma-cobalt;
+		background: rgba(255, 255, 255, 0.8);
+		padding: 1rem;
+		font-weight: 800;
+		font-size: 1.05rem;
+		&.w100
+			width: calc(100% - 10px);
+			left: 10px;
+		&.w90
+			width: 90%;
+			left: 10%;
+		&.w80
+			width: 80%;
+			left: 20%;
+		&.w70
+			width: 70%;
+			left: 30%;
+		&.w70
+			width: 70%;
+			left: 30%;
+		&.w60
+			width: 60%;
+			left: 40%;
+		&.w50
+			width: 50%;
+			left: 50%;
+		&.w40
+			width: 40%;
+			left: 60%;
+		&.w30
+			width: 30%;
+			left: 70%;
+		&.w20
+			width: 20%;
+			left: 80%;
+		&.w10
+			width: 10%;
+			left: 90%;
+		.arrowlist 
+			font-size: 90%;
+			margin-left: 0;
+	.izfigwide
+		.mobile
+			display: none;
+		.desktop
+			display: inline;
+		figure
+			margin: 0;
+			position: relative
+			.image
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+				background-position: center;
+
+
 @media (max-width: 767px)
+	.izfigwrapwide
+		.izfigwide
+			.mobile
+				display: inline;
+			.desktop
+				display: none;
 	.izfigwrapleft
 		position: relative;
 		padding: 0;
+		margin: 1rem 2rem 1rem 0;
 		float: none;
 		width: 100%;
 		&.block30

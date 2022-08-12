@@ -1,5 +1,6 @@
 {{- $section1 := .Site.Params.section1 }}
 {{- $title    := index $section1 "title" }}
+{{- $anchor    := index $section1 "anchor" }}
 {{- $subtitle := index $section1 "subtitle" }}
 {{- $subtitle2 := index $section1 "subtitle2" }}
 {{- $subtitlepop  := index $section1 "subtitlepop" }}
@@ -7,6 +8,7 @@
 <section class="section section-feature-grey is-medium">
   <div class="container">
     <div class="title-wrapper has-text-centered">
+      <a class="titleanchor" id="{{ $anchor }}"></a>
       <h2 class="title is-3">{{ $title }}</h2>
       <h3 class="subtitle is-5">{{ $subtitle | safeHTML }}</h3>
       <h3 class="subtitlepop izuma-pop is-5">{{ $subtitlepop | safeHTML }}</h3>
