@@ -27,6 +27,106 @@ Section Styles
     }
 }
 
+.section3-product {
+    .izuma {
+        height: 100px;
+        background: #e3e3e3;
+        margin-left: -30px;
+        clip-path: polygon(0% 0%, 100% 0%, 93% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 100%, 0% 0%);
+        border-bottom: #FFF 5px solid;
+        border-right: #FFF 5px solid;
+        .left-content {
+            cursor: pointer;
+            display: flex;
+            float: right;
+            margin-right: 20px;
+            width: 75%;
+            padding: 10px;
+            .title {
+                font-family: "Poppins", Helvetica, sans-serif;
+                margin-bottom: 0 !important;
+            }
+        }
+        .right-content {
+            cursor: pointer;
+            display: flex;
+            float: left;
+            margin-left: 20px;
+            width: 75%;
+            padding: 10px;
+            .title {
+                font-family: "Poppins", Helvetica, sans-serif;
+                margin-bottom: 0 !important;
+            }
+        }
+        &.right {
+           clip-path: polygon(0% 50%, 7% 0%, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 1000%, 0% 0%);
+        }
+        .iz-block {
+            width: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            img {
+                padding: 10px;
+                padding-right: 20px;
+                padding-left: 20px;
+                margin-top: auto;
+                height: 75px;
+                width: auto;
+            }
+        }
+    }
+}
+
+.section.section3 {
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+
+    .section3-product {
+        .izuma {
+            border: 0;
+            border-bottom: #FFF 5px solid;
+            clip-path: none;
+            .left-content {
+                float: none;
+                width: 100%;
+                margin-right: 0;
+                padding-left: 20px;
+                .title {
+                    font-family: "Poppins", Helvetica, sans-serif;
+                    margin-bottom: 0 !important;
+                }
+            }
+            .right-content {
+                float: none;
+                width: 100%;
+                margin-left: 0;
+                .title {
+                }
+            }
+            &.right {
+               clip-path: none;
+            }
+            .iz-block {
+                width: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+                img {
+                }
+                .textright {
+                    font-size: 80%;
+                }
+                .textleft {
+                    font-size: 80%;
+                }
+            }
+        }
+    }
+
+}
+
 .izuma-pop {
             font-family: 'Poppins', sans-serif;
             color: #FFF;

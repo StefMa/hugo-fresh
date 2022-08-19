@@ -1,7 +1,16 @@
 {{- $section3   := .Site.Params.section3 }}
+{{- $subcontent   := index $section3 "subcontent" }}
 {{- $title      := index $section3 "title" }}
 {{- $subtitle   := index $section3 "subtitle" }}
 {{- $image      := index $section3 "image" }}
+{{- $imageleft      := index .Site.Params.section3.subcontent "imageleft" }}
+{{- $titleleft      := index .Site.Params.section3.subcontent "titleleft" }}
+{{- $textleft      := index .Site.Params.section3.subcontent "textleft" }}
+{{- $linkleft      := index .Site.Params.section3.subcontent "linkleft" }}
+{{- $imageright      := index .Site.Params.section3.subcontent "imageright" }}
+{{- $titleright      := index .Site.Params.section3.subcontent "titleright" }}
+{{- $textright      := index .Site.Params.section3.subcontent "textright" }}
+{{- $linkright      := index .Site.Params.section3.subcontent "linkright" }}
 {{- $buttonText := index $section3 "buttontext" }}
 {{- $buttonLink := index $section3 "buttonlink" }}
 <section class="section section-feature-grey is-medium section3">
@@ -24,5 +33,46 @@
         {{ $buttonText }}
       </a>
     </p>
-  </div>
+  </div>  
 </section>
+{{ if $subcontent }}
+    <div class="columns is-gapless section3-product" style="margin-bottom: 0;">
+      <div class="column is-half izuma">
+        <div id="section3leftcontent" class="left-content">
+          <a id="section3leftlink" href="{{ $linkleft }}" class="nodisplaylink"></a>
+          <div class="iz-block">
+            <h4 class="title is-4">{{ $titleleft | safeHTML }}</h4>
+            <div class="textleft">{{ $textleft | safeHTML }}</div>
+          </div>
+          <div class="iz-block"> 
+            <img class="pushed-image" src="{{ printf "/images/%s" $imageleft | relURL }}">            
+          </div>
+        </div>
+      </div>
+      <div class="column is-half izuma right">
+        <div id="section3rightcontent" class="right-content">
+          <div class="iz-block"> 
+            <img class="pushed-image" src="{{ printf "/images/%s" $imageright | relURL }}">            
+          </div>
+
+          <div class="iz-block"> 
+            <h4 class="title is-4">{{ $titleright | safeHTML }}</h4>
+            <div class="textright">{{ $textright | safeHTML }}</div>
+          </div>
+
+        </div>
+      </div>
+{{ end }}
+    </div>
+{{ if $subcontent }}    
+    <script type="text/javascript">
+const leftcontent = document.querySelector("#section3leftcontent")
+const leftlink = document.querySelector('#section3leftlink')
+ 
+leftcontent.addEventListener("click", handleClick)
+ 
+function handleClick(event) {
+  leftlink.click();
+} 
+    </script>
+{{ end }}
