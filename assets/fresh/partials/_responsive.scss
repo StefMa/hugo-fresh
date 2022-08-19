@@ -8,6 +8,12 @@ Responsive Styles
 }
 
 @media (max-width: 767px) {
+    .desktop-break {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
     html, body {
       overflow-x: hidden;
     }
