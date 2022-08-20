@@ -42,6 +42,7 @@ Section Styles
             margin-right: 20px;
             width: 75%;
             padding: 10px;
+            justify-content: flex-end;
             .title {
                 font-family: "Poppins", Helvetica, sans-serif;
                 margin-bottom: 0 !important;
@@ -51,7 +52,7 @@ Section Styles
             cursor: pointer;
             display: flex;
             float: left;
-            margin-left: 20px;
+            margin-left: 4%;
             width: 75%;
             padding: 10px;
             .title {
