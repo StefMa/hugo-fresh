@@ -31,7 +31,7 @@
             date.setTime(date.getTime() + (days*24*60*60*1000));
             expires = "; expires=" + date.toUTCString();
         }
-        document.cookie = name + "=" + value + expires + "; path=/";
+        document.cookie = name + "=" + value + expires + "; SameSite=Strict; path=/";
     }
     function readCookie(name) {
         var nameEQ = name + "=";
@@ -62,6 +62,8 @@
     }
     function acceptSomeConsentScripts(consentValue) {
         setConsentInputs(consentValue);
+        console.log("acceptSomeConsentScripts: ", consentValue);
+        consentValue = "{ \"set\":\""+consentValue+"\"}";
         createCookie('consent-settings',consentValue,31);
         document.getElementById('consent-notice').style.display = 'none';
         document.getElementById('consent-overlay').classList.remove('active');
@@ -102,7 +104,14 @@
 
     if(readCookie('consent-settings')) {
         var consentValue = readCookie('consent-settings').toString();
-        console.log(consentValue);
+        console.log("consentValue: ",consentValue);
+        try {
+            var obj = JSON.parse(consentValue);
+            consentValue = obj.set;
+        } catch(e) {
+            console.error("Failed to parse consentValue cookie: ", e);
+            consentValue = 0;
+        }
         setConsentInputs(consentValue);
         loadConsentScripts(consentValue);
     } else {
@@ -123,6 +132,7 @@
     var elements = document.querySelectorAll('.approve-consent');
     elements.forEach(function(el) {
         el.addEventListener("click",function() {
+//            console.log("YO YO")
             acceptAllConsentScripts();
         });
     });
