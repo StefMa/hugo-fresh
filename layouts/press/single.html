@@ -2,6 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
   <head>
     {{ partial "meta.html" . }}
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ partial "css.html" . }}
     {{ partial "izumafonts.html" . }}        
   </head>
@@ -15,22 +16,20 @@
 
     {{ partial "single/single.html" . }}
 
+    {{ if .Params.include_footer }}
+    {{ partial "footer.html" . }}
+    {{ end }}
+
     <!-- Back To Top Button -->
     <div id="backtotop"><a href="#"></a></div>
 
     {{ if .Params.sidebar }}
-    {{ partial "sidebar2.html" . }}
+    {{ partial "single/sidebar.html" . }}
     {{ end }}
 
-    {{ end }}
-
-    {{ if .Params.include_footer }}
-    {{ partial "footer.html" . }}
     {{ end }}
 
     {{ partial "javascript.html" . }}
     {{ partial "consent.html" }}    
   </body>
 </html>
-
-

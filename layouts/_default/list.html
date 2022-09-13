@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+{{ partial "navbar.html" . }}
+{{ partial "navbar-clone.html" . }}
+{{ partial "single/content.html" . }}
+
+    {{ if .Params.include_footer }}
+    {{ partial "footer.html" . }}
+    {{ end }}
+
+<!--  <h1 class="title section-title">{{ .Title }}</h1> -->
+  {{ range .Pages }}
+    {{ .Render "summary"}}
+  {{ end }}
+
+      <!-- Back To Top Button -->
+    <div id="backtotop"><a href="#"></a></div>
+
+    {{ if .Params.sidebar }}
+    {{ partial "sidebar2.html" . }}
+    {{ end }}
+
+{{ end }}
+
+
+
+
