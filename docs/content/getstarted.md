@@ -2,7 +2,7 @@
 title: Get Started
 sidebar: true
 sidebarlogo: fresh-white
-include_footer: false
+include_footer: true
 ---
 
 ## The Fresh theme for Hugo
