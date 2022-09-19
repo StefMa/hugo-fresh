@@ -8,8 +8,8 @@
 {{- $isobject    := index $hero "isobject" }}
 <div class="hero-body">
   <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-5 is-offset-1 landing-caption">
+    <div class="columnz is-vcentered">
+      <div class="zcolumn is-5 is-offset-1 landing-caption">
         <h1 class="title is-1 is-bold is-spaced">
           {{ $title }}
         </h1>
@@ -33,7 +33,7 @@
         </p>
       </div>
       <div class="mobile-30"></div>
-      <div class="column is-5 is-offset-1">
+      <div class="zcolumn is-5 is-offset-1">
         <figure>
           {{ if $isobject }}
           <object type="image/svg+xml" data="{{ printf "/images/%s" $image | relURL }}" alt="Description"></object>

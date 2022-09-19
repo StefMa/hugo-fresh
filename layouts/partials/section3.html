@@ -15,8 +15,8 @@
 {{- $buttonLink := index $section3 "buttonlink" }}
 <section class="section section-feature-grey is-medium section3">
   <div class="container">
-    <div class="columns">
-      <div class="column is-10 is-offset-1">
+    <div class="columnz">
+      <div class="zcolumn is-10 is-offset-1">
         <div class="has-text-centered">
           <img class="pushed-image need-border" src="{{ printf "/images/%s" $image | relURL }}">
         </div>
@@ -36,8 +36,8 @@
   </div>  
 </section>
 {{ if $subcontent }}
-    <div class="columns is-gapless section3-product" style="margin-bottom: 0;">
-      <div class="column is-half izuma">
+    <div class="columnz is-gapless section3-product" style="margin-bottom: 0;">
+      <div class="zcolumn is-half izuma">
         <div id="section3leftcontent" class="left-content">
           <a id="section3leftlink" href="{{ $linkleft }}" class="nodisplaylink"></a>
           <div class="iz-block">
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <div class="column is-half izuma right">
+      <div class="zcolumn is-half izuma right">
         <div id="section3rightcontent" class="right-content">
           <div class="iz-block"> 
             <img class="pushed-image" src="{{ printf "/images/%s" $imageright | relURL }}">            

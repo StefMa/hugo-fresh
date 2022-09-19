@@ -1,66 +1,66 @@
 $column-gap: 0.75rem !default
 
-.column
+.zcolumn
   display: block
   flex-basis: 0
   flex-grow: 1
   flex-shrink: 1
   padding: $column-gap
-  .columns.is-mobile > &.is-narrow
+  .columnz.is-mobile > &.is-narrow
     flex: none
-  .columns.is-mobile > &.is-full
+  .columnz.is-mobile > &.is-full
     flex: none
     width: 100%
-  .columns.is-mobile > &.is-three-quarters
+  .columnz.is-mobile > &.is-three-quarters
     flex: none
     width: 75%
-  .columns.is-mobile > &.is-two-thirds
+  .columnz.is-mobile > &.is-two-thirds
     flex: none
     width: 66.6666%
-  .columns.is-mobile > &.is-half
+  .columnz.is-mobile > &.is-half
     flex: none
     width: 50%
-  .columns.is-mobile > &.is-one-third
+  .columnz.is-mobile > &.is-one-third
     flex: none
     width: 33.3333%
-  .columns.is-mobile > &.is-one-quarter
+  .columnz.is-mobile > &.is-one-quarter
     flex: none
     width: 25%
-  .columns.is-mobile > &.is-one-fifth
+  .columnz.is-mobile > &.is-one-fifth
     flex: none
     width: 20%
-  .columns.is-mobile > &.is-two-fifths
+  .columnz.is-mobile > &.is-two-fifths
     flex: none
     width: 40%
-  .columns.is-mobile > &.is-three-fifths
+  .columnz.is-mobile > &.is-three-fifths
     flex: none
     width: 60%
-  .columns.is-mobile > &.is-four-fifths
+  .columnz.is-mobile > &.is-four-fifths
     flex: none
     width: 80%
-  .columns.is-mobile > &.is-offset-three-quarters
+  .columnz.is-mobile > &.is-offset-three-quarters
     margin-left: 75%
-  .columns.is-mobile > &.is-offset-two-thirds
+  .columnz.is-mobile > &.is-offset-two-thirds
     margin-left: 66.6666%
-  .columns.is-mobile > &.is-offset-half
+  .columnz.is-mobile > &.is-offset-half
     margin-left: 50%
-  .columns.is-mobile > &.is-offset-one-third
+  .columnz.is-mobile > &.is-offset-one-third
     margin-left: 33.3333%
-  .columns.is-mobile > &.is-offset-one-quarter
+  .columnz.is-mobile > &.is-offset-one-quarter
     margin-left: 25%
-  .columns.is-mobile > &.is-offset-one-fifth
+  .columnz.is-mobile > &.is-offset-one-fifth
     margin-left: 20%
-  .columns.is-mobile > &.is-offset-two-fifths
+  .columnz.is-mobile > &.is-offset-two-fifths
     margin-left: 40%
-  .columns.is-mobile > &.is-offset-three-fifths
+  .columnz.is-mobile > &.is-offset-three-fifths
     margin-left: 60%
-  .columns.is-mobile > &.is-offset-four-fifths
+  .columnz.is-mobile > &.is-offset-four-fifths
     margin-left: 80%
   @for $i from 1 through 12
-    .columns.is-mobile > &.is-#{$i}
+    .columnz.is-mobile > &.is-#{$i}
       flex: none
       width: percentage($i / 12)
-    .columns.is-mobile > &.is-offset-#{$i}
+    .columnz.is-mobile > &.is-offset-#{$i}
       margin-left: percentage($i / 12)
   +mobile
     &.is-narrow-mobile
@@ -427,7 +427,7 @@ $column-gap: 0.75rem !default
       &.is-offset-#{$i}-fullhd
         margin-left: percentage($i / 12)
 
-.columns
+.columnz
   margin-left: (-$column-gap)
   margin-right: (-$column-gap)
   margin-top: (-$column-gap)
@@ -465,11 +465,11 @@ $column-gap: 0.75rem !default
       display: flex
 
 @if $variable-columns
-  .columns.is-variable
+  .columnz.is-variable
     --columnGap: 0.75rem
     margin-left: calc(-1 * var(--columnGap))
     margin-right: calc(-1 * var(--columnGap))
-    .column
+    .zcolumn
       padding-left: var(--columnGap)
       padding-right: var(--columnGap)
     @for $i from 0 through 8

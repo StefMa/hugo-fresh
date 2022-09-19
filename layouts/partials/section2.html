@@ -5,14 +5,14 @@
 {{- $features := index $section2 "features" }}
 <section class="section is-medium section2">
   <div class="container">
-    <div class="columns">
-      <div class="column is-centered-tablet-portrait">
+    <div class="columnz">
+      <div class="zcolumn is-centered-tablet-portrait">
         <a class="titleanchor" id="{{ $anchor }}"></a>
         <h1 class="title section-title">{{ $title }}</h1>
         <div class="pop-spacer"></div>
         <h3 class="subtitle is-5 izuma-pop cobalt">{{ $subtitle | safeHTML }}</h3>
       </div>
-      <div class="column is-7 desktop-top60">
+      <div class="zcolumn is-7 desktop-top60">
         <div class="spacer-desktop"></div>
         {{- range $features }}
         <div class="mt-50"></div>

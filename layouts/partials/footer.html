@@ -6,14 +6,14 @@
 {{- $socialMediaTitle    := index $footer "socialmediatitle" }}
 <footer class="footer footer-dark">
   <div class="container">
-    <div class="columns">
-      <div class="column">
+    <div class="columnz">
+      <div class="zcolumn">
         <div class="footer-logo">
           <img src="{{ printf "/images/logos/%s" $logo | relURL }}">
         </div>
       </div>
       {{- range $quickLinks }}
-        <div class="column">
+        <div class="zcolumn">
           <div class="footer-column">
             <div class="footer-header">
                 <h3>{{ .title }}</h3>
@@ -30,7 +30,7 @@
           </div>
         </div>
       {{- end }}
-      <div class="column">
+      <div class="zcolumn">
         <div class="footer-column">
           <div class="footer-header">
             <h3>{{ $socialMediaTitle }}</h3>
