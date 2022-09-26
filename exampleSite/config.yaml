@@ -17,10 +17,15 @@ params:
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy
   description:
+  # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
+  # preloader: false
   navbarlogo:
   # Logo (from static/images/logos/___)
     image: logos/fresh.svg
     link: /
+    # Default width/height. Uncomment if you need to change
+    # width: 112
+    # height: 28
   font:
     name: "Open Sans"
     sizes: [400,600]

@@ -7,10 +7,12 @@
     {{ partial "izumafonts.html" . }}        
   </head>
   <body>
+    {{ if ne .Site.Params.preloader false }}
     <!-- Preloader -->
     <div id="preloader">
       <div id="status"></div>
     </div>
+    {{ end }}
 
     {{ block "main" . }}
 
