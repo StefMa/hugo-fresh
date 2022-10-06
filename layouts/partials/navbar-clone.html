@@ -77,6 +77,18 @@
         </a>
         {{- end }}
         {{- end }}
+        {{ if .IsTranslated }}
+        {{ range .Translations }}
+        <a href="{{ .Permalink }}" class="navbar-item">
+          {{ if eq .Lang "fr" }}
+            <span class="fi fi-fr"></span>
+          {{- else if eq .Lang "en" }}
+            <span class="fi fi-gb"></span>
+          {{- else }}
+          {{- end }}
+        </a>
+        {{ end }}
+      {{ end }}
       </div>
     </div>
 </div>
