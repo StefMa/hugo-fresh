@@ -3,6 +3,7 @@ Hero styles
 ========================================================================== */
 
 .hero-body {
+    background-color: $hero-background-color;
     padding-top: 6rem;
     padding-bottom: 6rem;
     .title, .subtitle {
@@ -10,12 +11,13 @@ Hero styles
     }
     .title {
         &.is-bold {
+            color: $sections-title-color;
             font-weight: 700;
         }
     }
     .subtitle {
         &.is-muted {
-            color: $muted-grey;
+            color: $sections-subtitle-color;
         }
     }
 }

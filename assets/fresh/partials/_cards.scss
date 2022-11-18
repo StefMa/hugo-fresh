@@ -8,7 +8,7 @@ Cards and Card content styles
 .feature-card {
     width: 300px;
     height: 320px;
-    background-color: #fff;
+    background-color: $card-feature-background;
     border-radius: 3px;
     margin: 0 auto;
     .card-title h4 {
@@ -16,7 +16,7 @@ Cards and Card content styles
         padding-top: 25px;
         font-size: 1.2rem;
         font-weight: 600;
-        color: $blue-grey;
+        color: $card-feature-header;
     }
     .card-icon img {
         height: 120px;
@@ -25,18 +25,20 @@ Cards and Card content styles
     .card-text {
         padding: 0 40px;
         p {
-            color: $muted-grey;
+            color: $card-feature-text;
         }
     }
     .card-action {
         margin-top: 10px;
     }
     &.is-bordered {
-        border: 1px solid $fade-grey;
+        border: 1px solid $card-feature-border;
     }
 }
 
 // Flex Card
+// probably irrelevant since I couldn't find the html where this is used
+// I am keeping it either way, just to make sure soemthing else is not messed
 .flex-card {
     position: relative;
     background-color: #fff;

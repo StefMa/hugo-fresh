@@ -2,7 +2,9 @@
 Dropdown styles
 ========================================================================== */
 
-// Hover Dropdowns 
+// Hover Dropdowns
+// probably irrelevant since I couldn't find the html where nav-item or is-drop are used
+// I am keeping it either way, just to make sure soemthing else is not messed
 div.nav-item.is-drop a {
     padding-right: 7px;
 }
@@ -11,7 +13,7 @@ div.nav-item.is-drop:hover .dropContain .dropOut {
     opacity: 1;
 }
 
-div.nav-item.is-drop:hover, div.nav-item.is-drop:hover a, {
+div.nav-item.is-drop:hover, div.nav-item.is-drop:hover a {
     border-bottom: 1px solid transparent !important;
     color: $secondary;
 }
