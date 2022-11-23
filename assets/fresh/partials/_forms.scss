@@ -19,7 +19,7 @@ input.input {
         padding-bottom: 7px;
     }
     &:focus, &:active {
-        border-color: $form-text-boarder;
+        border-color: $form-text-border;
     }
     &.rounded {
         border-radius: 100px;
@@ -42,12 +42,6 @@ input.input {
             color: $accent;
         }
     }
-    &.is-bloody-focus:focus {
-        border-color: $bloody;
-        ~ span.icon i {
-            color: $bloody;
-        }
-    }
 }
 
 textarea.textarea {
@@ -55,7 +49,7 @@ textarea.textarea {
     background-color:  $form-text-background;
 
     &:focus, &:active {
-        border-color: $form-text-boarder;
+        border-color: $form-text-border;
     }
 }
 

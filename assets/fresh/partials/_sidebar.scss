@@ -142,9 +142,9 @@ Sidebar Styles
                     }
                     li {
                         a {
-                            background-color: darken($dark-grey, 5%);
+                            background-color: darken($sidebar-background-color, 5%);
                             padding-left: 62px;
-                            border-bottom: 1px solid darken($dark-grey, 2%);
+                            border-bottom: 1px solid darken($sidebar-background-color, 2%);
                             font-size: .8rem;
                             &:hover {
                                 color: $sidebar-highlight-color;

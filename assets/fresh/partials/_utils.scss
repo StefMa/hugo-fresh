@@ -163,14 +163,14 @@ body #backtotop a {
 
 //Input placeholders
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: $placeholder;
+    color: $util-placeholder-color;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-    color: $placeholder;
+    color: $util-placeholder-color;
 }
 :-ms-input-placeholder { /* IE 10+ */
-    color: $placeholder;
+    color: $util-placeholder-color;
 }
 :-moz-placeholder { /* Firefox 18- */
-    color: $placeholder;
+    color: $util-placeholder-color;
 }
