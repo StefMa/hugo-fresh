@@ -3,65 +3,66 @@ Color variables for edited elements
 ========================================================================== */
 // buttons
 $button-primary-color: $secondary;
-$button-primary-text: $white;
+$button-primary-text: $background;
 
 $button-secondary-color: $primary;
-$button-secondary-text: $white;
+$button-secondary-text: $background;
 
 $button-accent-color: $accent;
-$button-accent-text: $white;
+$button-accent-text: $background;
 
 // cards
-$card-feature-background: $white;
-$card-feature-header: $blue-grey;
-$card-feature-text: $muted-grey;
-$card-feature-border: $fade-grey;
+$card-feature-background: $background;
+$card-feature-header: $title;
+$card-feature-text: $subtitle;
+$card-feature-border: $border;
 
 // footer
-$footer-background: $blue-grey;
-$footer-titles: $white;
-$footer-links: $light-blue-grey;
+$footer-background: $title;
+$footer-titles: $background;
+$footer-links: $light-title;
 $footer-logos: $primary;
-$footer-hover: $smoke-white;
+$footer-hover: $background;
 
 // forms
-$form-text-color: $basaltic-grey;
-$form-text-background: $white;
-$form-text-boarder: $light-grey;
+$form-text-color: $subtitle;
+$form-text-background: $background;
+$form-text-border: $border;
 
 // hero & sections
-$hero-background-color: $white;
-$sections-light-background: $light-grey;
-$sections-feature-background: $section-grey;
+$hero-background-color: $background;
+$sections-light-background: $border;
+$sections-feature-background: $background;
 $sections-alt-background: $primary;
 
-$sections-title-color: $header-grey;
-$sections-subtitle-color: $muted-grey;
-$sections-ibtitle-color: $blue-grey;
-$sections-ibsubtitle-color: $title-grey;
+$sections-title-color: $header;
+$sections-subtitle-color: $subheader;
+$sections-ibtitle-color: $title;
+$sections-ibsubtitle-color: $subtitle;
 
 $sections-divider-color: $primary;
 
 // navbar
-$navbar-background-color: $white;
-$navbar-text-color: $muted-grey;
+$navbar-background-color: $navbar;
+$navbar-text-color: $subheader;
 $navbar-highlight-color: $primary;
 
 // sidebar
 $sidebar-hamburger-color: $primary;
-$sidebar-background-color: $dark-grey;
-$sidebar-text-color: $white;
-$sidebar-x-color: $white;
+$sidebar-background-color: $title;
+$sidebar-text-color: $background;
+$sidebar-x-color: $background;
 $sidebar-highlight-color: $primary;
 
 // testimonials
-$testimonials-background-color: $smoke-white;
-$testimonials-text-color: $text-dark;
-$testimonials-name-color: $blue-grey;
-$testimonials-position-color: $white;
+$testimonials-background-color: $background;
+$testimonials-text-color: $header;
+$testimonials-name-color: $title;
+$testimonials-position-color: $background;
 
 // utils
-$utils-preloader-color: $white;
-$util-backtop-color: $medium-grey;
+$utils-preloader-color: $background;
+$util-backtop-color: $subtitle;
 $util-backtop-hover-color: $primary;
-$util-backtop-arrow-color: $white;
+$util-backtop-arrow-color: $background;
+$util-placeholder-color: $light-title;
