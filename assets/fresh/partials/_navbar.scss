@@ -63,6 +63,7 @@ Navbar
                 top: 3.4rem;
                 min-width: 220px;
                 margin-top: 4px;
+                background-color: $navbar-background-color;
                 border-top-color: $navbar-highlight-color;
                 .navbar-item {
                     padding: 10px 20px;
@@ -109,7 +110,7 @@ Navbar
     top: 0;
     left: 0;
     width: 100%;
-    background: $white;
+    background: $navbar-background-color;
     transform: translateY(-100%);
     z-index: 100;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
