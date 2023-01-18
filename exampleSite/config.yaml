@@ -17,10 +17,15 @@ params:
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy
   description:
+  # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
+  # preloader: false
   navbarlogo:
   # Logo (from static/images/logos/___)
     image: logos/fresh.svg
     link: /
+    # Default width/height. Uncomment if you need to change
+    # width: 112
+    # height: 28
   font:
     name: "Open Sans"
     sizes: [400,600]
@@ -150,7 +155,12 @@ params:
       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
       job: HR Manager
       img: 3
-  section5: true
+  section5:
+    title: Drop us a line or two
+    subtitle: We'd love to hear from you
+    buttonText: Send Message
+    # action: https://formspree.io/f/<form_id>
+    # method: POST
   footer:
     # Logo (from /images/logos/___)
     logo: fresh-white-alt.svg
