@@ -155,7 +155,12 @@ params:
       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
       job: HR Manager
       img: 3
-  section5: true
+  section5:
+    title: Drop us a line or two
+    subtitle: We'd love to hear from you
+    buttonText: Send Message
+    # action: https://formspree.io/f/<form_id>
+    # method: POST
   footer:
     # Logo (from /images/logos/___)
     logo: fresh-white-alt.svg
