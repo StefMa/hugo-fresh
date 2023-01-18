@@ -23,6 +23,9 @@ params:
   # Logo (from static/images/logos/___)
     image: logos/fresh.svg
     link: /
+    # Default width/height. Uncomment if you need to change
+    # width: 112
+    # height: 28
   font:
     name: "Open Sans"
     sizes: [400,600]
