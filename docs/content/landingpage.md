@@ -241,7 +241,12 @@ Write us.
 <summary>Code</summary>
 
 ```yaml
-section5: true # or false to hide it
+section5:
+  title: Drop us a line or two
+  subtitle: We'd love to hear from you
+  buttonText: Send Message
+  action: https://formspree.io/f/{ID}
+  method: POST
 ```
 
 </details>
