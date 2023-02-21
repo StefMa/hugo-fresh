@@ -19,7 +19,6 @@ jobs:
 
       - name: Build
         run: hugo --minify
-        working-directory: docs
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -27,4 +26,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force_orphan: true
           commit_message: '[skip ci] Deploy:'
-          publish_dir: docs/public
+          publish_dir: ./public
