@@ -50,12 +50,18 @@ hero:
   buttonlink: "#"
   image: illustrations/worker.svg
   # Footer logos (from static/images/logos/clients/*.svg)
+  # urls are optional
   clientlogos:
-  - systek
-  - tribe
-  - kromo
-  - infinite
-  - gutwork
+  - logo: systek
+    url: https://google.com
+  - logo: tribe
+    url: https://stefma.github.io/hugo-fresh/
+  - logo: kromo
+    url: https://github.com/StefMa/hugo-fresh
+  - logo: infinite
+    url: https://hugo-fresh.vercel.app/
+  - logo: gutwork
+    url: https://bulma.io/
 ```
 
 </details>
