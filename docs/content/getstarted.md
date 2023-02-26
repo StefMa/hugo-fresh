@@ -29,7 +29,7 @@ git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
 rm config.toml
 
 # Fetch the example config
-curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/config.yaml
+curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/hugo.yaml
 
 # Run the site locally
 hugo server
