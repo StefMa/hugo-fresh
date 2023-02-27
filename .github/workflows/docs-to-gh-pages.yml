@@ -6,6 +6,10 @@ on:
     branches:
       - master
 
+env:
+  REPO_NAME: ${{ github.event.repository.name }}
+  REPO_OWNER: ${{ github.repository_owner }}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -19,8 +23,8 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
-        working-directory: docs
+        run: hugo --baseURL https://${REPO_OWNER}.github.io/${REPO_NAME} --minify
+        working-directory: exampleSite
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
