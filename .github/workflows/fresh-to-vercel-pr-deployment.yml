@@ -14,21 +14,53 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Download hugo build
-        uses: actions/download-artifact@v3
+        uses: actions/github-script@v6.4.0
         with:
-          name: hugo-output
-          path: public/
+          script: |
+            var artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               run_id: ${{ github.event.workflow_run.id }},
+            });
+            var matchArtifact = artifacts.data.artifacts.filter((artifact) => {
+              return artifact.name == "hugo-output"
+            })[0];
+            var download = await github.rest.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: matchArtifact.id,
+               archive_format: 'zip',
+            });
+            var fs = require('fs');
+            fs.writeFileSync('${{github.workspace}}/hugo-output.zip', Buffer.from(download.data));
+      - run: unzip hugo-output.zip -d hugo-output
 
-      - name: Download alias-domain 
-        uses: actions/download-artifact@v3
+      - name: Download alias-domain
+        uses: actions/github-script@v6.4.0
         with:
-          name: alias-domain
-          path: alias-domain
+          script: |
+            var artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               run_id: ${{ github.event.workflow_run.id }},
+            });
+            var matchArtifact = artifacts.data.artifacts.filter((artifact) => {
+              return artifact.name == "alias-domain"
+            })[0];
+            var download = await github.rest.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: matchArtifact.id,
+               archive_format: 'zip',
+            });
+            var fs = require('fs');
+            fs.writeFileSync('${{github.workspace}}/alias-domain.zip', Buffer.from(download.data));
+      - run: unzip alias-domain.zip
 
       - name: Extract alias-domain
         id: extract-alias-domain
         run: |
-          aliasDomain=`cat alias-domain/alias-domain`
+          aliasDomain=`cat alias-domain`
           echo "ALIAS_DOMAIN=$aliasDomain" >> $GITHUB_OUTPUT
 
       - name: Deploy to Vercel on PR
@@ -37,5 +69,6 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} 
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}} 
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
-          alias-domains: ${{ steps.extract-alias-domain.outputs.ALIAS_DOMAIN }}"
-          working-directory: ./public
+          vercel-project-name: hugo-fresh
+          alias-domains: ${{ steps.extract-alias-domain.outputs.ALIAS_DOMAIN }}
+          working-directory: ./hugo-output
