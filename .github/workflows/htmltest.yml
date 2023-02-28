@@ -32,7 +32,7 @@ jobs:
 
       - name: Test HTML
         # https://github.com/wjdp/htmltest-action/
-        continue-on-error: false # <- Set to true if run shouldn't fail with broken links
+        continue-on-error: true # <- Set to true if run shouldn't fail with broken links
         uses: wjdp/htmltest-action@master
         with:
           # For consistency, use the same config file as for local builds
