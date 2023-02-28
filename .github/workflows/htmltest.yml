@@ -1,0 +1,47 @@
+# .github/workflows/htmltest.yml
+# Run htmltest link checker on generated HTML output from user guide
+
+name: Link check with htmltest
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+  pull_request:
+
+jobs:
+  htmltest:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+          extended: true
+
+      - run: hugo --destination $GITHUB_WORKSPACE/exampleSite/public --themesDir ../../ --theme hugo-fresh
+        working-directory: exampleSite
+
+      - name: Test HTML
+        # https://github.com/wjdp/htmltest-action/
+        continue-on-error: true # <- Set to true if run shouldn't fail with broken links
+        uses: wjdp/htmltest-action@master
+        with:
+          # For consistency, use the same config file as for local builds
+          config: exampleSite/.htmltest.yml
+          path: exampleSite/public
+
+      - name: Archive htmltest results
+        uses: actions/upload-artifact@v3
+        with:
+          name: htmltest-report
+          path: tmp/.htmltest/htmltest.log
+          retention-days: 7 # default is 90 days

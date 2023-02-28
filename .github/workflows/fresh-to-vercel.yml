@@ -1,0 +1,36 @@
+name: Fresh to vercel
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deployMasterToVercel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.110.0'
+          extended: true
+
+      - name: Build with Hugo on master
+        working-directory: exampleSite
+        run: |
+          git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
+          hugo \
+            --minify \
+            --baseURL https://hugo-fresh.vercel.app/
+
+      - name: Deploy to Vercel on master
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} 
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}} 
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+          vercel-args: '--prod'
+          working-directory: ./exampleSite/public
