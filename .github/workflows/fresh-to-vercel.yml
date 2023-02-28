@@ -23,6 +23,7 @@ jobs:
         if: github.ref == 'refs/heads/master'
         working-directory: exampleSite
         run: |
+          git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
           hugo \
             --minify \
             --baseURL https://hugo-fresh.vercel.app/
@@ -41,6 +42,11 @@ jobs:
         if: github.ref != 'refs/heads/master'
         working-directory: exampleSite
         run: |
+          git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
+          cd themes/hugo-fresh
+          git fetch origin ${{ github.ref }}:pr-branch-name
+          git checkout pr-branch-name
+          cd ../..
           hugo \
             --minify \
             --baseURL https://hugo-fresh-${{ github.ref_name }}.vercel.app
