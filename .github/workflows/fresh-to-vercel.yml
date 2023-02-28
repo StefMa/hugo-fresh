@@ -1,42 +1,11 @@
 name: Fresh to vercel
 
 on:
-  pull_request_target:
+  push:
+    branches:
+      - master
 
 jobs:
-  deployPullToVercel:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.110.0'
-          extended: true
-
-      - name: Build with Hugo on PR
-        working-directory: exampleSite
-        run: |
-          git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
-          cd themes/hugo-fresh
-          git fetch origin ${{ github.ref }}:pr-branch-name
-          git checkout pr-branch-name
-          cd ../..
-          hugo \
-            --minify \
-            --baseURL https://hugo-fresh-${{ github.ref_name }}.vercel.app
-
-      - name: Deploy to Vercel on PR
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }} 
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}} 
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
-          alias-domains: https://hugo-fresh-${{ github.ref_name }}.vercel.app
-          working-directory: ./exampleSite/public
-
   deployMasterToVercel:
     runs-on: ubuntu-latest
     steps:
@@ -50,7 +19,6 @@ jobs:
           extended: true
 
       - name: Build with Hugo on master
-        if: github.ref == 'refs/heads/master'
         working-directory: exampleSite
         run: |
           git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
@@ -59,7 +27,6 @@ jobs:
             --baseURL https://hugo-fresh.vercel.app/
 
       - name: Deploy to Vercel on master
-        if: github.ref == 'refs/heads/master'
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} 

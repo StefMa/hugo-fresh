@@ -1,0 +1,41 @@
+name: Fresh to vercel PR deployment
+
+on:
+  workflow_run:
+    workflows: [Fresh to vercel PR]
+    types:
+      - completed
+
+jobs:
+  createExampleAndDeployToArtifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Download hugo build
+        uses: actions/download-artifact@v3
+        with:
+          name: hugo-output
+          path: public/
+
+      - name: Download alias-domain 
+        uses: actions/download-artifact@v3
+        with:
+          name: alias-domain
+          path: alias-domain
+
+      - name: Extract alias-domain
+        id: extract-alias-domain
+        run: |
+          aliasDomain=`cat alias-domain/alias-domain`
+          echo "ALIAS_DOMAIN=$aliasDomain" >> $GITHUB_OUTPUT
+
+      - name: Deploy to Vercel on PR
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} 
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}} 
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+          alias-domains: ${{ steps.extract-alias-domain.outputs.ALIAS_DOMAIN }}"
+          working-directory: ./public

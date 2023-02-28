@@ -1,0 +1,46 @@
+name: Fresh to vercel PR
+
+on:
+  pull_request:
+
+jobs:
+  createExampleAndDeployToArtifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.110.0'
+          extended: true
+
+      - name: Build with Hugo on PR
+        working-directory: exampleSite
+        run: |
+          git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
+          cd themes/hugo-fresh
+          git fetch origin ${{ github.ref }}:pr-branch-name
+          git checkout pr-branch-name
+          cd ../..
+          hugo \
+            --minify \
+            --baseURL https://hugo-fresh-${{ github.run_number }}.vercel.app
+
+      - name: Save hugo as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: hugo-output
+          path: exampleSite/public/
+
+      - name: Save alias domain
+        run: |
+          mkdir -p ./alias-domain
+          echo https://hugo-fresh-${{ github.run_number }}.vercel.app > ./alias-domain/alias-domain
+
+      - name: Save alias domain as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: alias-domain
+          path: alias-domain/
