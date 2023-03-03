@@ -21,7 +21,6 @@ jobs:
       - name: Build with Hugo on master
         working-directory: exampleSite
         run: |
-          git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
           hugo \
             --minify \
             --baseURL https://hugo-fresh.vercel.app/
@@ -32,5 +31,6 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} 
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}} 
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+          vercel-project-name: hugo-fresh
           vercel-args: '--prod'
           working-directory: ./exampleSite/public

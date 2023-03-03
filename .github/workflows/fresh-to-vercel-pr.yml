@@ -19,14 +19,9 @@ jobs:
       - name: Build with Hugo on PR
         working-directory: exampleSite
         run: |
-          git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
-          cd themes/hugo-fresh
-          git fetch origin ${{ github.ref }}:pr-branch-name
-          git checkout pr-branch-name
-          cd ../..
           hugo \
             --minify \
-            --baseURL https://hugo-fresh-${{ github.run_number }}.vercel.app
+            --baseURL https://hugo-fresh-${{ github.event.pull_request.head.user.login }}-${{ github.event.pull_request.head.ref }}.vercel.app
 
       - name: Save hugo as artifact
         uses: actions/upload-artifact@v3
@@ -37,7 +32,7 @@ jobs:
       - name: Save alias domain
         run: |
           mkdir -p ./alias-domain
-          echo https://hugo-fresh-${{ github.run_number }}.vercel.app > ./alias-domain/alias-domain
+          echo hugo-fresh-${{ github.event.pull_request.head.user.login }}-${{ github.event.pull_request.head.ref }}.vercel.app > ./alias-domain/alias-domain
 
       - name: Save alias domain as artifact
         uses: actions/upload-artifact@v3
