@@ -21,7 +21,6 @@ jobs:
       - name: Build with Hugo on master
         working-directory: exampleSite
         run: |
-          git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
           hugo \
             --minify \
             --baseURL https://hugo-fresh.vercel.app/

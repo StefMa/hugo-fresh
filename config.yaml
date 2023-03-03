@@ -1,0 +1,28 @@
+# Dependency 'bulma' is brought in as module
+# and mount points are declared
+module:
+  imports:
+  - path: github.com/jgthms/bulma
+    mounts:
+    - source: bulma.sass
+      target: assets/bulma/bulma.sass
+    - source: bulma-rtl.sass
+      target: assets/bulma/bulma-rtl.sass
+    - source: sass
+      target: assets/bulma/sass
+    - source: sass/base
+      target: assets/bulma/sass/base
+    - source: sass/components
+      target: assets/bulma/sass/components
+    - source: sass/elements
+      target: assets/bulma/sass/elements
+    - source: sass/form
+      target: assets/bulma/sass/form
+    - source: sass/grid
+      target: assets/bulma/sass/grid
+    - source: sass/helpers
+      target: assets/bulma/sass/helpers
+    - source: sass/layout
+      target: assets/bulma/sass/layout
+    - source: sass/utilities
+      target: assets/bulma/sass/utilities
