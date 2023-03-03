@@ -6,6 +6,8 @@ module:
     mounts:
     - source: bulma.sass
       target: assets/bulma/bulma.sass
+    - source: bulma-rtl.sass
+      target: assets/bulma/bulma-rtl.sass
     - source: sass
       target: assets/bulma/sass
     - source: sass/base

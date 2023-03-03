@@ -1,8 +1,14 @@
 baseURL: http://something-fresh.org/
 languageCode: en-us
 title: Hugo Fresh Theme
-# theme: hugo-fresh
-theme: github.com/StefMa/hugo-fresh
+
+module:
+  # uncomment line below for local development of module
+  # workspace: hugo.work
+  imports:
+    path: github.com/StefMa/hugo-fresh
+
+
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
 # Disables warnings
 disableKinds:
