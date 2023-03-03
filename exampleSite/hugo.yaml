@@ -1,7 +1,8 @@
 baseURL: http://something-fresh.org/
 languageCode: en-us
 title: Hugo Fresh Theme
-theme: hugo-fresh
+# theme: hugo-fresh
+theme: github.com/StefMa/hugo-fresh
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
 # Disables warnings
 disableKinds:
