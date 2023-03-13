@@ -8,7 +8,7 @@ include_footer: false
 ## Customize the landing page
 There's a wide variety of customizations that you can make to your Hugo Fresh landing page by modifying the `hugo.yaml` file that you downloaded.
 
-> **Note**: There is always an up-to-date config file at [`exampleSite/hugo.yaml`](../../exampleSite/hugo.yaml) that contains all possible configurations.
+> **Note**: There is always an up-to-date config file at [`exampleSite/hugo.yaml`](https://github.com/StefMa/hugo-fresh/blob/master/exampleSite/hugo.yaml) that contains all possible configurations.
 Please make sure you check them out as well.
 
 {{< title4 preloader >}}
