@@ -6,7 +6,18 @@ include_footer: false
 ---
 
 ## Customize the landing page
-There's a wide variety of customizations that you can make to your Hugo Fresh landing page by modifying the `config.yaml` file that you downloaded.
+There's a wide variety of customizations that you can make to your Hugo Fresh landing page by modifying the `hugo.yaml` file that you downloaded.
+
+> **Note**: There is always an up-to-date config file at [`exampleSite/hugo.yaml`](../../exampleSite/hugo.yaml) that contains all possible configurations.
+Please make sure you check them out as well.
+
+### preloader
+Preloader ensures images are loaded before displaying to the user.
+If you don't want it, set it to `false`.
+
+```yaml
+preloader: false
+```
 
 ### navbarlogo
 Define the logo of the navigation bar in the upper left corner.
