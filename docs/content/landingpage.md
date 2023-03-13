@@ -11,7 +11,7 @@ There's a wide variety of customizations that you can make to your Hugo Fresh la
 > **Note**: There is always an up-to-date config file at [`exampleSite/hugo.yaml`](../../exampleSite/hugo.yaml) that contains all possible configurations.
 Please make sure you check them out as well.
 
-### preloader
+{{< title4 preloader >}}
 Preloader ensures images are loaded before displaying to the user.
 If you don't want it, set it to `false`.
 
@@ -19,7 +19,7 @@ If you don't want it, set it to `false`.
 preloader: false
 ```
 
-### navbarlogo
+{{< title4 navbarlogo >}}
 Define the logo of the navigation bar in the upper left corner.
 
 <details>
@@ -33,7 +33,7 @@ navbarlogo:
 
 </details>
 
-### font
+{{< title4 font >}}
 Set the font of the site.
 
 <details>
@@ -47,7 +47,7 @@ font:
 
 </details>
 
-### hero
+{{< title4 hero >}}
 The "main" page which you see when you open the website.
 
 <details>
@@ -77,7 +77,7 @@ hero:
 
 </details>
 
-### navbar
+{{< title4 navbar >}}
 The navigation bar which is at the top of the site.
 For a dropdown, add a "sublinks" list.
 
@@ -107,7 +107,7 @@ navbar:
 
 </details>
 
-### sidebar
+{{< title4 sidebar >}}
 The sidebar is an optional parameter where you can place even more navigation items.
 
 <details>
@@ -152,7 +152,7 @@ sidebar:
 
 </details>
 
-### section1
+{{< title4 section1 >}}
 Describes the second "page" which you will see when you scroll down. Currently it will have **always** three `titles`.
 
 <details>
@@ -182,7 +182,7 @@ section1:
 
 </details>
 
-### section2
+{{< title4 section2 >}}
 Shows information why someone should use this product.
 
 <details>
@@ -207,7 +207,7 @@ section2:
 
 </details>
 
-### section3
+{{< title4 section3 >}}
 Display a bright image of your product.
 
 <details>
@@ -224,7 +224,7 @@ section3:
 
 </details>
 
-### section4
+{{< title4 section4 >}}
 What clients says about us.
 
 <details>
@@ -251,7 +251,7 @@ section4:
 
 </details>
 
-### section5
+{{< title4 section5 >}}
 Write us.
 
 <details>
@@ -268,7 +268,7 @@ section5:
 
 </details>
 
-### footer
+{{< title4 footer >}}
 The footer of the site.
 
 <details>
