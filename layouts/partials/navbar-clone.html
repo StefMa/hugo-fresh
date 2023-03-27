@@ -1,8 +1,5 @@
 {{- $navbar           := .Site.Params.navbar }}
-{{- $sidebarVisible   := .Site.Params.sidebar }}
-{{ if .Params.sidebar }}
-{{ $sidebarVisible = .Params.sidebar }}
-{{ end }}
+{{- $sidebarVisible   := .Params.sidebar | default .Site.Params.sidebar }}
 {{- $navbarLogo       := .Site.Params.navbarlogo }}
 {{- $navbarLogoWidth  := .Site.Params.navbarlogo.width | default 112 }}
 {{- $navbarLogoHeight := .Site.Params.navbarlogo.width | default 28 }}
