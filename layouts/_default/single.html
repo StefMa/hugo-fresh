@@ -1,35 +1,13 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-  <head>
-    {{ partial "meta.html" . }}
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    {{ partial "css.html" . }}
-  </head>
-  <body>
-    {{ if ne .Site.Params.preloader false }}
-    <!-- Preloader -->
-    <div id="preloader">
-      <div id="status"></div>
-    </div>
-    {{ end }}
+{{ define "main" }}
 
-    {{ block "main" . }}
+  {{ partial "single/single.html" . }}
 
-    {{ partial "single/single.html" . }}
+  {{ if .Params.include_footer }}
+  {{ partial "footer.html" . }}
+  {{ end }}
 
-    {{ if .Params.include_footer }}
-    {{ partial "footer.html" . }}
-    {{ end }}
+  {{ if .Params.sidebar }}
+  {{ partial "single/sidebar.html" . }}
+  {{ end }}
 
-    <!-- Back To Top Button -->
-    <div id="backtotop"><a href="#"></a></div>
-
-    {{ if .Params.sidebar }}
-    {{ partial "single/sidebar.html" . }}
-    {{ end }}
-
-    {{ end }}
-
-    {{ partial "javascript.html" . }}
-  </body>
-</html>
+{{ end }}
