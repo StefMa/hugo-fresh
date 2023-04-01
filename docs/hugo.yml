@@ -19,3 +19,8 @@ params:
   - title: GitHub
     url: https://github.com/StefMa/hugo-fresh
     button: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
