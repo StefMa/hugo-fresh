@@ -1,6 +1,8 @@
-{{ template "_internal/google_analytics.html" . }}
+{{- if .Site.GoogleAnalytics }}
+    {{ template "_internal/google_analytics.html" . }}
+{{- end}}
 {{ if eq .Site.Params.openGraph true }}
-{{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/opengraph.html" . }}
 {{ end }}
 <meta name="description" content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Hardcoded description; the author should update :){{ end }}" />
 <meta charset="utf-8">
