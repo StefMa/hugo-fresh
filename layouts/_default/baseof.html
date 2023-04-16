@@ -4,6 +4,11 @@
     {{ partial "meta.html" . }}
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ partial "css.html" . }}
+    {{- if .IsHome -}}
+      <meta name="description" content="{{ site.Params.Description }}" />
+    {{- else -}}
+      <meta name="description" content="{{ .Params.Description }}" />
+    {{- end }}
   </head>
   <body>
     {{ if ne .Site.Params.preloader false }}
