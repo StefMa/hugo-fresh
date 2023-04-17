@@ -9,6 +9,7 @@
     {{- else -}}
       <meta name="description" content="{{ .Params.Description }}" />
     {{- end }}
+    <meta name="keywords" content="{{ site.Params.Keywords}}">
   </head>
   <body>
     {{ if ne .Site.Params.preloader false }}
