@@ -35,7 +35,7 @@ models:
         blog:
                 type: page
                 label: blog page
-                folder: ../exampleSite/content/blog
+                folder: ../../exampleSite/content/blog
                 fields:
                         - type: string
                           name: title
@@ -55,7 +55,7 @@ models:
         agb:
                 type: page
                 label: agb
-                folder: ../exampleSite/content
+                file: ../../exampleSite/content/agb.md
                 fields:
                         - type: string
                           name: title
