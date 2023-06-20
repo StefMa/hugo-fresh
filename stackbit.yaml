@@ -6,3 +6,69 @@ uploadDir: images
 staticDir: static
 pagesDir: docs/content
 dataDir: exampleSite
+models:
+        standard:
+                type: page
+                label: standard
+                folder: .
+                fields:
+                        - type: string
+                          name: title
+                          label: Title
+                          description: Page title
+                          required: true
+                        - type: boolean
+                          name: sidebar
+                          label: Sidebar
+                          description: Add a sidebar
+                          required: true
+                        - type: string
+                          name: sidebarlogo
+                          label: Sidebar Logo
+                          description: Theme of the sidebar logo
+                          required: true
+                        - type: boolean
+                          name: include_footer
+                          label: Include footer
+                          description: Include a footer
+                          required: true
+        blog:
+                type: page
+                label: blog page
+                folder: ../exampleSite/content/blog
+                fields:
+                        - type: string
+                          name: title
+                          label: Title
+                          description: Page title
+                          required: true
+                        - type: boolean
+                          name: sidebar
+                          label: Sidebar
+                          description: Add a sidebar
+                          required: true
+                        - type: string
+                          name: sidebarlogo
+                          label: Sidebar Logo
+                          description: Theme of the sidebar logo
+                          required: true
+        agb:
+                type: page
+                label: agb
+                folder: ../exampleSite/content
+                fields:
+                        - type: string
+                          name: title
+                          label: Title
+                          description: Page title
+                          required: true
+                        - type: boolean
+                          name: sidebar
+                          label: Sidebar
+                          description: Add a sidebar
+                          required: true
+                        - type: boolean
+                          name: include_footer
+                          label: Include footer
+                          description: Include a footer
+                          required: true
