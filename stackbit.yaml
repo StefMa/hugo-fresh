@@ -57,6 +57,7 @@ models:
                 type: page
                 label: agb
                 file: ../../exampleSite/content/agb.md
+                singleInstance: true
                 fields:
                         - type: string
                           name: title
