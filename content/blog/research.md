@@ -1,6 +1,6 @@
 ---
 title: Second
-sidebar: true
+sidebar: false
 sidebarlogo: fresh-white-alt
 ---
 
