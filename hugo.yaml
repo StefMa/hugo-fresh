@@ -6,7 +6,32 @@ module:
   # uncomment line below for local development of module
   # workspace: hugo.work
   imports:
-    path: https://github.com/cpretus-dev/hugo-fresh
+  - path: github.com/cpretus-dev/hugo-fresh.git
+  - path: github.com/jgthms/bulma
+    mounts:
+    - source: bulma.sass
+      target: assets/bulma/bulma.sass
+    - source: bulma-rtl.sass
+      target: assets/bulma/bulma-rtl.sass
+    - source: sass
+      target: assets/bulma/sass
+    - source: sass/base
+      target: assets/bulma/sass/base
+    - source: sass/components
+      target: assets/bulma/sass/components
+    - source: sass/elements
+      target: assets/bulma/sass/elements
+    - source: sass/form
+      target: assets/bulma/sass/form
+    - source: sass/grid
+      target: assets/bulma/sass/grid
+    - source: sass/helpers
+      target: assets/bulma/sass/helpers
+    - source: sass/layout
+      target: assets/bulma/sass/layout
+    - source: sass/utilities
+      target: assets/bulma/sass/utilities
+
 
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
 # Disables warnings
@@ -37,15 +62,15 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: Social Brain Lab Barcelona
+    title: Manage. Deploy.
     # Hero subtitle (optional)
-    subtitle: "Director: Clara Pretus, Ph.D."
+    subtitle: Lorem ipsum sit dolor amet is dummy text used by the typography industry
     # Button text
-    buttontext: Join us!
+    buttontext: Get started
     # Where the main hero button links to
     buttonlink: "#"
     # Hero image (from static/images/___)
-    image: logos/fresh.svg
+    image: illustrations/worker.svg
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
     clientlogos:
@@ -61,11 +86,9 @@ params:
       url: https://bulma.io/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: Home
+  - title: Features
     url: /
-  - title: Team
-    url: /
-  - title: Publications
+  - title: Pricing
     url: /
   - title: Dropdown
     sublinks:
@@ -115,24 +138,24 @@ params:
       - text: App settings
         url: /
   section1:
-    title: Research questions
+    title: Great power comes
     subtitle: with great responsibility
     tiles:
-    - title: Moral psychology of AI
+    - title: App builder
       icon: mouse-globe
       text: This is some explanatory text that is on two rows
       url: /
-      buttonText: Find out more
-    - title: Misinformation
+      buttonText: Free trial
+    - title: Cloud integration
       icon: laptop-cloud
       text: This is some explanatory text that is on two rows
       url: /
-      buttonText: Find out more
-    - title: Extremist narratives
+      buttonText: Get started
+    - title: Add-ons & plugins
       icon: plug-cloud
       text: This is some explanatory text that is on two rows
       url: /
-      buttonText: Find out more
+      buttonText: Get started
   section2:
     title: You're here because you want the best
     subtitle: And we know it
