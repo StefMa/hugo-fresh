@@ -52,7 +52,7 @@ params:
   # preloader: false
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/fresh.svg
+    image: logos/lablogo.png
     link: /
     # Default width/height. Uncomment if you need to change
     # width: 112
@@ -62,84 +62,84 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: Manage. Deploy.
+    title: Social Brain Lab Barcelona
     # Hero subtitle (optional)
-    subtitle: Lorem ipsum sit dolor amet is dummy text used by the typography industry
+    subtitle: "Lab director: Clara Pretus, Ph.D."
     # Button text
     buttontext: Get started
     # Where the main hero button links to
     buttonlink: "#"
     # Hero image (from static/images/___)
-    image: illustrations/worker.svg
+    image: illustrations/brain.png
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
     clientlogos:
-    - logo: systek
-      url: https://google.com
-    - logo: tribe
-      url: https://stefma.github.io/hugo-fresh/
-    - logo: kromo
-      url: https://github.com/StefMa/hugo-fresh
-    - logo: infinite
-      url: https://hugo-fresh.vercel.app/
-    - logo: gutwork
-      url: https://bulma.io/
+    - logo: uab
+      url: https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html
+    - logo: hospitalmar
+      url: https://www.imim.es/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: Features
+  - title: Home
     url: /
-  - title: Pricing
+  - title: Team
+    url: /blog/team
+#  - title: Dropdown
+#    sublinks:
+#    - title: Dropdown item
+#      url: /
+#    - title: Dropdown item
+#      url: /
+#    - title: Dropdown item
+#      url: /
+  - title: Research
+    url: /blog/research
+  - title: Publications
+    url: /blog/publications
+  - title: News
     url: /
-  - title: Dropdown
-    sublinks:
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-  - title: Log in
+  - title: Join Us
     url: /
-  - title: Sign up
+  - title: Contact
     url: /
     button: true
-  sidebar:
-    # Logo (from /images/logos/___.svg)
-    logo: fresh-square
-    sections:
-    - title: User
-      icon: user
-      links:
-      - text: Profile
-        url: /
-      - text: Account
-        url: /
-      - text: Settings
-        url: /
-    - title: Messages
-      icon: envelope
-      links:
-      - text: Inbox
-        url: /
-      - text: Compose
-        url: /
-    - title: Images
-      icon: image
-      links:
-      - text: Library
-        url: /
-      - text: Upload
-        url: /
-    - title: Settings
-      icon: cog
-      links:
-      - text: User settings
-        url: /
-      - text: App settings
-        url: /
+  # sidebar:
+  #   # Logo (from /images/logos/___.svg)
+  #   logo: fresh-square
+  #   sections:
+  #   - title: User
+  #     icon: user
+  #     links:
+  #     - text: Profile
+  #       url: /
+  #     - text: Account
+  #       url: /
+  #     - text: Settings
+  #       url: /
+  #   - title: Messages
+  #     icon: envelope
+  #     links:
+  #     - text: Inbox
+  #       url: /
+  #     - text: Compose
+  #       url: /
+  #   - title: Images
+  #     icon: image
+  #     links:
+  #     - text: Library
+  #       url: /
+  #     - text: Upload
+  #       url: /
+  #   - title: Settings
+  #     icon: cog
+  #     links:
+  #     - text: User settings
+  #       url: /
+  #     - text: App settings
+  #       url: /
   section1:
-    title: Great power comes
-    subtitle: with great responsibility
+    title: Research
+  #  subtitle: with great responsibility
     tiles:
     - title: App builder
       icon: mouse-globe
@@ -175,7 +175,7 @@ params:
     subtitle: To rule them all
     image: illustrations/mockups/app-mockup.png
     buttonText: Get started
-    buttonLink: "#"
+    buttonLink: /blog/team
   section4:
     title: Our Clients love us!
     subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
@@ -225,22 +225,12 @@ params:
           link: /
         - text: Why choose our product?
           link: /
-        - text: Compare features
-          link: /
-        - text: Our roadmap
-          link: /
-        - text: AGB
-          link: /agb
       column2:
         title: "Docs"
         links:
         - text: Get started
           link: /
         - text: User guides
-          link: /
-        - text: Admin guide
-          link: /
-        - text: Developers
           link: /
       column3:
         title: "Blog"
