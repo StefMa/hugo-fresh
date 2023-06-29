@@ -66,9 +66,9 @@ params:
     # Hero subtitle (optional)
     subtitle: "Lab director: Clara Pretus, Ph.D."
     # Button text
-    buttontext: Get started
+    buttontext: We are recruiting!
     # Where the main hero button links to
-    buttonlink: "#"
+    buttonlink: "/blog/joinus"
     # Hero image (from static/images/___)
     image: illustrations/brain.png
     # Footer logos (from static/images/logos/clients/*.svg)
@@ -101,8 +101,8 @@ params:
   - title: News
     url: /agb
   - title: Join Us
-    url: /
-  - title: Contact
+    url: /blog/joinus
+  - title: Contact Us
     url: /
     button: true
   # sidebar:
@@ -141,8 +141,7 @@ params:
   #       url: /
   section0:
     title: Mission
-    tiles:
-    - text: Buffalo cupim kielbasa spare ribs frankfurter. Ribeye pork burgdoggen tenderloin, tail strip steak bacon ham hock pork loin cupim. Bresaola biltong salami, cow ham hock doner pork chop bacon sausage short ribs. Picanha shank sausage turducken. Ham hock t-bone cupim, tri-tip biltong venison flank beef. Cupim bresaola kevin, ham hock beef hamburger tri-tip biltong sirloin filet mignon. Buffalo cupim kielbasa spare ribs frankfurter. Ribeye pork burgdoggen tenderloin, tail strip steak bacon ham hock pork loin cupim. Bresaola biltong salami, cow ham hock doner pork chop bacon sausage short ribs. Picanha shank sausage turducken. Ham hock t-bone cupim, tri-tip biltong venison flank beef. Cupim bresaola kevin, ham hock beef hamburger tri-tip biltong sirloin filet mignon.
+
   section1:
     title: Research
   #  subtitle: with great responsibility
