@@ -140,7 +140,7 @@ params:
   #     - text: App settings
   #       url: /
   section0:
-    title: Mission
+    title: Welcome to our lab!
 
   section1:
     title: Research
