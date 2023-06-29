@@ -52,7 +52,7 @@ params:
   # preloader: false
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/lablogo.png
+    image: logos/lablogo.svg
     link: /
     # Default width/height. Uncomment if you need to change
     # width: 112
@@ -74,6 +74,8 @@ params:
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
     clientlogos:
+    - logo: lablogo
+      url: https://www.socialbrainlab.com
     - logo: uab
       url: https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html
     - logo: hospitalmar
@@ -137,6 +139,10 @@ params:
   #       url: /
   #     - text: App settings
   #       url: /
+  section0:
+    title: Mission
+    tiles:
+    - text: Buffalo cupim kielbasa spare ribs frankfurter. Ribeye pork burgdoggen tenderloin, tail strip steak bacon ham hock pork loin cupim. Bresaola biltong salami, cow ham hock doner pork chop bacon sausage short ribs. Picanha shank sausage turducken. Ham hock t-bone cupim, tri-tip biltong venison flank beef. Cupim bresaola kevin, ham hock beef hamburger tri-tip biltong sirloin filet mignon. Buffalo cupim kielbasa spare ribs frankfurter. Ribeye pork burgdoggen tenderloin, tail strip steak bacon ham hock pork loin cupim. Bresaola biltong salami, cow ham hock doner pork chop bacon sausage short ribs. Picanha shank sausage turducken. Ham hock t-bone cupim, tri-tip biltong venison flank beef. Cupim bresaola kevin, ham hock beef hamburger tri-tip biltong sirloin filet mignon.
   section1:
     title: Research
   #  subtitle: with great responsibility
@@ -200,30 +206,32 @@ params:
     # method: POST
   footer:
     # Logo (from /images/logos/___)
-    logo: fresh-white-alt.svg
+    logo: lablogo_white.png
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://github.com/lucperkins/github-fresh
+    - link: https://twitter.com/ClaraPretus
+      icon: twitter
+    - link: https://github.com/cpretus-dev
       # Icons are from Font Awesome
       icon: github
     - link: https://dribbble.com/#
       icon: dribbble
     - link: https://facebook.com/#
       icon: facebook
-    - link: https://twitter.com/lucperkins
-      icon: twitter
     - link: https://bitbucket.org/#
       icon: bitbucket
     bulmalogo: true
     quicklinks:
       column1:
-        title: "Product"
+        title: "Address"
         links:
-        - text: Discover features
+        - text: Parc de Recerca Biomèdica
+          link: /https://www.prbb.org/
+        - text: c/ Doctor Aiguader, 88
           link: /
-        - text: Why choose our product?
+        - text: 08003 Barcelona 
           link: /
       column2:
         title: "Docs"
@@ -232,10 +240,10 @@ params:
           link: /
         - text: User guides
           link: /
-      column3:
-        title: "Blog"
-        links:
-        - text: Latest news
-          link: /blog/first
-        - text: Tech articles
-          link: /blog/second
+      # column3:
+      #   title: "Blog"
+      #   links:
+      #   - text: Latest news
+      #     link: /blog/first
+      #   - text: Tech articles
+      #     link: /blog/second

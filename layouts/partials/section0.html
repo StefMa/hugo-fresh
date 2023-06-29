@@ -1,0 +1,28 @@
+{{- $section0 := .Site.Params.section0 }}
+{{- $title    := index $section0 "title" }}
+{{- $subtitle := index $section0 "subtitle" }}
+{{- $tiles    := index $section0 "tiles" }}
+<section class="section is-medium section-secondary" id="section0">
+  <div class="title-wrapper has-text-centered">
+    <h2 class="title is-2 light-text is-spaced">{{ $title }}</h2>
+    {{- with $subtitle }}
+    <h3 class="subtitle is-5 light-text">{{ . }}</h3>
+    {{- end }}
+  </div>
+
+    <div class="content-wrapper">
+        {{- range $tiles }}
+          <div class="card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <!-- <div class="card-icon">
+                <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
+            </div> -->
+            <br><br>
+            <div class="card-text">
+                <p>{{ .text }}</p>
+            </div>
+            <br><br>
+          </div>
+        {{- end }}
+    </div>
+  </div>
+</section>

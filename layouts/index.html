@@ -4,6 +4,10 @@
     {{ partial "hero.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.section0 }}
+    {{ partial "section0.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.section1 }}
     {{ partial "section1.html" . }}
     {{ end }}
