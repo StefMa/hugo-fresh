@@ -146,35 +146,35 @@ params:
     title: Research
   #  subtitle: with great responsibility
     tiles:
-    - title: App builder
-      icon: mouse-globe
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Free trial
-    - title: Cloud integration
-      icon: laptop-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Get started
-    - title: Add-ons & plugins
-      icon: plug-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Get started
+    - title: Political exclusion
+      icon: exclusion
+      text: How does political exclusion impact political behavior?
+      url: /projects/valawai
+      buttonText: Read more
+    - title: Misinformation
+      icon: misinformation
+      text: Is cognitive rigidity linked to fake news consumption?
+      url: /projects/bial
+      buttonText: Read more
+    - title: Polarization
+      icon: polarization
+      text: Can people's social media diet influence polarization? 
+      url: /projects/arenas
+      buttonText: Read more
   section2:
-    title: You're here because you want the best
-    subtitle: And we know it
+    title: Featured publications
+    #subtitle: And we know it
     features:
     - title: Powerful and unified interface
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
       # Icon (from /images/illustrations/icons/___.svg)
-      icon: laptop-globe
+      icon: 
     - title: Cross-device synchronisation
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: doc-sync
+      icon: 
     - title: Nomad system
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: mobile-feed
+      icon: 
   section3:
     title: One platform
     subtitle: To rule them all

@@ -9,11 +9,12 @@ sidebarlogo: fresh-white-alt
 
 **Pretus C.,** Javeed A., Hughes D.R., Hackburg K., Tsakiris M., Vilarroya O., Van Bavel J. ([under review](https://psyarxiv.com/7j26y/)). The *Misleading* count: An identity-based intervention to mitigate the spread of partisan misinformation. 
 
-Van Bavel J., **Pretus C.**, Rathje S., Pärnamets P., Vlasceanu M., Knowles, E. (accepted with [minor revisions](https://psyarxiv.com/qdb97/)). The Costs of Polarizing a Pandemic: Antecedents, Consequences, and Lessons. Invited article at *Perspectives on Psychological Science*.
-
 ## 2023
 
 **Pretus C.,** Servin C., Harris E.A., Brady W.J., Vilarroya O., Van Bavel J. ([2023](https://psycnet.apa.org/fulltext/2023-83147-001.html)). The Role of Political Devotion in Sharing Partisan Misinformation and Resistance to Fact-checking. *Journal of Experimental Psychology: General.*
+
+Van Bavel J., **Pretus C.**, Rathje S., Pärnamets P., Vlasceanu M., Knowles, E. (2023)). The Costs of Polarizing a Pandemic: Antecedents, Consequences, and Lessons. Invited article at *Perspectives on Psychological Science*.
+
 
 ## **2022**
 
