@@ -13,7 +13,7 @@ sidebarlogo: fresh-white-alt
 
 **Pretus C.,** Servin C., Harris E.A., Brady W.J., Vilarroya O., Van Bavel J. ([2023](https://psycnet.apa.org/fulltext/2023-83147-001.html)). The Role of Political Devotion in Sharing Partisan Misinformation and Resistance to Fact-checking. *Journal of Experimental Psychology: General.*
 
-Van Bavel J., **Pretus C.**, Rathje S., Pärnamets P., Vlasceanu M., Knowles, E. (2023)). The Costs of Polarizing a Pandemic: Antecedents, Consequences, and Lessons. Invited article at *Perspectives on Psychological Science*.
+Van Bavel J., **Pretus C.**, Rathje S., Pärnamets P., Vlasceanu M., Knowles, E. (2023). The Costs of Polarizing a Pandemic: Antecedents, Consequences, and Lessons. Invited article at *Perspectives on Psychological Science*.
 
 
 ## **2022**

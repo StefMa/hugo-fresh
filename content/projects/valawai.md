@@ -1,11 +1,9 @@
 ---
-title: VALAWAI
+title: "VALAWAI: Moral awareness for AI (2022-2026)"
 sidebar: false
 sidebarlogo: fresh-white-alt
 ---
 
-
-## VALAWAI: Moral awareness for AI (2022-2026)
 
 We are part of VALAWAI, an EIC funded project that focuses on the development of value-aware artificial intelligence (AI). The project will demonstrate the utility of Value-Aware AI in three application areas for which a moral dimension urgently needs to be included: (i) social media, (ii) social robots, and (iii) medical decision-making.
 
