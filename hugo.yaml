@@ -52,7 +52,7 @@ params:
   # preloader: false
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/lablogo.svg
+    image: logos/lablogo6.png
     link: /
     # Default width/height. Uncomment if you need to change
     # width: 112
@@ -74,7 +74,7 @@ params:
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
     clientlogos:
-    - logo: lablogo
+    - logo: lablogo6-black
       url: https://www.socialbrainlab.com
     - logo: uab
       url: https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html
@@ -166,7 +166,7 @@ params:
     - title: The Role of Political Devotion in Sharing Partisan Misinformation and Resistance to Fact-checking.
       text: <br> In a set of studies across the U.S. and Spain, we found that far-right partisans were more likely to share misinformation relevant to conservative sacred values and were resistant to fact-checks and accuracy nudges. At a brain level, we observed a strong response in brain regions implicated in norm compliance and mentalizing to misinformation that included sacred values (vs. nonsacred values) among far-right partisans. This work provides new theoretical and practical insights into misinformation sharing and resistance to fact-checking among far-right partisans. <br><br>[Read more](https://psycnet.apa.org/fulltext/2023-83147-001.html)
     - title: "The Misleading count: An identity-based intervention to mitigate the spread of partisan misinformation."
-      text: <br> Across three experiments in the U.S. and UK, we found that crowdsourcing accuracy judgments by adding a Misleading count (next to the Like count) reduced participants’ reported likelihood to share inaccurate information about partisan issues by 25% (compared to a control condition). The Misleading count was also more effective when it reflected in-group norms (from fellow Democrats/Republicans) compared to the norms of general users, though this effect was absent in a less politically polarized context (UK).<br><br>[Read more](https://psyarxiv.com/7j26y/)
+      text: <br> Across three experiments in the U.S. and UK, we found that crowdsourcing accuracy judgments by adding a Misleading count next to the Like count reduced participants’ reported likelihood to share inaccurate information about partisan issues by 25% compared to a control condition. The Misleading count was also more effective when it reflected in-group norms (from fellow Democrats/Republicans) compared to the norms of general users, though this effect was absent in a less politically polarized context (UK).<br><br>[Read more](https://psyarxiv.com/7j26y/)
     - title: Nomad system
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
       icon: 
@@ -200,7 +200,7 @@ params:
     # method: POST
   footer:
     # Logo (from /images/logos/___)
-    logo: lablogo_white.png
+    logo: lablogo6-black.svg
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
