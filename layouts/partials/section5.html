@@ -20,11 +20,14 @@
         <div class="column is-6 is-offset-3">
           <form{{ with $action }} action="{{ . }}"{{end}}{{ with $method }} method="{{ . }}"{{end}}>
             <div class="columns is-multiline">
-              <div class="column is-6">
+              <div class="column is-4">
                 <input class="input is-medium" name="name" type="text" placeholder="Enter your name">
               </div>
-              <div class="column is-6">
+              <div class="column is-4">
                 <input class="input is-medium" name="email" type="email" placeholder="Enter your email address">
+              </div>
+              <div class="column is-4">
+                <input class="input is-medium" name="phone" type="tel" placeholder="Enter your phone number">
               </div>
               <div class="column is-12">
                 <textarea class="textarea" name="message" rows="10" placeholder="Write something..."></textarea>
