@@ -70,7 +70,7 @@ params:
     # Where the main hero button links to
     buttonlink: "/blog/joinus"
     # Hero image (from static/images/___)
-    image: illustrations/braintwo.png
+    image: illustrations/twobrains.png
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
     clientlogos:
