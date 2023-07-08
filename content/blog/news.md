@@ -7,7 +7,6 @@ image: /static/images/illustrations/brain.png
 ---
 
 
-<br>
 
 ### 📌 March, 2023
 

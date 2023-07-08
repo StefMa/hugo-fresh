@@ -6,7 +6,6 @@ sidebarlogo: fresh-white-alt
 image: /static/images/illustrations/brain.png
 ---
 
-<br>
 
 ### Luis Marcos-Vidal
 

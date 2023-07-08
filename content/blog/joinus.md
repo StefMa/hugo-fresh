@@ -16,7 +16,12 @@ As a student in our lab, you will work alongside experienced researchers, gainin
 
 1 predoctoral position in Cognitive Neuroscience working on political extremism with fMRI
 <br>
+[Read more](https://www.imim.cat/media/upload/arxius/ofertes%20de%20treball/2023/BT/Ref.%202311%20-%20PRETUS.pdf?_t=1686307206)
+<br><br>
 1 predoctoral position in Cognitive Neuroscience working on misinformation with EEG
+<br>
+[Read more](https://www.imim.cat/media/upload/arxius/ofertes%20de%20treball/2023/BT/Ref.%202310%20-%20PRETUS.pdf?_t=1686306918)
+<br>
 
 ### Postdoctral positions
 

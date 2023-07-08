@@ -83,7 +83,7 @@ params:
     - logo: twitter
       url: https://twitter.com/ClaraPretus 
     - logo: osf
-      url:
+      url: https://osf.io/4b3rt
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Home
@@ -105,7 +105,7 @@ params:
   - title: Join Us
     url: /blog/joinus
   - title: Contact Us
-    url: 
+    url: /
     button: true
   # sidebar:
   #   # Logo (from /images/logos/___.svg)
