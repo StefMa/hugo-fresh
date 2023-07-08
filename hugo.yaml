@@ -64,7 +64,7 @@ params:
     # Main hero title
     title: Social Brain Lab Barcelona
     # Hero subtitle (optional)
-    subtitle: "Lab director: Clara Pretus, Ph.D."
+    subtitle: "Director: Clara Pretus, Ph.D."
     # Button text
     buttontext: We are recruiting!
     # Where the main hero button links to
@@ -165,11 +165,11 @@ params:
     features:
     - title: The Role of Political Devotion in Sharing Partisan Misinformation and Resistance to Fact-checking.
       text: <br> In a set of studies across the U.S. and Spain, we found that far-right partisans were more likely to share misinformation relevant to conservative sacred values and were resistant to fact-checks and accuracy nudges. At a brain level, we observed a strong response in brain regions implicated in norm compliance and mentalizing to misinformation that included sacred values (vs. nonsacred values) among far-right partisans. This work provides new theoretical and practical insights into misinformation sharing and resistance to fact-checking among far-right partisans. <br><br>[Read more](https://psycnet.apa.org/fulltext/2023-83147-001.html)
-    - title: "The Misleading count: An identity-based intervention to mitigate the spread of partisan misinformation."
+    - title: "The Misleading Count: An Identity-Based Intervention to Mitigate the Spread of Partisan Misinformation."
       text: <br> Across three experiments in the U.S. and UK, we found that crowdsourcing accuracy judgments by adding a Misleading count next to the Like count reduced participants’ reported likelihood to share inaccurate information about partisan issues by 25% compared to a control condition. The Misleading count was also more effective when it reflected in-group norms (from fellow Democrats/Republicans) compared to the norms of general users, though this effect was absent in a less politically polarized context (UK).<br><br>[Read more](https://psyarxiv.com/7j26y/)
-    - title: Nomad system
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: 
+    - title: "The Psychology of Hate: Moral Concerns Differentiate Hate from Dislike"
+      text: <br> We investigated whether any differences in the psychological conceptualization of hate and dislike were simply a matter of degree of negativity (i.e., hate falls on the end of the continuum of dislike) or also morality (i.e., hate is imbued with distinct moral components that distinguish it from dislike). In three lab studies in Canada and the U.S., we found that hated attitude objects were more negative than disliked attitude objects and associated with moral beliefs and emotions, even after adjusting for differences in negativity. <br><br>[Read more](https://onlinelibrary.wiley.com/doi/10.1002/ejsp.2906)
+      #icon: 
   section3:
     #title: Our team
     #subtitle: To rule them all
@@ -177,8 +177,8 @@ params:
     buttonText: Meet the team
     buttonLink: /blog/team
   section4:
-    title: Our Clients love us!
-    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+    title: Supported by
+    #subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
     clients:
     - name: Irma Walters
       quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
