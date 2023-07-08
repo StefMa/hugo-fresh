@@ -6,6 +6,8 @@ sidebarlogo: fresh-white-alt
 image: /static/images/illustrations/brain.png
 ---
 
+<br>
+
 ### Luis Marcos-Vidal
 
 **Post-doctoral researcher**
@@ -16,13 +18,13 @@ Luis obtained his Bachelor's in Psychology in 2015, his Master’s degree in Res
 
 ---
 
-![lowerQuality_Fotos URNC-LAB_FInals_Horitzontals_3.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c4f5ebee-2cdd-4c2e-a869-c7afdc49ad89/lowerQuality_Fotos_URNC-LAB_FInals_Horitzontals_3.jpeg)
-
 ### Camila Servin-Barthet
 
 **PhD student**
 
 Camila is a second-year PhD student in Psychiatry at the Autonomous University of Barcelona (UAB). She received her Bachelor’s in Biology at the University of Barcelona (UB) in 2019 and her Master’s degree in Research in Behavior and Cognition also at the UB. Her research focuses on the neuropsychological and brain adaptations in social cognition as a function of sex steroids during pregnancy and the postpartum period.
+
+![lowerQuality_Fotos URNC-LAB_FInals_Horitzontals_3.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c4f5ebee-2cdd-4c2e-a869-c7afdc49ad89/lowerQuality_Fotos_URNC-LAB_FInals_Horitzontals_3.jpeg)
 
 ---
 
@@ -36,13 +38,14 @@ Anna is a third-year PhD student in Psychiatry at the Autonomous University of B
 
 ---
 
-![carina.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c67d9d08-a671-4b12-bf80-36c40f44489a/carina.png)
 
 ### Carina Castillo
 
 **PhD student**
 
 Carina is a fifth-year PhD student in Psychiatry at the Autonomous University of Barcelona (UAB). She received her Bachelor’s in Psychology at the Pontifical Catholic University of Ecuador in 2014 and her Master’s degree in neuropsychological rehabilitation and cognitive stimulation at the UAB in 2016. Her research focuses on the adaptation, standardization, and validation of neuropsychological tests aimed at specific cultural groups.
+
+![carina.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c67d9d08-a671-4b12-bf80-36c40f44489a/carina.png)
 
 ---
 
@@ -56,10 +59,11 @@ Lorena is a second-year PhD student in Psychiatry at the Autonomous University o
 
 ---
 
-![diana - copia.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/28425092-46b6-4f2b-bc20-27c667173e34/diana_-_copia.jpg)
 
 ### Diána Hughes
 
 **Research Assistant**
 
 Diána Hughes is a research assistant at the [Social Identity and Morality Lab](https://www.jayvanbavel.com/lab) at New York University. She is also a project manager with the [Emergency Preparedness, Research, Evaluation, and Practice (EPREP) Program](https://www.hsph.harvard.edu/preparedness/) at the Harvard T.H. Chan School of Public Health. Diána holds a bachelor’s and a master’s of international affairs from the Frederick S. Pardee School of Global Studies at Boston University. Her research interests include violent and nonviolent extremism, the psychology of extremism, and misinformation, disinformation, and malinformation (MDM).
+
+![diana - copia.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/28425092-46b6-4f2b-bc20-27c667173e34/diana_-_copia.jpg)

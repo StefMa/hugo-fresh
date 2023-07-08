@@ -80,6 +80,10 @@ params:
       url: https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html
     - logo: hospitalmar
       url: https://www.imim.es/
+    - logo: twitter
+      url: https://twitter.com/ClaraPretus 
+    - logo: osf
+      url:
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Home
@@ -97,7 +101,7 @@ params:
   - title: Publications
     url: /blog/publications
   - title: News
-    url: /agb
+    url: /blog/news
   - title: Join Us
     url: /blog/joinus
   - title: Contact Us
@@ -178,6 +182,11 @@ params:
     buttonLink: /blog/team
   section4:
     title: Supported by
+    image:
+      - images: erclogo
+      - images: eiclogo
+      - images: biallogo
+      - images: artilogo
     #subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
     # clients:
     # - name: Irma Walters
