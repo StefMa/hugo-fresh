@@ -179,19 +179,19 @@ params:
   section4:
     title: Supported by
     #subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
-    clients:
-    - name: Irma Walters
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Accountant
-      img: 1
-    - name: John Bradley
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Financial Analyst
-      img: 2
-    - name: Gary Blackman
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: HR Manager
-      img: 3
+    # clients:
+    # - name: Irma Walters
+    #   quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+    #   job: Accountant
+    #   img: 1
+    # - name: John Bradley
+    #   quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+    #   job: Financial Analyst
+    #   img: 2
+    # - name: Gary Blackman
+    #   quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+    #   job: HR Manager
+    #   img: 3
   section5:
     title: Contact us
     #subtitle: We'd love to hear from you
@@ -200,7 +200,7 @@ params:
     # method: POST
   footer:
     # Logo (from /images/logos/___)
-    logo: lablogo6-black.svg
+    logo: lablogo6-white.svg
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
@@ -210,12 +210,12 @@ params:
     - link: https://github.com/cpretus-dev
       # Icons are from Font Awesome
       icon: github
-    - link: https://dribbble.com/#
-      icon: dribbble
-    - link: https://facebook.com/#
-      icon: facebook
-    - link: https://bitbucket.org/#
-      icon: bitbucket
+    # - link: https://dribbble.com/#
+    #   icon: dribbble
+    # - link: https://facebook.com/#
+    #   icon: facebook
+    # - link: https://bitbucket.org/#
+    #   icon: bitbucket
     bulmalogo: true
     quicklinks:
       column1:
@@ -228,12 +228,14 @@ params:
         - text: 08003 Barcelona 
           link: /
       column2:
-        title: "Docs"
+        title: "Credit"
         links:
-        - text: Get started
-          link: /
-        - text: User guides
-          link: /
+        - text: Icons by Freepik
+          link: https://www.flaticon.com/
+        - text: Logo made with Canva
+          link: https://www.canva.com/  
+        - text: Illustration made with getimg.ai
+          link: https://getimg.ai/
       # column3:
       #   title: "Blog"
       #   links:
