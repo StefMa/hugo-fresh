@@ -225,7 +225,7 @@ params:
     #   icon: facebook
     # - link: https://bitbucket.org/#
     #   icon: bitbucket
-    bulmalogo: true
+    # bulmalogo: true
     quicklinks:
       column1:
         title: "Address"
