@@ -1,5 +1,6 @@
 ---
 title: "VALAWAI: Moral awareness for AI (2022-2026)"
+type: project
 sidebar: false
 sidebarlogo: fresh-white-alt
 image: "images/illustrations/faces/3.png"
