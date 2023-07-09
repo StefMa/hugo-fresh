@@ -209,7 +209,7 @@ params:
     # method: POST
   footer:
     # Logo (from /images/logos/___)
-    logo: made-with-bulma.png #lablogo6-white.svg
+    logo: lablogo6-white.svg
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
