@@ -2,6 +2,7 @@
 title: Join us
 sidebar: false
 sidebarlogo: fresh-white-alt
+include_footer: true
 ---
 
 Are you interested in studying complex societal challenges such as misinformation and extremism? 
