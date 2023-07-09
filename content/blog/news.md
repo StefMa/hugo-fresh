@@ -2,10 +2,8 @@
 title: News
 sidebar: false
 sidebarlogo: fresh-white-alt
-
-image: /static/images/illustrations/brain.png
+include_footer: true
 ---
-
 
 
 ### 📌 March, 2023

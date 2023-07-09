@@ -2,6 +2,7 @@
 title: "VALAWAI: Moral awareness for AI (2022-2026)"
 sidebar: false
 sidebarlogo: fresh-white-alt
+include_footer: true
 ---
 
 

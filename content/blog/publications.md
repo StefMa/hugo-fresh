@@ -1,8 +1,8 @@
-
 ---
 title: Publications
 sidebar: false
 sidebarlogo: fresh-white-alt
+include_footer: true
 ---
 
 ## Pre-prints

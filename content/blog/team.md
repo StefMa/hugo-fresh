@@ -2,8 +2,7 @@
 title: Team
 sidebar: false
 sidebarlogo: fresh-white-alt
-
-image: /static/images/illustrations/brain.png
+include_footer: true
 ---
 
 
