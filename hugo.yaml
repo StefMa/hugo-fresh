@@ -209,7 +209,7 @@ params:
     # method: POST
   footer:
     # Logo (from /images/logos/___)
-    #logo: fresh-white.svg #lablogo6-white.svg
+    logo: fresh-white-alt.svg #lablogo6-white.svg
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
@@ -225,7 +225,7 @@ params:
     #   icon: facebook
     # - link: https://bitbucket.org/#
     #   icon: bitbucket
-    # bulmalogo: true
+    bulmalogo: true
     quicklinks:
       column1:
         title: "Address"
@@ -245,10 +245,10 @@ params:
           link: https://www.canva.com/  
         - text: Illustration made with getimg.ai
           link: https://getimg.ai/
-      # column3:
-      #   title: "Blog"
-      #   links:
-      #   - text: Latest news
-      #     link: /blog/first
-      #   - text: Tech articles
-      #     link: /blog/second
+      column3:
+        title: "Blog"
+        links:
+        - text: Latest news
+          link: /blog/first
+        - text: Tech articles
+          link: /blog/second
