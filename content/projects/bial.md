@@ -2,7 +2,7 @@
 title: "BIAL: Neurocognitive correlates of vulnerability to misinformation (2023-2027)"
 sidebar: false
 sidebarlogo: fresh-white-alt
-include_footer: true
+
 ---
 
 
