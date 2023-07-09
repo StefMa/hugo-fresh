@@ -1,0 +1,23 @@
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-12">
+        <h1 class="title section-title">{{ .Params.title }}</h1>
+        <h5 class="subtitle is-5 is-muted">{{ .Params.subtitle }}</h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-4">
+        {{ range .Params.images }}
+        <img src="{{ printf "/%s" . }}" alt="Image" class="section-image">
+        {{ end }}
+      </div>
+      <div class="column is-8">
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
