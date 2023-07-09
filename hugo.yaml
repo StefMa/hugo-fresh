@@ -4,7 +4,7 @@ title: Hugo Fresh Theme
 
 module:
   # uncomment line below for local development of module
-  # workspace: hugo.work
+  #workspace: hugo.work
   imports:
   - path: github.com/cpretus-dev/hugo-fresh.git
   - path: github.com/jgthms/bulma
@@ -209,7 +209,7 @@ params:
     # method: POST
   footer:
     # Logo (from /images/logos/___)
-    logo: lablogo6-white.svg
+    logo: fresh-white.svg #lablogo6-white.svg
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
