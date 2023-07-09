@@ -1,6 +1,6 @@
 ---
 title: AGB
-include_footer: true
+include_footer: false
 sidebar: false
 ---
 
