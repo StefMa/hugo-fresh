@@ -1,5 +1,6 @@
 ---
 title: "ARENAS: Extremist Narratives in the EU (2023-2027)"
+type: project
 sidebar: false
 sidebarlogo: fresh-white-alt
 image: "images/illustrations/faces/1.png"

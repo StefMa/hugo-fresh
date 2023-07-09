@@ -91,13 +91,14 @@ params:
   - title: Team
     url: /blog/team
   - title: Research
-    sublinks:
-    - title: Moral psychology of AI
-      url: /projects/valawai
-    - title: Misinformation
-      url: /projects/bial
-    - title: Extremism
-      url: /projects/arenas
+    url: /projects/valawai
+    # sublinks:
+    # - title: Moral psychology of AI
+    #   url: /projects/valawai
+    # - title: Misinformation
+    #   url: /projects/bial
+    # - title: Extremism
+    #   url: /projects/arenas
   - title: Publications
     url: /blog/publications
   - title: News
