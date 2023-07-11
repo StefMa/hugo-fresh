@@ -1,6 +1,7 @@
 {{- $section4 := .Site.Params.section4 }}
-{{- $title    := index $section4 "title" }}
-{{- $image    := index $section4 "image" }}
+{{- $title := index $section4 "title" }}
+{{- $images := index $section4 "images" }}
+
 <section class="section is-medium section-secondary" id="section4">
   <div class="container">
 
@@ -9,11 +10,11 @@
     </div>
 
     <div class="image-wrapper">
-      <div class="columns is-vcentered">
-        {{- range $index, $image := index $section4 "images" }}
-        {{- if lt $index 4 }}
+      <div class="columns is-vcentered is-multiline">
+        {{- range $index, $imageName := $images }}
+        {{- if lt $index 8 }}
         <div class="column is-3">
-          <img src="{{ printf "/images/logos/funders/%s.png" (string $image) | relURL }}" alt="{{ $title }} Image {{ add $index 1 }}"/>
+          <img src="{{ printf "/images/logos/funders/%s.png" (string $imageName) | relURL }}" alt="{{ $title }} Image {{ add $index 1 }}" class="pushed-image" />
         </div>
         {{- end }}
         {{- end }}

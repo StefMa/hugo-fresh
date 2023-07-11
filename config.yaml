@@ -106,7 +106,7 @@ params:
   - title: Join Us
     url: /blog/joinus
   - title: Contact Us
-    url: /
+    url: "#section5"
     button: true
   # sidebar:
   #   # Logo (from /images/logos/___.svg)
