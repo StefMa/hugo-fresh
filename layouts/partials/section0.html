@@ -1,8 +1,7 @@
 {{- $section0 := .Site.Params.section0 }}
-{{- $title := index $section0 "title" }}
+{{- $title    := index $section0 "title" }}
 {{- $subtitle := index $section0 "subtitle" }}
-{{- $tiles := index $section0 "tiles" }}
-
+{{- $tiles    := index $section0 "tiles" }}
 <section class="section is-medium section-secondary" id="section0">
   <div class="title-wrapper has-text-centered">
     <h2 class="title is-2 light-text is-spaced">{{ $title }}</h2>
@@ -11,49 +10,31 @@
     {{- end }}
   </div>
 
-  <div class="container">
+  <div class="container" style="padding: 0 180px;">
     <br>
-    <p class="text-justify light-text section0-text">Our team uses a cognitive neuroscience and experimental psychology approach
+    <p style="color: white; text-align: justify;">In recent years, have witnessed a concerning increase in political polarization, 
+      with individuals becoming more entrenched in their beliefs and less willing to engage in open dialogue. 
+      This polarization has created fertile ground for the spread of misinformation, 
+      as people are more likely to embrace information that aligns with their existing biases, 
+      further exacerbating societal divisions.</p>
+    <br>
+    <p style="color: white; text-align: justify;">Our team uses a cognitive neuroscience and experimental psychology approach
        to understand how political extremism impacts decision-making in contexts of political polarization. 
        Particularly, we examine how extreme social identities and moral values shape people’s political 
-       beliefs, motivation to share misinformation, and willingness to engage in political violence.</p>
+       beliefs, motivation to share misinformation, and willingness to engage in political violence. </p>
     <br>
-    <p class="text-justify light-text section0-text">We also develop novel interventions to combat polarization and 
+    <p style="color: white; text-align: justify;">We also develop novel interventions to combat polarization and 
       the spread of misinformation based on insights from psychological and neuracognitive findings.
       We use a multi-method approach that includes neuroimaging tools such as functional magnetic resonance 
-      (fMRI) and electroencephalography (EEG), psychological testing, and behavioral experiments.</p>
+      (fMRI) and electroencephalography (EEG), psychological testing, and behavioral experiments. </p>
     <br>
-    <p class="text-justify light-text section0-text">Join us in our mission to understand the neuroscience 
-      of political extremism and the spread of misinformation.</p>
+    <p style="color: white; text-align: justify;">Join us in our mission to understand the neuroscience 
+      of political extremism and the spread of misinformation. </p>
     <br>
     <br>
     <div class="button-container" style="display: flex; justify-content: center;">
       <a href="blog/joinus" class="button" style="color: black;">Join Us</a>
     </div>
   </div>
+  </div>
 </section>
-
-<style>
-  #section0 .container {
-    padding: 0 20px;
-  }
-
-  @media (min-width: 768px) {
-    #section0 .container {
-      padding: 0 180px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    #section0 .section0-text {
-      margin: 0 80px;
-    }
-  }
-</style>
-
-
-
-
-
-
-
