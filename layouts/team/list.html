@@ -1,0 +1,69 @@
+
+{{ define "main" }}
+
+  {{ partial "navbar.html" . }}
+
+    <section class="section is-medium" style="padding: 9rem 4.5rem 5rem 4.5rem">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-12">
+            <h1 class="title section-title">{{ .Title }}</h1>
+            <div class="divider"></div>
+          </div>
+        </div>
+
+	{{ range where (.Site.RegularPages.ByParam "position") "Params.type" "member" }}
+        <br>
+        <div class="columns">
+	  <div class="column is-6" style="width:30%">
+ 	    <img src="{{ printf "/%s" .Params.image }}" alt="Image" class="section-image">
+	  </div>
+ 	  <div class="column is-6">
+	    <div class="content">
+  	      {{ .Content }}
+	    </div>
+  	  </div>
+ 	</div >
+
+	<div class="columns">
+ 	  <div class="column is-12">
+  	    <div class="divider"></div>
+ 	  </div>
+	</div>
+
+	{{ end }}	
+
+    </div>
+  </section>
+
+  <section class="section is-medium" style="padding: 2rem 4.5rem 9rem 4.5rem">
+   
+    <div class="container">
+       <div class="columns">
+         <div class="column is-12">
+           <h1 class="title section-title">Former Members</h1>
+           <div class="divider"></div>
+	 </div>
+       </div>
+
+       <div class="content">  
+         <h3>PhD Students</h3>
+
+         <ul>
+	   <li><h4>Carina Castillo</h4></li>
+         </ul>
+
+         <h3>Research Assistant</h3>
+
+         <ul>
+           <li><h4>Diána Hughes</h4></li>
+         </ul>
+       </div>
+     </div>
+  </section>
+
+  {{ partial "single/sidebar.html" . }}
+  {{ partial "footer.html" . }}
+
+{{ end }}
+

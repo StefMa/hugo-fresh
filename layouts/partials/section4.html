@@ -4,18 +4,16 @@
 <section class="section is-medium section-secondary" id="section4">
   <div class="container">
 
-    <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2 light-text is-spaced">{{ $title }}</h2>
+    <div class="title-wrapper has-text-centered" style="padding: 2% 0">
+      <h3 class="title is-2 light-text is-spaced">{{ $title }}</h3>
     </div>
 
-    <div class="image-wrapper">
+    <div class="image-wrapper" style="padding: 2% 0">
       <div class="columns is-vcentered">
-        {{- range $index, $image := index $section4 "images" }}
-        {{- if lt $index 4 }}
+        {{- range $image }}
         <div class="column is-3">
-          <img src="{{ printf "/images/logos/funders/%s.png" (string $image) | relURL }}" alt="{{ $title }} Image {{ add $index 1 }}"/>
+		<img src="{{ printf "/images/logos/funders/%s.png" .images | relURL }}"/>
         </div>
-        {{- end }}
         {{- end }}
       </div>
     </div>

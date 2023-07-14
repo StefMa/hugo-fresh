@@ -4,7 +4,7 @@ type: project
 sidebar: false
 sidebarlogo: fresh-white-alt
 image: "images/illustrations/faces/3.png"
-
+include_footer: true
 ---
 
 
@@ -13,3 +13,7 @@ We are part of VALAWAI, an EIC funded project that focuses on the development of
 As part of VALAWAI, we will be leading behavioral and neuroimaging experiments on humans’ response to value-aware AI. 
 
 Visit the project’s website: [valawai.eu](https://valawai.eu/)
+
+<div class="container" style="display: flex; justify-content: center; padding: 5%">
+ <img src="/images/illustrations/faces/1.png"/>
+</div>

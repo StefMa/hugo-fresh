@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+  {{ partial "single/single.html" . }}
+
+  {{ if .Params.include_footer }}
+  {{ partial "footer.html" . }}
+  {{ end }}
+
+  {{ if .Params.sidebar }}
+  {{ partial "single/sidebar.html" . }}
+  {{ end }}
+
+  {{ partial "footer.html" . }}
+
+{{ end }}

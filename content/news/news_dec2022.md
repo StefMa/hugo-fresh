@@ -3,6 +3,8 @@ title: News
 type: news
 sidebar: false
 sidebarlogo: fresh-white-alt
+image: images/news/fake-news.jpeg
+date: 2022-12-01
 ---
 
 
@@ -19,7 +21,5 @@ We are also very interested in distinguishing political orientation from politic
 We are excited to start this project and to provide responses to all of these questions!
 
 👉🏼 **We will be announcing a research assistant position** **opening** for this project soon. Follow me on [Twitter](https://twitter.com/ClaraPretus) or [Mastodon](https://c.im/@ClaraPretus) if you don’t want to miss it!
-
-!https://images.unsplash.com/photo-1636188540036-1879f679c2b0?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb
 
  

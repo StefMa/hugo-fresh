@@ -89,24 +89,24 @@ params:
   - title: Home
     url: /
   - title: Team
-    url: /blog/team
+    url: /team
   - title: Research
-    url: /projects/arenas
-    # sublinks:
-    # - title: Moral psychology of AI
-    #   url: /projects/valawai
-    # - title: Misinformation
-    #   url: /projects/bial
-    # - title: Extremism
-    #   url: /projects/arenas
+    url: /#section1
+    sublinks:
+    - title: Moral psychology of AI
+      url: /projects/valawai
+    - title: Misinformation
+      url: /projects/bial
+    - title: Extremism
+      url: /projects/arenas
   - title: Publications
-    url: /blog/publications
+    url: /publications
   - title: News
-    url: /blog/news
+    url: /news
   - title: Join Us
-    url: /blog/joinus
+    url: /joinus
   - title: Contact Us
-    url: /
+    url: /#section5
     button: true
   # sidebar:
   #   # Logo (from /images/logos/___.svg)
@@ -180,14 +180,14 @@ params:
     #subtitle: To rule them all
     image: illustrations/team.png
     buttonText: Meet the team
-    buttonLink: /blog/team
+    buttonLink: /team
   section4:
     title: Supported by
     image:
       - images: erclogo
       - images: eiclogo
       - images: biallogo
-      - images: artilogo
+      - images: artislogo
     #subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
     # clients:
     # - name: Irma Walters

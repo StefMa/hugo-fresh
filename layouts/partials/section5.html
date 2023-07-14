@@ -7,6 +7,34 @@
 {{- $action     := index $section5 "action" }}
 {{- $method     := index $section5 "method" }}
 {{- $buttonText := index $section5 "buttontext" | default "Send Message" }}
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+
+  (function() {
+   emailjs.init("CzcAN-N3W80fJeXYq")
+  })();
+
+  function sendMail() {
+    var link = "mailto:luismarvi93@gmail.com"
+             + "?cc=" + encodeURIComponent(document.getElementsByName('email')[0].value)
+             + "&subject=" + encodeURIComponent(document.getElementsByName('name')[0].value)
+             + "&body=" + encodeURIComponent(document.getElementsByName('message')[0].value)
+    ;
+    
+    var contactParams = {
+	    from_name: document.getElementsByName('name')[0].value,
+	    from_email: document.getElementsByName('email')[0].value,
+	    message: document.getElementsByName('message')[0].value
+    }
+
+    emailjs.send('service_socialbrain','template_r1brdfd',contactParams).then(function (res) {});
+  }
+
+</script>
+
+
 <section class="section section-light-grey is-medium" id="section5">
   <div class="container">
     <div class="title-wrapper has-text-centered">
@@ -30,7 +58,7 @@
                 <textarea class="textarea" name="message" rows="10" placeholder="Write something..."></textarea>
               </div>
               <div class="form-footer has-text-centered mt-10">
-                <button class="button cta is-large primary-btn raised is-clear">{{ $buttonText }}</button>
+                <button class="button cta is-large primary-btn raised is-clear" onclick="sendMail(); return false">{{ $buttonText }}</button>
               </div>
             </div>
           </form>

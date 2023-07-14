@@ -3,6 +3,8 @@ title: News
 type: news
 sidebar: false
 sidebarlogo: fresh-white-alt
+image: images/news/
+date: 2023-03-01
 ---
 
 
@@ -20,7 +22,3 @@ The Behavioral Insights Hub is a global platform for creating knowledge around 
 
 Very excited to take part in this!
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ab8e1b65-fdc3-47c4-9390-f5ab6fd24fe9/Untitled.png)
-
-
- 
