@@ -1,0 +1,22 @@
+{{- $section4 := .Site.Params.section4 }}
+{{- $title    := index $section4 "title" }}
+{{- $image    := index $section4 "image" }}
+<section class="section is-medium section-secondary" id="section4">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered" style="padding: 2% 0">
+      <h3 class="title is-2 light-text is-spaced">{{ $title }}</h3>
+    </div>
+
+    <div class="image-wrapper" style="padding: 2% 0">
+      <div class="columns is-vcentered">
+        {{- range $image }}
+        <div class="column is-3">
+		<img src="{{ printf "/images/logos/funders/%s.png" .images | relURL }}"/>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+
+  </div>
+</section>
