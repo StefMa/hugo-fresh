@@ -1,13 +1,38 @@
 {{ define "main" }}
 
-  {{ partial "single/single.html" . }}
+  {{ partial "navbar.html" . }}
 
-  {{ if .Params.include_footer }}
-  {{ partial "footer.html" . }}
-  {{ end }}
+  <section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-12">
+        <h1 class="title section-title">{{ .Title }}</h1>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+      <!--div class="columns">
+        <div class="column is-6"-->
+          <div class="content">
+            {{ .Content }}
+          </div>
+        <!--/div>
+      </div>
+      <div class="columns">
+        <div class="column is-12">
+          <div class="divider"></div>
+        </div>
+      </div-->
+
+  </div>
+  </section>
 
   {{ if .Params.sidebar }}
-  {{ partial "single/sidebar.html" . }}
+   {{ partial "single/sidebar.html" . }}
+  {{ end }}
+
+  {{ if .Params.include_footer }}
+   {{ partial "footer.html" . }}
   {{ end }}
 
 {{ end }}

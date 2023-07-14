@@ -3,6 +3,8 @@ title: News
 type: news
 sidebar: false
 sidebarlogo: fresh-white-alt
+image: images/news/
+date: 2022-10-01
 ---
 
 
@@ -20,4 +22,3 @@ Exciting times ahead!
 
 Read more about the project [here](https://www.notion.so/PROJECTS-d66f0f661a74420291292aa7cc22854d?pvs=21) - the project website is under way.
 
-![2022-10-12 11.08.57.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ebb3041d-497c-43ca-acb4-314c130eaf34/2022-10-12_11.08.57.jpg)

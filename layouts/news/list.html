@@ -24,35 +24,14 @@
 	      <img src="{{ printf "/%s" .Params.image }}" alt="Image" class="section-image" style="padding: 5%">
             </div>
           </div>
+	  <br>
           <div class="columns">
             <div class="column is-12">
               <div class="divider"></div>
             </div>
           </div>
+	  <br>
         {{ end }}
-	
-	<!--- Loop over team with format --->
-	{{ range where .Site.RegularPages.ByDate "Params.type" "member" }}
-        <br>
-        <div class="columns">
-	  <div class="column is-6" style="width:30%">
-  	    <img src="/images/illustrations/faces/1.png" alt="Image" class="section-image" width=350px style="position: relative">
- 	  </div>
- 	  <div class="column is-6">
-	    <div class="content">
-  	      {{ .Content }}
-	    </div>
-  	  </div>
- 	</div >
-
-	<div class="columns">
- 	  <div class="column is-12">
-  	    <div class="divider"></div>
- 	  </div>
-	</div>
-
-	{{ end }}	
-
 
     </div>
   </section>
