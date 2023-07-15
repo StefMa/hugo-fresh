@@ -4,7 +4,7 @@ type: news
 sidebar: false
 sidebarlogo: fresh-white-alt
 image: images/news/october.jpg
-date: 2022-10-01
+date: 2022-10-30
 ---
 
 
@@ -20,4 +20,4 @@ We forgot to take pictures of the event, but here is us having dinner to celebra
 
 Exciting times ahead!
 
-Read more about the project in [valawai.eu](https://valawai.eu/).
+Read more about the VALAWAI project in [valawai.eu](https://valawai.eu/).

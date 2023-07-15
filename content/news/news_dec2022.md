@@ -4,7 +4,7 @@ type: news
 sidebar: false
 sidebarlogo: fresh-white-alt
 image: images/news/december.jpeg
-date: 2022-12-01
+date: 2022-10-29
 ---
 
 
@@ -20,6 +20,6 @@ We are also very interested in distinguishing political orientation from politic
 
 We are excited to start this project and to provide responses to all of these questions!
 
-👉🏼 **We will be announcing a research assistant position** **opening** for this project soon. Follow me on [Twitter](https://twitter.com/ClaraPretus) or [Mastodon](https://c.im/@ClaraPretus) if you don’t want to miss it!
+👉🏼 **We will be announcing a research assistant position** **opening** for this project soon. Follow me on [Twitter](https://twitter.com/ClaraPretus) if you don’t want to miss it!
 
  
