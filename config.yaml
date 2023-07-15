@@ -1,6 +1,6 @@
 baseURL: http://something-fresh.org/
 languageCode: en-us
-title: Social Brain Lab
+title: Social Brain Lab Barcelona
 
 module:
   # uncomment line below for local development of module
@@ -66,7 +66,7 @@ params:
     # Hero subtitle (optional)
     subtitle: "Director: Clara Pretus, Ph.D."
     # Button text
-    buttontext: We are recruiting!
+    buttontext: We are hiring!
     # Where the main hero button links to
     buttonlink: "/blog/joinus"
     # Hero image (from static/images/___)
