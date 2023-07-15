@@ -3,7 +3,7 @@ title: News
 type: news
 sidebar: false
 sidebarlogo: fresh-white-alt
-image: images/news/march.png
+image: images/news/announcement.png
 date: 2022-10-27
 ---
 
@@ -23,5 +23,5 @@ We are celebrating this occasion by officially launching the **Social Brain Lab 
 
 Visit us at [www.socialbrainlab.com](https://www.socialbrainlab.com) and stay tuned for the latest news and open positions ⚡⚡ 
 
-We are [HIRING](https://socialbrainlab.com/joinus/)!
+We are [hiring](https://socialbrainlab.com/joinus/)!
 
