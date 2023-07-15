@@ -3,7 +3,7 @@ title: "BIAL: Neurocognitive correlates of vulnerability to misinformation (2023
 type: project
 sidebar: false
 sidebarlogo: fresh-white-alt
-image: "images/illustrations/faces/2.png"
+image: 
 include_footer: true
 ---
 
@@ -14,6 +14,6 @@ This is a project we conceived together with the [Center for Brain at Cognition]
 
 
 <div class="container" style="display: flex; justify-content: center; padding: 5%">
- <img src="/images/illustrations/faces/1.png"/>
+ <img src="/images/projects/bial.png"/>
 </div>
 

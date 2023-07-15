@@ -3,7 +3,7 @@ title: News
 type: news
 sidebar: false
 sidebarlogo: fresh-white-alt
-image: images/news/fake-news.jpeg
+image: images/news/december.jpeg
 date: 2022-12-01
 ---
 

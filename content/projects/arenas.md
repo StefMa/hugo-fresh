@@ -3,7 +3,7 @@ title: "ARENAS: Extremist Narratives in the EU (2023-2027)"
 type: project
 sidebar: false
 sidebarlogo: fresh-white-alt
-image: "images/illustrations/faces/1.png"
+image: 
 include_footer: true
 ---
 
@@ -12,6 +12,6 @@ We are part of ARENAS, an ERC funded project that aims to understand and mitigat
 As part of ARENAS, we will be leading studies on how extremist social media networks contribute to affective polarization in Spain and France.
 
 <div class="container" style="display: flex; justify-content: center; padding: 5%">
- <img src="/images/illustrations/faces/1.png"/>
+ <img src="/images/projects/arenas.png"/>
 </div>
 
