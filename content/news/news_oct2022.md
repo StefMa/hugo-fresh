@@ -3,7 +3,7 @@ title: News
 type: news
 sidebar: false
 sidebarlogo: fresh-white-alt
-image: images/news/
+image: images/news/october.jpg
 date: 2022-10-01
 ---
 
@@ -20,5 +20,4 @@ We forgot to take pictures of the event, but here is us having dinner to celebra
 
 Exciting times ahead!
 
-Read more about the project [here](https://www.notion.so/PROJECTS-d66f0f661a74420291292aa7cc22854d?pvs=21) - the project website is under way.
-
+Read more about the project in [valawai.eu](https://valawai.eu/).

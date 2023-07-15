@@ -3,7 +3,7 @@ title: "VALAWAI: Moral awareness for AI (2022-2026)"
 type: project
 sidebar: false
 sidebarlogo: fresh-white-alt
-image: "images/illustrations/faces/3.png"
+image: 
 include_footer: true
 ---
 
@@ -15,5 +15,5 @@ As part of VALAWAI, we will be leading behavioral and neuroimaging experiments o
 Visit the project’s website: [valawai.eu](https://valawai.eu/)
 
 <div class="container" style="display: flex; justify-content: center; padding: 5%">
- <img src="/images/illustrations/faces/1.png"/>
+ <img src="/images/projects/valawai.jpeg"/>
 </div>

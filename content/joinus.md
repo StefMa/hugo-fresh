@@ -5,7 +5,7 @@ sidebarlogo: fresh-white-alt
 include_footer: true
 ---
 
-Are you interested in studying complex societal challenges such as misinformation and extremism? 
+Are you interested in studying misinformation and extremism from a neuroscience perspective? 
 
 Our lab offers a unique opportunity to contribute to cutting-edge research in the fields of cognitive neuroscience and experimental psychology. We investigate the neural underpinnings of extremist behavior and explore the spread of misinformation in today's society.
 

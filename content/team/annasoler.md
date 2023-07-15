@@ -3,7 +3,7 @@ title: Team
 type: member
 sidebar: false
 sidebarlogo: fresh-white-alt
-image: images/illustrations/faces/1.png
+image: images/team/anna.jpeg
 position: 3
 ---
 
