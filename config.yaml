@@ -1,6 +1,7 @@
 baseURL: http://something-fresh.org/
 languageCode: en-us
 title: Social Brain Lab Barcelona
+description: ""
 
 module:
   # uncomment line below for local development of module
@@ -121,27 +122,7 @@ params:
   #       url: /
   #     - text: Settings
   #       url: /
-  #   - title: Messages
-  #     icon: envelope
-  #     links:
-  #     - text: Inbox
-  #       url: /
-  #     - text: Compose
-  #       url: /
-  #   - title: Images
-  #     icon: image
-  #     links:
-  #     - text: Library
-  #       url: /
-  #     - text: Upload
-  #       url: /
-  #   - title: Settings
-  #     icon: cog
-  #     links:
-  #     - text: User settings
-  #       url: /
-  #     - text: App settings
-  #       url: /
+
   section0:
     title: Welcome to our lab!
 
@@ -194,14 +175,6 @@ params:
     #   quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
     #   job: Accountant
     #   img: 1
-    # - name: John Bradley
-    #   quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-    #   job: Financial Analyst
-    #   img: 2
-    # - name: Gary Blackman
-    #   quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-    #   job: HR Manager
-    #   img: 3
   section5:
     title: Contact us
     #subtitle: We'd love to hear from you
