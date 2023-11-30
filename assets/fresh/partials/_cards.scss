@@ -6,8 +6,8 @@ Cards and Card content styles
 
 // Feature Card
 .feature-card {
-    width: 300px;
-    height: 320px;
+    width: 320px;
+    height: 360px;
     background-color: #fff;
     border-radius: 3px;
     margin: 0 auto;
@@ -19,17 +19,17 @@ Cards and Card content styles
         color: $blue-grey;
     }
     .card-icon img {
-        height: 120px;
-        margin-top: 20px;
+        height: 150px;
+        margin-top: 10px;
     }
     .card-text {
-        padding: 0 40px;
+        padding: 0 20px;
         p {
             color: $muted-grey;
         }
     }
     .card-action {
-        margin-top: 10px;
+        margin-top: 20px;
     }
     &.is-bordered {
         border: 1px solid $fade-grey;
