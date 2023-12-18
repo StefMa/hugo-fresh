@@ -24,7 +24,7 @@ jobs:
             --baseURL https://hugo-fresh-${{ github.event.pull_request.head.user.login }}-${{ github.event.pull_request.head.ref }}.vercel.app
 
       - name: Save hugo as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: hugo-output
           path: exampleSite/public/
@@ -35,7 +35,7 @@ jobs:
           echo hugo-fresh-${{ github.event.pull_request.head.user.login }}-${{ github.event.pull_request.head.ref }}.vercel.app > ./alias-domain/alias-domain
 
       - name: Save alias domain as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: alias-domain
           path: alias-domain/
