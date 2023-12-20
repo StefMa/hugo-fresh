@@ -40,7 +40,7 @@ jobs:
           path: exampleSite/public
 
       - name: Archive htmltest results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: htmltest-report
           path: tmp/.htmltest/htmltest.log
