@@ -44,3 +44,5 @@ Checkout the [Landing page docs](../landingpage) to customize the landing page.
 There is also the option to create single pages. Check the [Single page docs](../singlepage) for more.
 
 Have some troubles? Check our [troubleshooting](../troubleshooting) guide.
+
+Interested in changed colors? Checkout the [Deep modifications](../deepmodifications) guide.
