@@ -8,9 +8,10 @@ include_footer: false
 ## Module
 
 The theme is an [hugo modules](https://gohugo.io/hugo-modules/)-theme.
-It is not possible to add this theme as a git submodule anymore.
+It is not recommended to add this theme as a git submodule. 
+However, it is still possible. See the [Deep modifications](../deepmodifications) guide for me.
 
-This provides several benefits for the development of this theme.
+Using the theme as a hugo module provides several benefits for the development of this theme.
 
 ### Versioning / stable theme
 
