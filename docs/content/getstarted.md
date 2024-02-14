@@ -25,7 +25,7 @@ hugo new site my-site && cd my-site
 hugo mod init YOUR_MODULE_NAME
 
 # Remove the default config
-rm config.toml
+rm hugo.toml
 
 # Fetch the example config
 curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/hugo.yaml
