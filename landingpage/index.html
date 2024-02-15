@@ -1,0 +1,203 @@
+<!doctype html><html lang=en-us><head><meta name=description content="Hardcoded description; the author should update :)"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta http-equiv=x-ua-compatible content="ie=edge"><title>Hugo Fresh documentation</title><link rel=icon type=image/png href=/hugo-fresh/images/favicon.png><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel=stylesheet><link rel=stylesheet type=text/css href=/hugo-fresh/css/style.min.7a984355ea0371a845ca84dd9356e5caf3fc628ad4553524aa9a665b79c54d29.css integrity="sha256-ephDVeoDcahFyoTdk1blyvP8YorUVTUkqppmW3nFTSk="><link rel=stylesheet type=text/css href=/hugo-fresh/css/icons.css></head><body><div id=preloader><div id=status></div></div><nav class="navbar is-fresh is-transparent no-shadow" role=navigation aria-label="main navigation"><div class=container><div class=navbar-brand><a class=navbar-item href=/hugo-fresh><img src=/images/logos/fresh.svg alt width=112 height=28></a>
+<a class="navbar-item is-hidden-desktop is-hidden-tablet"><div id=menu-icon-wrapper class=menu-icon-wrapper style=visibility:visible><svg width="1e3" height="1e3"><path class="path1" d="M3e2 4e2H7e2c2e2.0 2e2 350-1e2 450A4e2 4e2.0 012e2 2e2L8e2 8e2"/><path class="path2" d="M3e2 5e2H7e2"/><path class="path3" d="M7e2 6e2H3e2c-2e2.0-2e2-4e2 1e2-450A4e2 380 0 112e2 8e2L8e2 2e2"/></svg><button id=menu-icon-trigger class=menu-icon-trigger></button></div></a><a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=navbar-menu><span aria-hidden=true></span>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span></a></div><div id=navbar-menu class="navbar-menu is-static"><div class=navbar-start><a class="navbar-item is-hidden-mobile"><div id=menu-icon-wrapper class=menu-icon-wrapper style=visibility:visible><svg width="1e3" height="1e3"><path class="path1" d="M3e2 4e2H7e2c2e2.0 2e2 350-1e2 450A4e2 4e2.0 012e2 2e2L8e2 8e2"/><path class="path2" d="M3e2 5e2H7e2"/><path class="path3" d="M7e2 6e2H3e2c-2e2.0-2e2-4e2 1e2-450A4e2 380 0 112e2 8e2L8e2 2e2"/></svg><button id=menu-icon-trigger class=menu-icon-trigger></button></div></a></div><div class=navbar-end><a href=https://github.com/StefMa/hugo-fresh class=navbar-item><span class="button signup-button rounded secondary-btn raised">GitHub</span></a></div></div></div></nav><nav id=navbar-clone class="navbar is-fresh is-transparent" role=navigation aria-label="main navigation"><div class=container><div class=navbar-brand><a class=navbar-item href=/hugo-fresh><img src=/images/logos/fresh.svg alt width=112 height=28></a>
+<a class="navbar-item is-hidden-desktop is-hidden-tablet"><div id=menu-icon-wrapper class=menu-icon-wrapper style=visibility:visible><svg width="1e3" height="1e3"><path class="path1" d="M3e2 4e2H7e2c2e2.0 2e2 350-1e2 450A4e2 4e2.0 012e2 2e2L8e2 8e2"/><path class="path2" d="M3e2 5e2H7e2"/><path class="path3" d="M7e2 6e2H3e2c-2e2.0-2e2-4e2 1e2-450A4e2 380 0 112e2 8e2L8e2 2e2"/></svg><button id=menu-icon-trigger class=menu-icon-trigger></button></div></a><a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=cloned-navbar-menu><span aria-hidden=true></span>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span></a></div><div id=cloned-navbar-menu class="navbar-menu is-fixed"><div class=navbar-start><a class="navbar-item is-hidden-mobile"><div id=cloned-menu-icon-wrapper class=menu-icon-wrapper style=visibility:visible><svg width="1e3" height="1e3"><path class="path1" d="M3e2 4e2H7e2c2e2.0 2e2 350-1e2 450A4e2 4e2.0 012e2 2e2L8e2 8e2"/><path class="path2" d="M3e2 5e2H7e2"/><path class="path3" d="M7e2 6e2H3e2c-2e2.0-2e2-4e2 1e2-450A4e2 380 0 112e2 8e2L8e2 2e2"/></svg><button id=cloned-menu-icon-trigger class=menu-icon-trigger></button></div></a></div><div class=navbar-end><a href=https://github.com/StefMa/hugo-fresh class=navbar-item><span class="button signup-button rounded secondary-btn raised">GitHub</span></a></div></div></div></nav><section class="section is-medium"><div class=container><div class=columns><div class="column is-centered-tablet-portrait"><h1 class="title section-title">Landing page</h1><h5 class="subtitle is-5 is-muted"></h5><div class=divider></div></div></div><div class=content><h2 id=customize-the-landing-page>Customize the landing page</h2><p>There&rsquo;s a wide variety of customizations that you can make to your Hugo Fresh landing page by modifying the <code>hugo.yaml</code> file that you downloaded.</p><blockquote><p><strong>Note</strong>: There is always an up-to-date config file at <a href=https://github.com/StefMa/hugo-fresh/blob/master/exampleSite/hugo.yaml><code>exampleSite/hugo.yaml</code></a> that contains all possible configurations.
+Please make sure you check them out as well.</p></blockquote><p><h4 class="title is-4">preloader</h4>Preloader ensures images are loaded before displaying to the user.
+If you don&rsquo;t want it, set it to <code>false</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>preloader</span>: <span style=color:#66d9ef>false</span>
+</span></span></code></pre></div><p><h4 class="title is-4">navbarlogo</h4>Define the logo of the navigation bar in the upper left corner.</p><details><summary>Code</summary><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>navbarlogo</span>:
+</span></span><span style=display:flex><span> <span style=color:#f92672>image</span>: <span style=color:#ae81ff>logos/fresh.svg</span> <span style=color:#75715e># Logo (from static/images/logos/)</span>
+</span></span><span style=display:flex><span> <span style=color:#f92672>link</span>: <span style=color:#ae81ff>/</span>
+</span></span></code></pre></div></details><p><h4 class="title is-4">font</h4>Set the font of the site.</p><details><summary>Code</summary><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>font</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#e6db74>&#34;Open Sans&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>sizes</span>: [<span style=color:#ae81ff>400</span>,<span style=color:#ae81ff>600</span>]
+</span></span></code></pre></div></details><p><h4 class="title is-4">hero</h4>The &ldquo;main&rdquo; page which you see when you open the website.</p><details><summary>Code</summary><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>hero</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Manage. Deploy.</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>subtitle</span>: <span style=color:#ae81ff>Lorem ipsum sit dolor amet is dummy text used by the typography industry</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>buttontext</span>: <span style=color:#ae81ff>Get started</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>buttonlink</span>: <span style=color:#e6db74>&#34;#&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>image</span>: <span style=color:#ae81ff>illustrations/worker.svg</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e># Footer logos (from static/images/logos/clients/*.svg)</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e># urls are optional</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>clientlogos</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>logo</span>: <span style=color:#ae81ff>systek</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>url</span>: <span style=color:#ae81ff>https://google.com</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>logo</span>: <span style=color:#ae81ff>tribe</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>url</span>: <span style=color:#ae81ff>https://stefma.github.io/hugo-fresh/</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>logo</span>: <span style=color:#ae81ff>kromo</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>url</span>: <span style=color:#ae81ff>https://github.com/StefMa/hugo-fresh</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>logo</span>: <span style=color:#ae81ff>infinite</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>url</span>: <span style=color:#ae81ff>https://hugo-fresh.vercel.app/</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>logo</span>: <span style=color:#ae81ff>gutwork</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>url</span>: <span style=color:#ae81ff>https://bulma.io/</span>
+</span></span></code></pre></div></details><p><h4 class="title is-4">navbar</h4>The navigation bar which is at the top of the site.
+For a dropdown, add a &ldquo;sublinks&rdquo; list.</p><details><summary>Code</summary><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>navbar</span>:
+</span></span><span style=display:flex><span>- <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Features</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>- <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Pricing</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>- <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Dropdown</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>sublinks</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Dropdown item</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Dropdown item</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Dropdown item</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>- <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Log in</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>- <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Sign up</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>button</span>: <span style=color:#66d9ef>true</span>
+</span></span></code></pre></div></details><p><h4 class="title is-4">sidebar</h4>The sidebar is an optional parameter where you can place even more navigation items.</p><details><summary>Code</summary><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>sidebar</span>:
+</span></span><span style=display:flex><span>  <span style=color:#75715e># Logo (from /images/logos/___.svg)</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>logo</span>: <span style=color:#ae81ff>fresh-square</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>sections</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>User</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>user</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>links</span>:
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Profile</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Account</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Settings</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Messages</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>envelope</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>links</span>:
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Inbox</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Compose</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Images</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>image</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>links</span>:
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Library</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Upload</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Settings</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>cog</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>links</span>:
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>User settings</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>App settings</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span></code></pre></div></details><p><h4 class="title is-4">section1</h4>Describes the second &ldquo;page&rdquo; which you will see when you scroll down. Currently it will have <strong>always</strong> three <code>titles</code>.</p><details><summary>Code</summary><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>section1</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Great power comes</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>subtitle</span>: <span style=color:#ae81ff>with great responsibility</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>tiles</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>App builder</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>mouse-globe</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>text</span>: <span style=color:#ae81ff>This is some explanatory text that is on two rows</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>buttonText</span>: <span style=color:#ae81ff>Free trial</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Cloud integration</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>laptop-cloud</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>text</span>: <span style=color:#ae81ff>This is some explanatory text that is on two rows</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>buttonText</span>: <span style=color:#ae81ff>Get started</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Add-ons &amp; plugins</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>plug-cloud</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>text</span>: <span style=color:#ae81ff>This is some explanatory text that is on two rows</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>url</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>buttonText</span>: <span style=color:#ae81ff>Get started</span>
+</span></span></code></pre></div></details><p><h4 class="title is-4">section2</h4>Shows information why someone should use this product.</p><details><summary>Code</summary><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>section2</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#ae81ff>You&#39;re here because you want the best</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>subtitle</span>: <span style=color:#ae81ff>And we know it</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>features</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Powerful and unified interface</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Icon (from /images/illustrations/icons/___.svg)</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>laptop-globe</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Cross-device synchronisation</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>doc-sync</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Nomad system</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>mobile-feed</span>
+</span></span></code></pre></div></details><p><h4 class="title is-4">section3</h4>Display a bright image of your product.</p><details><summary>Code</summary><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>section3</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#ae81ff>One platform</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>subtitle</span>: <span style=color:#ae81ff>To rule them all</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>image</span>: <span style=color:#ae81ff>illustrations/mockups/app-mockup.png</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>buttonText</span>: <span style=color:#ae81ff>Get started</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>buttonLink</span>: <span style=color:#e6db74>&#34;#&#34;</span>
+</span></span></code></pre></div></details><p><h4 class="title is-4">section4</h4>What clients says about us.</p><details><summary>Code</summary><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>section4</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Our Clients love us!</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>subtitle</span>: <span style=color:#ae81ff>Lorem ipsum sit dolor amet is a dummy text used by typography industry</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>clients</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Irma Walters</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>quote</span>: <span style=color:#ae81ff>Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>job</span>: <span style=color:#ae81ff>Accountant</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>img</span>: <span style=color:#ae81ff>1</span> <span style=color:#75715e># From (static/images/illustrations/faces)</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>John Bradley</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>quote</span>: <span style=color:#ae81ff>Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>job</span>: <span style=color:#ae81ff>Financial Analyst</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>img</span>: <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Gary Blackman</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>quote</span>: <span style=color:#ae81ff>Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>job</span>: <span style=color:#ae81ff>HR Manager</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>img</span>: <span style=color:#ae81ff>3</span>
+</span></span></code></pre></div></details><p><h4 class="title is-4">section5</h4>Write us.</p><details><summary>Code</summary><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>section5</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Drop us a line or two</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>subtitle</span>: <span style=color:#ae81ff>We&#39;d love to hear from you</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>buttonText</span>: <span style=color:#ae81ff>Send Message</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>action</span>: <span style=color:#ae81ff>https://formspree.io/f/{ID}</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>method</span>: <span style=color:#ae81ff>POST</span>
+</span></span></code></pre></div></details><p><h4 class="title is-4">footer</h4>The footer of the site.</p><details><summary>Code</summary><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>footer</span>:
+</span></span><span style=display:flex><span>  <span style=color:#75715e># Logo (from /staticimages/logos/___)</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>logo</span>: <span style=color:#ae81ff>fresh-white-alt.svg</span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e># Social media links (GitHub, Twitter, etc.). All are optional.</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>socialmedia</span>:
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>link</span>: <span style=color:#ae81ff>https://github.com/StefMa/hugo-fresh</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Icons are from Font Awesome</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>github</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>link</span>: <span style=color:#ae81ff>https://dribbble.com/#</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>dribbble</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>link</span>: <span style=color:#ae81ff>https://facebook.com/#</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>facebook</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>link</span>: <span style=color:#ae81ff>https://twitter.com/lucperkins</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>twitter</span>
+</span></span><span style=display:flex><span>  - <span style=color:#f92672>link</span>: <span style=color:#ae81ff>https://bitbucket.org/#</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>icon</span>: <span style=color:#ae81ff>bitbucket</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>bulmalogo</span>: <span style=color:#66d9ef>true</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>quicklinks</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>column1</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Product&#34;</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>links</span>:
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Discover features</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>link</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Why choose our product?</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>link</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Compare features</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>link</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Our roadmap</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>link</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>AGB</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>link</span>: <span style=color:#ae81ff>/agb</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>column2</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Docs&#34;</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>links</span>:
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Get started</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>link</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>User guides</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>link</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Admin guide</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>link</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Developers</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>link</span>: <span style=color:#ae81ff>/</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>column3</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;Blog&#34;</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>links</span>:
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Latest news</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>link</span>: <span style=color:#ae81ff>/blog/first</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>text</span>: <span style=color:#ae81ff>Tech articles</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>link</span>: <span style=color:#ae81ff>/blog/second</span>
+</span></span></code></pre></div></details></div></div></section><div class=sidebar><div class=sidebar-header><img src=/images/logos/fresh-white.svg>
+<a class=sidebar-close href=javascript:void(0);><i data-feather=x></i></a></div><div class=inner><ul class=sidebar-menu><li><a href=https://stefma.github.io/hugo-fresh/deepmodifications/>Deep modification</a></li><li><a href=https://stefma.github.io/hugo-fresh/getstarted/>Get Started</a></li><li><a href=https://stefma.github.io/hugo-fresh/module/>Hugo module</a></li><li><a href=https://stefma.github.io/hugo-fresh/landingpage/>Landing page</a></li><li><a href=https://stefma.github.io/hugo-fresh/markdown-syntax/>Markdown Syntax Guide</a></li><li><a href=https://stefma.github.io/hugo-fresh/misc/>Misc</a></li><li><a href=https://stefma.github.io/hugo-fresh/singlepage/>Single page</a></li><li><a href=https://stefma.github.io/hugo-fresh/troubleshooting/>Troubleshooting</a></li></ul></div></div><div id=backtotop><a href=#></a></div><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js></script>
+<script src=https://unpkg.com/feather-icons></script>
+<script src=/hugo-fresh/js/fresh.js></script>
+<script src=/hugo-fresh/js/jquery.panelslider.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js></script></body></html>
