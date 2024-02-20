@@ -1,30 +1,68 @@
 /* ==========================================================================
-Color variables
+Color variables for edited elements
 ========================================================================== */
+// buttons
+$button-primary-color: $secondary;
+$button-primary-text: $background;
 
-$white: #fff;
-$smoke-white: #fcfcfc;
-$grey-white: #f2f2f2;
+$button-secondary-color: $primary;
+$button-secondary-text: $background;
 
-$primary: #4FC1EA;
-$secondary: #F39200;
-$accent: #00efb7;
+$button-accent-color: $accent;
+$button-accent-text: $background;
 
-$fade-grey: #ededed;
-$light-grey: #EFF4F7;
-$title-grey: #A9ABAC;
-$blue-grey: #444F60;
-$muted-grey: #999;
-$light-blue-grey: #98a9c3;
-$medium-grey: #66676b;
-$basaltic-grey: #878787;
-$purple: #7F00FF;
-$mint: #11FFBD;
-$bloody: #FC354C;
-$pinky: #ff00cc;
-$frost: #004e92;
-$placeholder: #cecece;
-$dark-grey: #344258;
-$border-grey: #ccc;
-$muted-grey: #999;
-$section-grey: #fbfbfb;
+// cards
+$card-feature-background: $background;
+$card-feature-header: $title;
+$card-feature-text: $subtitle;
+$card-feature-border: $border;
+
+// footer
+$footer-background: $title;
+$footer-titles: $background;
+$footer-links: $light-title;
+$footer-logos: $primary;
+$footer-hover: $background;
+
+// forms
+$form-text-color: $subtitle;
+$form-text-background: $background;
+$form-text-border: $border;
+
+// hero & sections
+$hero-background-color: $background;
+$sections-light-background: $border;
+$sections-feature-background: $background;
+$sections-alt-background: $primary;
+
+$sections-title-color: $header;
+$sections-subtitle-color: $subheader;
+$sections-ibtitle-color: $title;
+$sections-ibsubtitle-color: $subtitle;
+
+$sections-divider-color: $primary;
+
+// navbar
+$navbar-background-color: $navbar;
+$navbar-text-color: $subheader;
+$navbar-highlight-color: $primary;
+
+// sidebar
+$sidebar-hamburger-color: $primary;
+$sidebar-background-color: $title;
+$sidebar-text-color: $background;
+$sidebar-x-color: $background;
+$sidebar-highlight-color: $primary;
+
+// testimonials
+$testimonials-background-color: $background;
+$testimonials-text-color: $header;
+$testimonials-name-color: $title;
+$testimonials-position-color: $background;
+
+// utils
+$utils-preloader-color: $background;
+$util-backtop-color: $subtitle;
+$util-backtop-hover-color: $primary;
+$util-backtop-arrow-color: $background;
+$util-placeholder-color: $light-title;

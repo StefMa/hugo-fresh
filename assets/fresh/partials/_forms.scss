@@ -3,10 +3,11 @@ Inputs styles
 ========================================================================== */
 
 input.input {
-    color: $basaltic-grey;
+    color:  $form-text-color;
     box-shadow: none !important;
     transition: all 0.8s;
     padding-bottom: 3px;
+    background-color: $form-text-background;
     &.is-small {
         padding-bottom: 2px;
         padding-left: 10px;
@@ -18,7 +19,7 @@ input.input {
         padding-bottom: 7px;
     }
     &:focus, &:active {
-        border-color: $light-grey;
+        border-color: $form-text-border;
     }
     &.rounded {
         border-radius: 100px;
@@ -41,11 +42,14 @@ input.input {
             color: $accent;
         }
     }
-    &.is-bloody-focus:focus {
-        border-color: $bloody;
-        ~ span.icon i {
-            color: $bloody;
-        }
+}
+
+textarea.textarea {
+    color:  $form-text-color;
+    background-color:  $form-text-background;
+
+    &:focus, &:active {
+        border-color: $form-text-border;
     }
 }
 

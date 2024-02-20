@@ -5,13 +5,13 @@ Section Styles
 //Sections
 .section {
     &.section-light-grey {
-        background-color: $light-grey;
+        background-color: $sections-light-background;
     }
     &.section-feature-grey {
-        background-color: $section-grey;
+        background-color: $sections-feature-background;
     }
-    &.section-secondary {
-        background-color: $secondary;
+    &.section-alt {
+        background-color: $sections-alt-background;
     }
     &.section-half {
         height: 75vh !important;
@@ -20,9 +20,12 @@ Section Styles
         font-family: 'Open Sans', sans-serif;
 
     }
+    .title {
+        color: $sections-title-color;
+    }
     .subtitle {
         &.is-muted {
-            color: $muted-grey;
+            color: $sections-subtitle-color;
         }
     }
 }
@@ -33,11 +36,13 @@ Section Styles
     margin: 0 auto;
     .title, .subtitle {
         font-family: 'Open Sans', sans-serif;
-
+    }
+    .title {
+        color: $sections-title-color;
     }
     .subtitle {
         &.is-muted {
-            color: $muted-grey;
+            color: $sections-subtitle-color;
         }
     }
 }
@@ -46,7 +51,7 @@ Section Styles
 .divider {
     height: 3px;
     border-radius: 50px;
-    background: $secondary;
+    background: $sections-divider-color;
     width: 60px;
     &.is-centered {
         margin: 0 auto;
@@ -72,12 +77,12 @@ img.pushed-image {
             display: block;
         }
         .icon-box-title {
-            color: $blue-grey;
+            color: $sections-ibtitle-color;
             font-size: 1.2rem;
             font-weight: 600;
         }
         .icon-box-text {
-            color: $title-grey;
+            color: $sections-ibsubtitle-color;
             font-size: 1rem;
             font-weight: 400;
         }

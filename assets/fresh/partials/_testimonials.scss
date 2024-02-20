@@ -9,7 +9,7 @@ Testimonials Styles
     min-width: 220px;
     max-width: 310px;
     width: 100%;
-    color: #333;
+    color: $testimonials-text-color;
     text-align: left;
     box-shadow: none !important;
     * {
@@ -32,7 +32,7 @@ Testimonials Styles
         display: block;
         border-radius: 8px;
         position: relative;
-        background-color: $smoke-white;
+        background-color: $testimonials-background-color;
         padding: 30px 50px 65px 50px;
         font-size: 1.2rem;
         font-weight: 500;
@@ -62,7 +62,7 @@ Testimonials Styles
         height: 80px;
         display: block;
         text-align: left;
-        color: $white;
+        color: $testimonials-position-color;
         padding: 0 35px;
         position: relative;
         z-index: 0;
@@ -78,11 +78,11 @@ Testimonials Styles
             margin: 0;
             font-weight: 600;
             font-size: 1.2rem;
-            color: $blue-grey;
+            color: $testimonials-name-color;
         }
         span {
             font-size: 0.8em;
-            color: $white;
+            color: $testimonials-position-color;
             top: 50%;
         }
     }

@@ -8,6 +8,7 @@ Navbar
     min-height: 3.8rem;
     transition: all .3s;
     z-index: 99;
+    background-color: $navbar-background-color;
     .container {
         min-height: 4rem;
     }
@@ -38,38 +39,42 @@ Navbar
     }
     //Navbar items
     .navbar-item {
-        color: $muted-grey;
+        background-color: $navbar-background-color;
+        color: $navbar-text-color;
         &.is-secondary {
             &:hover {
-                color: $secondary !important;
+                background-color: $navbar-background-color;
+                color: $navbar-highlight-color !important;
             }
         }
         &.has-dropdown {
             padding: 10px 0;
             .navbar-link {
-                color: $muted-grey;
+                color: $navbar-text-color;
                 &:after {
                     top: 55%;
                     height: 0.5em;
                     width: 0.5em;
                     border-width: 2px;
-                    border-color: $muted-grey;
+                    border-color: $navbar-text-color;
                 }
             }
             .navbar-dropdown {
                 top: 3.4rem;
                 min-width: 220px;
                 margin-top: 4px;
-                border-top-color: $secondary;
+                background-color: $navbar-background-color;
+                border-top-color: $navbar-highlight-color;
                 .navbar-item {
                     padding: 10px 20px;
                 }
             }
             &:hover {
                 .navbar-link {
-                    color: $secondary;
+                    background-color: $navbar-background-color;
+                    color: $navbar-highlight-color;
                     &:after {
-                        border-color: $secondary;
+                        border-color: $navbar-highlight-color;
                     }
                 }
             }
@@ -88,12 +93,12 @@ Navbar
         left: 0;
         width: 100%;
         min-height: 4rem !important;
-        background: $white;
+        background: $navbar-background-color;
         box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
         a {
-            color: $blue-grey;
+            color: $navbar-text-color;
             &:hover {
-                color: $primary;
+                color: $navbar-highlight-color;
             }
         }
     }
@@ -105,7 +110,7 @@ Navbar
     top: 0;
     left: 0;
     width: 100%;
-    background: $white;
+    background: $navbar-background-color;
     transform: translateY(-100%);
     z-index: 100;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
