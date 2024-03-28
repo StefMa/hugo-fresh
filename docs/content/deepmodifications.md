@@ -18,9 +18,15 @@ hugo new site my-site && cd my-site
 # Make a git project out of it
 git init
 
-# Add the theme as well as the css files as git submodules
-git submodule add https://github.com/jgthms/bulma.git themes/bulma
+# Add this theme as a git submodule
 git submodule add https://github.com/StefMa/hugo-fresh.git themes/hugo-fresh
+
+# Add the dependency to the css files as a git submodule and checkout version 0.9.4
+git submodule add https://github.com/jgthms/bulma.git themes/bulma
+cd themes/bulma && git checkout 0.9.4
+
+# Go back from themes/bulma dir
+cd ../..
 
 # Remove the default config
 rm config.toml
