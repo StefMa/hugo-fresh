@@ -30,7 +30,7 @@ curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/h
 
 # Configure the theme as git submodule
 # Remove the 'module' section in the `hugo.yml` and add
-# theme = 'hugo-fresh' (See also https://github.com/StefMa/hugo-fresh/issues/175#issuecomment-1863358700)
+# theme: 'hugo-fresh' (See also https://github.com/StefMa/hugo-fresh/issues/175#issuecomment-1863358700)
 
 # Change the path of the bulma css files
 # Replace `github.com/jgthms/bulma` with `bulma` in
