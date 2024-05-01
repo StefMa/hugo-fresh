@@ -80,7 +80,7 @@ params:
     url: /
     button: true
   sidebar:
-    # Logo (from /images/logos/___.svg)
+    # Logo (from static/images/logos/___.svg)
     logo: fresh-square
     sections:
     - title: User
@@ -138,7 +138,7 @@ params:
     features:
     - title: Powerful and unified interface
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      # Icon (from /images/illustrations/icons/___.svg)
+      # Icon (from static/images/illustrations/icons/___.svg)
       icon: laptop-globe
     - title: Cross-device synchronisation
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
@@ -175,7 +175,7 @@ params:
     # action: https://formspree.io/f/<form_id>
     # method: POST
   footer:
-    # Logo (from /images/logos/___)
+    # Logo (from static/images/logos/___)
     logo: fresh-white-alt.svg
     # Social Media Title
     socialmediatitle: Follow Us
