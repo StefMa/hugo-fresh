@@ -276,7 +276,7 @@ The footer of the site.
 
 ```yaml
 footer:
-  # Logo (from /staticimages/logos/___)
+  # Logo (from /static/images/logos/___)
   logo: fresh-white-alt.svg
   # Social media links (GitHub, Twitter, etc.). All are optional.
   socialmedia:
