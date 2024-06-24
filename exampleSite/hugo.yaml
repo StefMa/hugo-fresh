@@ -210,10 +210,12 @@ params:
       column2:
         title: "Docs"
         links:
+        - text: Index
+          link: /howto
         - text: Get started
-          link: /
+          link: /howto/get_started
         - text: User guides
-          link: /
+          link: /howto/user_guide
         - text: Admin guide
           link: /
         - text: Developers
@@ -221,6 +223,8 @@ params:
       column3:
         title: "Blog"
         links:
+        - text: All blog posts
+          link: /blog
         - text: Latest news
           link: /blog/first
         - text: Tech articles
