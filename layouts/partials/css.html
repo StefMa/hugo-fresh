@@ -1,7 +1,7 @@
 {{- $inServerMode := .Site.IsServer }}
 {{- $sass         := "style.sass" }}
 {{- $cssTarget    := "css/style.css" }}
-{{- $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
+{{- $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true "transpiler" "dartsass") (dict "targetPath" $cssTarget "outputStyle" "compressed" "transpiler" "dartsass") }}
 {{- $fontName     := .Site.Params.font.name | default "Open Sans" }}
 {{- $fontFace     := replace $fontName " " "+" }}
 {{- $fontSizes    := delimit (.Site.Params.font.sizes | default (slice 300 400 600 700)) "," }}
