@@ -14,8 +14,10 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.110.0'
+          hugo-version: "0.110.0"
           extended: true
+
+      - uses: dw-labs-org/dart-sass-gha@v1
 
       - name: Build
         working-directory: docs
@@ -26,5 +28,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force_orphan: true
-          commit_message: '[skip ci] Deploy:'
+          commit_message: "[skip ci] Deploy:"
           publish_dir: docs/public

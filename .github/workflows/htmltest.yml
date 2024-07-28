@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - master
+      - master
   pull_request:
 
 jobs:
@@ -26,6 +26,8 @@ jobs:
         with:
           hugo-version: "latest"
           extended: true
+
+      - uses: dw-labs-org/dart-sass-gha@v1
 
       - run: hugo --destination $GITHUB_WORKSPACE/exampleSite/public --themesDir ../../ --theme hugo-fresh
         working-directory: exampleSite
