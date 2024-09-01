@@ -6,8 +6,8 @@ $white: #fff;
 $smoke-white: #fcfcfc;
 $grey-white: #f2f2f2;
 
-$primary: #4FC1EA;
-$secondary: #F39200;
+$primary: #0A2342;
+$secondary: #972DBD;
 $accent: #00efb7;
 
 $fade-grey: #ededed;
@@ -28,3 +28,8 @@ $dark-grey: #344258;
 $border-grey: #ccc;
 $muted-grey: #999;
 $section-grey: #fbfbfb;
+
+:root {
+    --primary-color: #{$primary};
+    --secondary-color: #{$secondary};
+  }
