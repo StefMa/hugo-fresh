@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+        # 0.120.0 "minVersion"
+        # 0.135.0 "justAVersion"
+        # latest "latest"
         hugo: ['0.120.0', '0.135.0', 'latest']
 
     steps:
