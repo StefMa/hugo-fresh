@@ -4,11 +4,12 @@ on:
   pull_request:
 
 jobs:
-  createExampleAndDeployToArtifacts:
+  testBuild:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         hugo: ['0.120.0', '0.135.0', 'latest']
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -17,6 +18,23 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: ${{ matrix.hugo }}
+          extended: true
+
+      - name: Build with Hugo on PR
+        working-directory: exampleSite
+        run: hugo --minify 
+        
+  createExampleAndDeployToArtifacts:
+    runs-on: ubuntu-latest
+    needs: [testBuild]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
           extended: true
 
       - name: Build with Hugo on PR
