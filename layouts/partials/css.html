@@ -1,4 +1,9 @@
-{{- $inServerMode := (or hugo.IsServer .Site.IsServer) }}
+{{- $inServerMode := "" }}
+{{- if gt (int (index (split hugo.Version ".") 1)) "120" }}
+  {{ $inServerMode = hugo.IsServer }}
+{{- else }}
+  {{ $inServerMode = .Site.IsServer }}
+{{- end }}
 {{- $sass         := "style.sass" }}
 {{- $cssTarget    := "css/style.css" }}
 {{- $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
