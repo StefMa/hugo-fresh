@@ -16,7 +16,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $white;
+    background-color: $utils-preloader-color;
     z-index: 99;
 }
 
@@ -61,7 +61,7 @@ button {
 #backtotop.visible a:hover {
     outline: none;
     opacity: 0.9;
-    background: $secondary;
+    background: $util-backtop-hover-color;
 }
 
 #backtotop a {
@@ -71,7 +71,7 @@ button {
     display: block;
     width: 46px;
     height: 46px;
-    background-color: $medium-grey;
+    background-color: $util-backtop-color;
     opacity: 1;
     transition: all 0.3s;
     border-radius: 50%;
@@ -81,7 +81,7 @@ button {
 
 body #backtotop a {
     outline: none;
-    color: #fff;
+    color: $util-backtop-arrow-color;
 }
 
 #backtotop a:after {
@@ -163,14 +163,14 @@ body #backtotop a {
 
 //Input placeholders
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: $placeholder;
+    color: $util-placeholder-color;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-    color: $placeholder;
+    color: $util-placeholder-color;
 }
 :-ms-input-placeholder { /* IE 10+ */
-    color: $placeholder;
+    color: $util-placeholder-color;
 }
 :-moz-placeholder { /* Firefox 18- */
-    color: $placeholder;
+    color: $util-placeholder-color;
 }
