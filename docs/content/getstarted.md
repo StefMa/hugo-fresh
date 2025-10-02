@@ -15,7 +15,7 @@ include_footer: false
 
 To create a new site using this theme as hugo module:
 
-Make sure `go` > 1.13 is installed on your system. [Download](https://go.dev/dl/) and install if needed.
+Make sure `go` > 1.13 is installed on your system. [Download](https://go.dev/dl/) and install if needed. Dart Sass must also be installed, see details [here](https://gohugo.io/hugo-pipes/transpile-sass-to-css/#dart-sass).
 
 ```bash
 # Create site and cd into it

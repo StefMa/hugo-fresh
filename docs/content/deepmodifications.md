@@ -21,9 +21,8 @@ git init
 # Add this theme as a git submodule
 git submodule add https://github.com/StefMa/hugo-fresh.git themes/hugo-fresh
 
-# Add the dependency to the css files as a git submodule and checkout version 0.9.4
+# Add the dependency to the css files as a git submodule
 git submodule add https://github.com/jgthms/bulma.git themes/bulma
-cd themes/bulma && git checkout 0.9.4
 
 # Go back from themes/bulma dir
 cd ../..
