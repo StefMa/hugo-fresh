@@ -4,6 +4,11 @@
     {{ partial "meta.html" . }}
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ partial "css.html" . }}
+    <noscript>
+      <style>
+        #preloader { display: none; }/* show page contents if page loaded with js disabled */
+      </style>
+    </noscript>
   </head>
   <body>
     {{ if ne .Site.Params.preloader false }}
