@@ -1,0 +1,14 @@
+/* ==========================================================================
+Color definitions to be used for the differnt elements
+========================================================================== */
+$primary: #F39200;
+$secondary: #4FC1EA;
+$accent: #00efb7;
+$background: #fff;
+$navbar: #fff;
+$title: #444F60;
+$subtitle: darken(adjust-hue($background, 200), 33);
+$light-title: lighten($title, 35);
+$border: darken($background, 7.1);
+$header: darken($background, 79);
+$subheader: darken($background, 40);
